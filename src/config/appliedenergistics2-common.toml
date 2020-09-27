@@ -27,7 +27,7 @@
 		InWorldFluix = true
 		InWorldSingularity = true
 		InWorldPurification = true
-		EnableFacadeCrafting = true
+		EnableFacadeCrafting = false
 
 	[features.World]
 		CertusQuartzWorldGen = true
