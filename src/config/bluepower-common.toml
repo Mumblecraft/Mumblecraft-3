@@ -5,7 +5,7 @@
 	#Vein Count Tungsten
 	veinCountTungsten = 2
 	#Vein Count Zinc
-	veinCountZinc = 6
+	veinCountZinc = 4
 	#Generate Ruby
 	generateRuby = true
 	#Amethyst Min Y
@@ -23,17 +23,17 @@
 	#Generate Zinc
 	generateZinc = true
 	#Vein Size Teslatite
-	veinSizeTeslatite = 8
+	veinSizeTeslatite = 6
 	#Generate Copper
 	generateCopper = false
 	#Copper Min Y
 	minCopperY = 35
 	#Volcano Spawn Chance
-	volcanoSpawnChance = 0.005
+	volcanoSpawnChance = 0.001
 	#Vein Count Ruby
 	veinCountRuby = 2
 	#Vein Size Silver
-	veinSizeSilver = 6
+	veinSizeSilver = 4
 	#Silver Max Y
 	maxSilverY = 20
 	#Copper Max Y
@@ -65,13 +65,13 @@
 	#Zinc Min Y
 	minZincY = 15
 	#Volcano Active To Inactive Ratio
-	volcanoActiveToInactiveRatio = 0.5
+	volcanoActiveToInactiveRatio = 0.6
 	#Sapphire Max Y
 	maxSapphireY = 48
 	#Generate Volcano
 	generateVolcano = true
 	#Vein Size Tungsten
-	veinSizeTungsten = 3
+	veinSizeTungsten = 2
 	#Ruby Min Y
 	minRubyY = 0
 	#Possible to generate Tungsten in the Volcano
@@ -81,7 +81,7 @@
 	#Generate Silver
 	generateSilver = false
 	#Vein Size Sapphire
-	veinSizeSapphire = 5
+	veinSizeSapphire = 4
 	#Vein Count Sapphire
 	veinCountSapphire = 2
 	#Vein Size Amethyst
