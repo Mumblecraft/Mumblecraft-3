@@ -152,7 +152,7 @@
 				# Determines how frequently Type 1 Caves spawn. 0 = will not spawn at all.
 				# Default: 10
 				#Range: 0 ~ 10
-				"Type 1 Cave Priority" = 10
+				"Type 1 Cave Priority" = 12
 
 			###########################################################################################################
 			## Settings used in the generation of type 2 caves, which tend to be more open and spacious.
@@ -183,7 +183,7 @@
 				# Determines how frequently Type 2 Caves spawn. 0 = will not spawn at all.
 				# Default: 5
 				#Range: 0 ~ 10
-				"Type 2 Cave Priority" = 5
+				"Type 2 Cave Priority" = 8
 
 			###########################################################################################################
 			## Settings controlling vanilla Minecraft cave generation.
@@ -204,7 +204,7 @@
 				# The minimum y-coordinate at which vanilla caves can generate.
 				# Default: 8
 				#Range: 0 ~ 255
-				"Vanilla Cave Minimum Altitude" = 8
+				"Vanilla Cave Minimum Altitude" = 7
 
 		###########################################################################################################
 		## Settings used in the generation of caverns. Caverns are spacious caves at low altitudes.
