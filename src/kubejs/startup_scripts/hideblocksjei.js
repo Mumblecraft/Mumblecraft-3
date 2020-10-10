@@ -1,7 +1,7 @@
 // This file is for hiding items in JEI
 
 //Write to console that this file is executing
-console.info('Kubejs Removing blocks from JEI')
+console.info('Kubejs: removing blocks from JEI')
 
 events.listen('jei.hide.items', function (event) {
 	//Ores/ingots

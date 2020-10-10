@@ -1,7 +1,7 @@
 // This file is for removing recipes
 
 //Write to console that this file is executing
-console.info('Kubejs Removing recipes')
+console.info('Kubejs: removing recipes')
 
 events.listen('recipes', function (event) {
 	//Ores and ingots
@@ -60,4 +60,9 @@ events.listen('recipes', function (event) {
 	event.remove({id: 'mekanismtools:refined_obsidian_paxel'})
 	event.remove({id: 'mekanismtools:steel_paxel'})
 	event.remove({id: 'mekanismtools:steel_shield'})
+
+	//Machines
+
+	//Mekanism
+	event.remove({id: 'mekanism:mettalurgic_infuser'})
 })
