@@ -25,11 +25,14 @@ events.listen('recipes', function (event) {
 	event.remove({id: 'mekanism:ingot_lead'})
 	event.remove({id: 'mekanism:ingot_uranium'})
 	event.remove({id: 'mekanism:ingot_steel'})
-	//Hide Mekanism nugs; favor IE
+	//Remove Mekanism nugs; favor IE
 	event.remove({id: 'mekanism:nugget_copper'})
 	event.remove({id: 'mekanism:nugget_lead'})
 	event.remove({id: 'mekanism:nugget_uranium'})
 	event.remove({id: 'mekanism:nugget_steel'})
+	//Remove Mekanism steel production
+	event.remove({id: 'mekanism:dust_steel'})
+	event.remove({id: 'mekanism:enriched_iron'})
 
 	//Tools/armor
 
@@ -56,4 +59,5 @@ events.listen('recipes', function (event) {
 	event.remove({id: 'mekanismtools:refined_glowstone_paxel'})
 	event.remove({id: 'mekanismtools:refined_obsidian_paxel'})
 	event.remove({id: 'mekanismtools:steel_paxel'})
+	event.remove({id: 'mekanismtools:steel_shield'})
 })

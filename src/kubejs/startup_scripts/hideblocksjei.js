@@ -30,6 +30,9 @@ events.listen('jei.hide.items', function (event) {
 	event.hide('mekanism:nugget_copper')
 	event.hide('mekanism:nugget_lead')
 	event.hide('mekanism:nugget_steel')
+	//Hide Mekanism steel production
+	event.hide('mekanism:dust_steel')
+	event.hide('mekanism:enriched_iron')
 	
 	//Tools/armor
 	
