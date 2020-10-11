@@ -68,7 +68,7 @@
 	#Free Runner Settings
 	[gear.free_runner]
 		#Energy cost/multiplier in Joules for reducing fall damage with free runners. Energy cost is: FallDamage * freeRunnerFallEnergyCost. (1 FallDamage is 1 half heart)
-		fallEnergyCost = "50"
+		fallEnergyCost = "128"
 		#Maximum amount (joules) of energy Free Runners can contain.
 		maxEnergy = "64000"
 		#Amount (joules) of energy the Free Runners can accept per tick.
@@ -78,15 +78,15 @@
 	[gear.jetpack]
 		#Jetpack Gas Tank capacity in mB.
 		#Range: 1 ~ 9223372036854775807
-		maxGas = 24000
+		maxGas = 32000
 		#Amount of hydrogen the Jetpack can accept per tick.
 		#Range: 1 ~ 9223372036854775807
-		fillRate = 16
+		fillRate = 64
 
 		#Armored Jetpack Settings
 		[gear.jetpack.armored]
 			#Armor value of the Armored Jetpack.
-			armor = 12
+			armor = 8
 			#Toughness value of the Armored Jetpack.
 			toughness = 2.0
 
@@ -102,9 +102,9 @@
 	#Portable Teleporter Settings
 	[gear.portable_teleporter]
 		#Maximum amount (joules) of energy the Portable Teleporter can contain.
-		maxEnergy = "1000000"
+		maxEnergy = "8000000"
 		#Amount (joules) of energy the Portable Teleporter can accept per tick.
-		chargeRate = "5000"
+		chargeRate = "8192"
 		#Delay in ticks before a player is teleported after clicking the Teleport button in the portable teleporter.
 		delay = 0
 
@@ -112,10 +112,10 @@
 	[gear.scuba_tank]
 		#Scuba Tank Gas Tank capacity in mB.
 		#Range: 1 ~ 9223372036854775807
-		maxGas = 24000
+		maxGas = 32000
 		#Amount of oxygen the Scuba Tank Gas Tank can accept per tick.
 		#Range: 1 ~ 9223372036854775807
-		fillRate = 16
+		fillRate = 64
 
 	#Seismic Reader Settings
 	[gear.seismic_reader]
