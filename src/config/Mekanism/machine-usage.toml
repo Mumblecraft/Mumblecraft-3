@@ -57,9 +57,9 @@
 	#Teleporter
 	[usage.teleporter]
 		#Base Joules cost for a teleportation.
-		teleporterBase = "1000"
+		teleporterBase = "1000000"
 		#Joules per unit of distance travelled during teleportation - sqrt(xDiff^2 + yDiff^2 + zDiff^2).
-		teleporterDistance = "10"
+		teleporterDistance = "100"
 		#Flat additional cost for interdimensional teleportation.
-		teleporterDimensionPenalty = "10000"
+		teleporterDimensionPenalty = "1000000"
 
