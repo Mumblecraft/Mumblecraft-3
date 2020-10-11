@@ -67,7 +67,12 @@ events.listen('jei.hide.items', function (event) {
 	'mekanismtools:osmium_paxel',
 	'mekanismtools:refined_glowstone_paxel',
 	'mekanismtools:refined_obsidian_paxel',
-	'mekanismtools:steel_paxel'
+	'mekanismtools:steel_paxel',
+	//No Tree Punching
+	//Remove mattocks
+	'notreepunching:iron_mattock',
+	'notreepunching:gold_mattock',
+	'notreepunching:diamond_mattock',
 
 	]
 	idHide.forEach(function (hide) {

@@ -71,6 +71,11 @@ events.listen('recipes', function (event) {
 	'mekanismtools:refined_obsidian_paxel',
 	'mekanismtools:steel_paxel',
 	'mekanismtools:steel_shield',
+	//No Tree Punching
+	//Remove mattocks
+	'notreepunching:iron_mattock',
+	'notreepunching:gold_mattock',
+	'notreepunching:diamond_mattock',
 
 	//Machines/Crafting Components
 
