@@ -4,59 +4,64 @@
 console.info('Kubejs: removing blocks from JEI')
 
 events.listen('jei.hide.items', function (event) {
+	var idHide = [
 	//Ores/ingots
 
 	//BluePower
-	event.hide('bluepower:copper_ingot')
-	event.hide('bluepower:silver_ingot')
-	event.hide('bluepower:copper_block')
-	event.hide('bluepower:silver_block')
-	event.hide('bluepower:copper_ore')
-	event.hide('bluepower:silver_ore')
+	'bluepower:copper_ingot',
+	'bluepower:silver_ingot',
+	'bluepower:copper_block',
+	'bluepower:silver_block',
+	'bluepower:copper_ore',
+	'bluepower:silver_ore',
 	//Mekanism
-	event.hide('mekanism:copper_ore')
-	event.hide('mekanism:lead_ore')
-	event.hide('mekanism:uranium_ore')
-	event.hide('mekanism:block_copper')
-	event.hide('mekanism:block_lead')
-	event.hide('mekanism:block_uranium')
-	event.hide('mekanism:block_steel')
-	event.hide('mekanism:ingot_lead')
-	event.hide('mekanism:ingot_copper')
-	event.hide('mekanism:ingot_uranium')
-	event.hide('mekanism:ingot_steel')
+	'mekanism:copper_ore',
+	'mekanism:lead_ore',
+	'mekanism:uranium_ore',
+	'mekanism:block_copper',
+	'mekanism:block_lead',
+	'mekanism:block_uranium',
+	'mekanism:block_steel',
+	'mekanism:ingot_lead',
+	'mekanism:ingot_copper',
+	'mekanism:ingot_uranium',
+	'mekanism:ingot_steel',
 	//Hide Mekanism nugs; favor IE
-	event.hide('mekanism:nugget_uranium')
-	event.hide('mekanism:nugget_copper')
-	event.hide('mekanism:nugget_lead')
-	event.hide('mekanism:nugget_steel')
+	'mekanism:nugget_uranium',
+	'mekanism:nugget_copper',
+	'mekanism:nugget_lead',
+	'mekanism:nugget_steel',
 	//Hide Mekanism steel production
-	event.hide('mekanism:dust_steel')
-	event.hide('mekanism:enriched_iron')
+	'mekanism:dust_steel',
+	'mekanism:enriched_iron',
 	
 	//Tools/armor
 	
 	//Mekanism
-	event.hide('mekanismtools:steel_pickaxe')
-	event.hide('mekanismtools:steel_axe')
-	event.hide('mekanismtools:steel_shovel')
-	event.hide('mekanismtools:steel_hoe')
-	event.hide('mekanismtools:steel_sword')
-	event.hide('mekanismtools:steel_helmet')
-	event.hide('mekanismtools:steel_chestplate')
-	event.hide('mekanismtools:steel_leggings')
-	event.hide('mekanismtools:steel_boots')
+	'mekanismtools:steel_pickaxe',
+	'mekanismtools:steel_axe',
+	'mekanismtools:steel_shovel',
+	'mekanismtools:steel_hoe',
+	'mekanismtools:steel_sword',
+	'mekanismtools:steel_helmet',
+	'mekanismtools:steel_chestplate',
+	'mekanismtools:steel_leggings',
+	'mekanismtools:steel_boots',
 	//Should we remove paxels? I think we should. -Doxx
-	event.hide('mekanismtools:wood_paxel')
-	event.hide('mekanismtools:stone_paxel')
-	event.hide('mekanismtools:iron_paxel')
-	event.hide('mekanismtools:diamond_paxel')
-	event.hide('mekanismtools:gold_paxel')
-	event.hide('mekanismtools:netherite_paxel')
-	event.hide('mekanismtools:bronze_paxel')
-	event.hide('mekanismtools:lapis_lazuli_paxel')
-	event.hide('mekanismtools:osmium_paxel')
-	event.hide('mekanismtools:refined_glowstone_paxel')
-	event.hide('mekanismtools:refined_obsidian_paxel')
-	event.hide('mekanismtools:steel_paxel')
+	'mekanismtools:wood_paxel',
+	'mekanismtools:stone_paxel',
+	'mekanismtools:iron_paxel',
+	'mekanismtools:diamond_paxel',
+	'mekanismtools:gold_paxel',
+	'mekanismtools:netherite_paxel',
+	'mekanismtools:bronze_paxel',
+	'mekanismtools:lapis_lazuli_paxel',
+	'mekanismtools:osmium_paxel',
+	'mekanismtools:refined_glowstone_paxel',
+	'mekanismtools:refined_obsidian_paxel',
+	'mekanismtools:steel_paxel'
+	]
+	idHide.forEach(function (hide) {
+		event.hide(hide)
+	})
 })

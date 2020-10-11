@@ -4,79 +4,83 @@
 console.info('Kubejs: removing recipes')
 
 events.listen('recipes', function (event) {
+	var idRemove =[
 	//Ores and ingots
 
 	//BluePower
-	event.remove({id: 'bluepower:copper_ingot'})
-	event.remove({id: 'bluepower:silver_ingot'})
-	event.remove({id: 'bluepower:copper_block'})
-	event.remove({id: 'bluepower:silver_block'})
-	event.remove({id: 'bluepower:copper_ore'})
-	event.remove({id: 'bluepower:silver_ore'})
+	'bluepower:copper_ingot',
+	'bluepower:silver_ingot',
+	'bluepower:copper_block',
+	'bluepower:silver_block',
+	'bluepower:copper_ore',
+	'bluepower:silver_ore',
 	//Mekanism
-	event.remove({id: 'mekanism:copper_ore'})
-	event.remove({id: 'mekanism:lead_ore'})
-	event.remove({id: 'mekanism:uranium_ore'})
-	event.remove({id: 'mekanism:block_copper'})
-	event.remove({id: 'mekanism:block_lead'})
-	event.remove({id: 'mekanism:block_uranium'})
-	event.remove({id: 'mekanism:block_steel'})
-	event.remove({id: 'mekanism:storage_blocks/steel'})
-	event.remove({id: 'mekanism:ingot_copper'})
-	event.remove({id: 'mekanism:ingot_lead'})
-	event.remove({id: 'mekanism:ingot_uranium'})
-	event.remove({id: 'mekanism:ingot_steel'})
+	'mekanism:copper_ore',
+	'mekanism:lead_ore',
+	'mekanism:uranium_ore',
+	'mekanism:block_copper',
+	'mekanism:block_lead',
+	'mekanism:block_uranium',
+	'mekanism:block_steel',
+	'mekanism:storage_blocks/steel',
+	'mekanism:ingot_copper',
+	'mekanism:ingot_lead',
+	'mekanism:ingot_uranium',
+	'mekanism:ingot_steel',
 	//Remove Mekanism nugs; favor IE
-	event.remove({id: 'mekanism:nugget_copper'})
-	event.remove({id: 'mekanism:nugget_lead'})
-	event.remove({id: 'mekanism:nugget_uranium'})
-	event.remove({id: 'mekanism:nugget_steel'})
+	'mekanism:nugget_copper',
+	'mekanism:nugget_lead',
+	'mekanism:nugget_uranium',
+	'mekanism:nugget_steel',
 	//Remove Mekanism steel production
-	event.remove({id: 'mekanism:dust_steel'})
-	event.remove({id: 'mekanism:enriched_iron'})
+	'mekanism:dust_steel',
+	'mekanism:enriched_iron',
 
 	//Tools/armor
 
 	//Mekanism
-	event.remove({id: 'mekanismtools:steel_pickaxe'})
-	event.remove({id: 'mekanismtools:steel_axe'})
-	event.remove({id: 'mekanismtools:steel_shovel'})
-	event.remove({id: 'mekanismtools:steel_hoe'})
-	event.remove({id: 'mekanismtools:steel_sword'})
-	event.remove({id: 'mekanismtools:steel_helmet'})
-	event.remove({id: 'mekanismtools:steel_chestplate'})
-	event.remove({id: 'mekanismtools:steel_leggings'})
-	event.remove({id: 'mekanismtools:steel_boots'})
+	'mekanismtools:steel_pickaxe',
+	'mekanismtools:steel_axe',
+	'mekanismtools:steel_shovel',
+	'mekanismtools:steel_hoe',
+	'mekanismtools:steel_sword',
+	'mekanismtools:steel_helmet',
+	'mekanismtools:steel_chestplate',
+	'mekanismtools:steel_leggings',
+	'mekanismtools:steel_boots',
 	//Should we remove paxels? I think we should. -Doxx
-	event.remove({id: 'mekanismtools:wood_paxel'})
-	event.remove({id: 'mekanismtools:stone_paxel'})
-	event.remove({id: 'mekanismtools:iron_paxel'})
-	event.remove({id: 'mekanismtools:diamond_paxel'})
-	event.remove({id: 'mekanismtools:gold_paxel'})
-	event.remove({id: 'mekanismtools:netherite_paxel'})
-	event.remove({id: 'mekanismtools:bronze_paxel'})
-	event.remove({id: 'mekanismtools:lapis_lazuli_paxel'})
-	event.remove({id: 'mekanismtools:osmium_paxel'})
-	event.remove({id: 'mekanismtools:refined_glowstone_paxel'})
-	event.remove({id: 'mekanismtools:refined_obsidian_paxel'})
-	event.remove({id: 'mekanismtools:steel_paxel'})
-	event.remove({id: 'mekanismtools:steel_shield'})
+	'mekanismtools:wood_paxel',
+	'mekanismtools:stone_paxel',
+	'mekanismtools:iron_paxel',
+	'mekanismtools:diamond_paxel',
+	'mekanismtools:gold_paxel',
+	'mekanismtools:netherite_paxel',
+	'mekanismtools:bronze_paxel',
+	'mekanismtools:lapis_lazuli_paxel',
+	'mekanismtools:osmium_paxel',
+	'mekanismtools:refined_glowstone_paxel',
+	'mekanismtools:refined_obsidian_paxel',
+	'mekanismtools:steel_paxel',
+	'mekanismtools:steel_shield',
 
 	//Machines
 
 	//Mekanism
-	event.remove({id: 'mekanism:metallurgic_infuser'})
-	event.remove({id: 'mekanism:steel_casing'})
-    event.remove({id: 'mekanism:energized_smelter'})
-    event.remove({id: 'mekanism:enrichment_chamber'})
-    event.remove({id: 'mekanism:crusher'})
-    event.remove({id: 'mekanism:osmium_compressor'})
-    event.remove({id: 'mekanism:purification_chamber'})
-    event.remove({id: 'mekanism:chemical_injection_chamber'})
-    event.remove({id: 'mekanism:precision_sawmill'})
-    event.remove({id: 'mekanism:bin/basic'})
-    event.remove({id: 'mekanism:bin/advanced'})
-    event.remove({id: 'mekanism:bin/elite'})
-    event.remove({id: 'mekanism:bin/ultimate'})
-
+	'mekanism:metallurgic_infuser',
+	'mekanism:steel_casing',
+    'mekanism:energized_smelter',
+    'mekanism:enrichment_chamber',
+    'mekanism:crusher',
+    'mekanism:osmium_compressor',
+    'mekanism:purification_chamber',
+    'mekanism:chemical_injection_chamber',
+    'mekanism:precision_sawmill',
+    'mekanism:bin/basic',
+    'mekanism:bin/advanced',
+    'mekanism:bin/elite',
+    'mekanism:bin/ultimate',
+	]
+	idRemove.forEach(function (remove) {
+		event.remove({id: remove})
+	})
 })
