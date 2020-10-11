@@ -21,6 +21,7 @@ events.listen('recipes', function (event) {
 	event.remove({id: 'mekanism:block_lead'})
 	event.remove({id: 'mekanism:block_uranium'})
 	event.remove({id: 'mekanism:block_steel'})
+	event.remove({id: 'mekanism:storage_blocks/steel'})
 	event.remove({id: 'mekanism:ingot_copper'})
 	event.remove({id: 'mekanism:ingot_lead'})
 	event.remove({id: 'mekanism:ingot_uranium'})
@@ -64,5 +65,18 @@ events.listen('recipes', function (event) {
 	//Machines
 
 	//Mekanism
-	event.remove({id: 'mekanism:mettalurgic_infuser'})
+	event.remove({id: 'mekanism:metallurgic_infuser'})
+	event.remove({id: 'mekanism:steel_casing'})
+    event.remove({id: 'mekanism:energized_smelter'})
+    event.remove({id: 'mekanism:enrichment_chamber'})
+    event.remove({id: 'mekanism:crusher'})
+    event.remove({id: 'mekanism:osmium_compressor'})
+    event.remove({id: 'mekanism:purification_chamber'})
+    event.remove({id: 'mekanism:chemical_injection_chamber'})
+    event.remove({id: 'mekanism:precision_sawmill'})
+    event.remove({id: 'mekanism:bin/basic'})
+    event.remove({id: 'mekanism:bin/advanced'})
+    event.remove({id: 'mekanism:bin/elite'})
+    event.remove({id: 'mekanism:bin/ultimate'})
+
 })
