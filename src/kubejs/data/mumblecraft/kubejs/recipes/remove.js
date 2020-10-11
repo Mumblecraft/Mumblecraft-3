@@ -14,6 +14,7 @@ events.listen('recipes', function (event) {
 	'bluepower:silver_block',
 	'bluepower:copper_ore',
 	'bluepower:silver_ore',
+	'bluepower:alloy_furnace/energy_tabletgold_ingot_generated',
 	//Mekanism
 	'mekanism:copper_ore',
 	'mekanism:lead_ore',
@@ -40,7 +41,7 @@ events.listen('recipes', function (event) {
 	'mekanism:enriched_carbon',
 	'mekanism:enriched_redstone',
 	'mekanism:enriched_diamond',
-	'mekanism:enriched_obsidian',
+	'mekanism:enriched_refined_obsidian',
 	'mekanism:enriched_gold',
 	'mekanism:enriched_tin',
 

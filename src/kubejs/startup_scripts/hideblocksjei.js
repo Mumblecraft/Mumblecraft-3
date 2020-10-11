@@ -38,7 +38,7 @@ events.listen('jei.hide.items', function (event) {
 	'mekanism:enriched_carbon',
 	'mekanism:enriched_redstone',
 	'mekanism:enriched_diamond',
-	'mekanism:enriched_obsidian',
+	'mekanism:enriched_refined_obsidian',
 	'mekanism:enriched_gold',
 	'mekanism:enriched_tin',
 	'mekanism:enriched_iron',
