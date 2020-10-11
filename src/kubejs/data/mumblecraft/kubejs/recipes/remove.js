@@ -78,7 +78,15 @@ events.listen('recipes', function (event) {
     'mekanism:bin/basic',
     'mekanism:bin/advanced',
     'mekanism:bin/elite',
-    'mekanism:bin/ultimate',
+	'mekanism:bin/ultimate',
+	//Disable enriched materials.
+	//Effectively resource cost x8 for Mekanism recipes
+	'mekanism:enriched_carbon',
+	'mekanism:enriched_redstone',
+	'mekanism:enriched_diamond',
+	'mekanism:enriched_obsidian',
+	'mekanism:enriched_gold',
+	'mekanism:enriched_tin'
 	]
 	idRemove.forEach(function (remove) {
 		event.remove({id: remove})

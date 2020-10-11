@@ -59,7 +59,15 @@ events.listen('jei.hide.items', function (event) {
 	'mekanismtools:osmium_paxel',
 	'mekanismtools:refined_glowstone_paxel',
 	'mekanismtools:refined_obsidian_paxel',
-	'mekanismtools:steel_paxel'
+	'mekanismtools:steel_paxel',
+	//Disable enriched materials.
+	//Effectively resource cost x8 for Mekanism recipes
+	'mekanism:enriched_carbon',
+	'mekanism:enriched_redstone',
+	'mekanism:enriched_diamond',
+	'mekanism:enriched_obsidian',
+	'mekanism:enriched_gold',
+	'mekanism:enriched_tin'
 	]
 	idHide.forEach(function (hide) {
 		event.hide(hide)

@@ -25,7 +25,7 @@ events.listen('recipes', function (event) {
         'BCB',
         'ABA',
     ], {
-        A: 'immersiveengineering:storage_steel',
+        A: 'immersiveengineering:heavy_engineering',
         B: '#forge:glass',
         C: 'mekanism:block_osmium'
     })
