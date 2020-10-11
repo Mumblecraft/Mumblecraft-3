@@ -26,7 +26,7 @@ events.listen('recipes', function (event) {
         'ABA',
     ], {
         A: 'immersiveengineering:heavy_engineering',
-        B: '#forge:glass',
+        B: 'mekanism:structural_glass',
         C: 'mekanism:block_osmium'
     })
 
@@ -38,7 +38,7 @@ events.listen('recipes', function (event) {
     ], {
         A: 'immersiveengineering:plate_steel',
         B: 'engineersdecor:small_electrical_furnace',
-        C: 'minecraft:redstone_block',
+        C: 'mekanism:rs_engineering',
         D: 'mekanism:steel_casing'
     })
 
@@ -173,4 +173,98 @@ events.listen('recipes', function (event) {
         C: 'mekanism:alloy_atomic',
         D: 'mekanism:elite_bin'
     })
+
+    //Energy Tablet
+    event.shaped(item.of('mekanism:energy_tablet', 1), [
+        'ABA',
+        'CBC',
+        'ABA',
+    ], {
+        A: 'immersiveengineering:plate_lead',
+        B: 'immersiveengineering:ingot_hop_graphite',
+        C: 'mekanism:alloy_infused'
+    })
+
+    //Basic Energy Cube
+    event.shaped(item.of('mekanism:basic_energy_cube', 1), [
+        'ABA',
+        'CDC',
+        'ABA',
+    ], {
+        A: 'immersiveengineering:plate_lead',
+        B: 'mekanism:energy_tablet',
+        C: 'immersiveengineering:rs_engineering',
+        D: 'mekanism:steel_casing'
+    })
+
+    //Basic Universal Cable
+    event.shaped(item.of('mekanism:basic_universal_cable', 1), [
+        ' A ',
+        'BCB',
+        ' A ',
+    ], {
+        A: 'immersiveengineering:plate_constantan',
+        B: 'immersiveengineering:plate_copper',
+        C: 'mekanism:rs_engineering'
+    })
+
+    //Basic Mechanical Pipe
+    event.shaped(item.of('mekanism:basic_mechanical_pipe', 1), [
+        ' A ',
+        'ABA',
+        ' A ',
+    ], {
+        A: 'immersiveengineering:plate_lead',
+        B: 'immersiveengineering:fluid_pipe'
+    })
+
+    //Basic Pressurized Tube
+    event.shaped(item.of('mekanism:basic_pressurized_tube', 1), [
+        ' A ',
+        'ABA',
+        ' A ',
+    ], {
+        A: 'immersiveengineering:plate_steel',
+        B: 'mekanism:structural_glass'
+    })
+
+    //Basic Logistical Transporter
+    event.shaped(item.of('mekanism:basic_logistical_transporter', 1), [
+        ' A ',
+        'ABA',
+        ' A ',
+    ], {
+        A: 'immersiveengineering:plate_steel',
+        B: 'mekanism:basic_control_circuit'
+    })
+
+    //Restrictive Transporter
+    event.shaped(item.of('mekanism:restrictive_transporter', 1), [
+        'ABA',
+    ], {
+        A: 'immersiveengineering:plate_steel',
+        B: 'minecraft:iron_bars'
+    })
+
+    //Diversion Transporter
+    event.shaped(item.of('mekanism:diversion_transporter', 1), [
+        'CCC',
+        'ABA',
+        'CCC',
+    ], {
+        A: 'immersiveengineering:plate_steel',
+        B: 'minecraft:iron_bars',
+        C: 'minecraft:redstone'
+    })
+
+    //Structural Glass
+    event.shaped(item.of('mekanism:structural_glass', 1), [
+        ' A ',
+        'ABA',
+        ' A ',
+    ], {
+        A: 'immersiveengineering:plate_steel',
+        B: '#forge:glass'
+    })
+    
 })
