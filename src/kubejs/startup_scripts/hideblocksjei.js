@@ -33,6 +33,14 @@ events.listen('jei.hide.items', function (event) {
 	'mekanism:nugget_steel',
 	//Hide Mekanism steel production
 	'mekanism:dust_steel',
+	//Disable enriched materials.
+	//Effectively resource cost x8 for Mekanism recipes
+	'mekanism:enriched_carbon',
+	'mekanism:enriched_redstone',
+	'mekanism:enriched_diamond',
+	'mekanism:enriched_refined_obsidian',
+	'mekanism:enriched_gold',
+	'mekanism:enriched_tin',
 	'mekanism:enriched_iron',
 	
 	//Tools/armor
@@ -59,7 +67,13 @@ events.listen('jei.hide.items', function (event) {
 	'mekanismtools:osmium_paxel',
 	'mekanismtools:refined_glowstone_paxel',
 	'mekanismtools:refined_obsidian_paxel',
-	'mekanismtools:steel_paxel'
+	'mekanismtools:steel_paxel',
+	//No Tree Punching
+	//Remove mattocks
+	'notreepunching:iron_mattock',
+	'notreepunching:gold_mattock',
+	'notreepunching:diamond_mattock',
+
 	]
 	idHide.forEach(function (hide) {
 		event.hide(hide)

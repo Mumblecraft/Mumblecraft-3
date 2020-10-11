@@ -52,7 +52,7 @@
 	#Energy Tablet Settings
 	[gear.energy_tablet]
 		#Maximum amount (joules) of energy the Energy Tablet can contain.
-		maxEnergy = "1000000"
+		maxEnergy = "100000"
 		#Amount (joules) of energy the Energy Tablet can accept per tick.
 		chargeRate = "5000"
 

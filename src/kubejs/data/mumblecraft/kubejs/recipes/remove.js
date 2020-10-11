@@ -14,6 +14,7 @@ events.listen('recipes', function (event) {
 	'bluepower:silver_block',
 	'bluepower:copper_ore',
 	'bluepower:silver_ore',
+	'bluepower:alloy_furnace/energy_tabletgold_ingot_generated',
 	//Mekanism
 	'mekanism:copper_ore',
 	'mekanism:lead_ore',
@@ -34,7 +35,15 @@ events.listen('recipes', function (event) {
 	'mekanism:nugget_steel',
 	//Remove Mekanism steel production
 	'mekanism:dust_steel',
+	//Disable enriched materials.
+	//Effectively resource cost x8 for Mekanism recipes
 	'mekanism:enriched_iron',
+	'mekanism:enriched_carbon',
+	'mekanism:enriched_redstone',
+	'mekanism:enriched_diamond',
+	'mekanism:enriched_refined_obsidian',
+	'mekanism:enriched_gold',
+	'mekanism:enriched_tin',
 
 	//Tools/armor
 
@@ -62,8 +71,13 @@ events.listen('recipes', function (event) {
 	'mekanismtools:refined_obsidian_paxel',
 	'mekanismtools:steel_paxel',
 	'mekanismtools:steel_shield',
+	//No Tree Punching
+	//Remove mattocks
+	'notreepunching:iron_mattock',
+	'notreepunching:gold_mattock',
+	'notreepunching:diamond_mattock',
 
-	//Machines
+	//Machines/Crafting Components
 
 	//Mekanism
 	'mekanism:metallurgic_infuser',
@@ -78,7 +92,17 @@ events.listen('recipes', function (event) {
     'mekanism:bin/basic',
     'mekanism:bin/advanced',
     'mekanism:bin/elite',
-    'mekanism:bin/ultimate',
+	'mekanism:bin/ultimate',
+	'mekanism:energy_tablet',
+	'mekanism:energy_cube/basic',
+	'mekanism:transmitter/universal_cable/basic',
+	'mekanism:transmitter/mechanical_pipe/basic',
+	'mekanism:transmitter/pressurized_tube/basic',
+	'mekanism:transmitter/logistical_transporter/basic',
+	'mekanism:transmitter/logistical_transporter/restrictive_transporter',
+	'mekanism:transmitter/logistical_transporter/diversion_transporter',
+	'mekanism:structural_glass'
+
 	]
 	idRemove.forEach(function (remove) {
 		event.remove({id: remove})
