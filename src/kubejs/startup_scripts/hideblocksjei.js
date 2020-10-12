@@ -73,6 +73,17 @@ events.listen('jei.hide.items', function (event) {
 	'notreepunching:iron_mattock',
 	'notreepunching:gold_mattock',
 	'notreepunching:diamond_mattock',
+	//Vanilla (Bypassed via flint)
+	'minecraft:wooden_sword',
+	'minecraft:wooden_shovel',
+	'minecraft:wooden_pickaxe',
+	'minecraft:wooden_axe',
+	'minecraft:wooden_hoe',
+	'minecraft:stone_sword',
+	'minecraft:stone_shovel',
+	'minecraft:stone_pickaxe',
+	'minecraft:stone_axe',
+	'minecraft:stone_hoe',
 
 	]
 	idHide.forEach(function (hide) {

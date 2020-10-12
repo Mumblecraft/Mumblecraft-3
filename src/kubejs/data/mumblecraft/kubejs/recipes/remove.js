@@ -76,6 +76,18 @@ events.listen('recipes', function (event) {
 	'notreepunching:iron_mattock',
 	'notreepunching:gold_mattock',
 	'notreepunching:diamond_mattock',
+	//Vanilla (Bypassed via flint)
+	'minecraft:wooden_sword',
+	'minecraft:wooden_shovel',
+	'minecraft:wooden_pickaxe',
+	'minecraft:wooden_axe',
+	'minecraft:wooden_hoe',
+	'minecraft:stone_sword',
+	'minecraft:stone_shovel',
+	'minecraft:stone_pickaxe',
+	'minecraft:stone_axe',
+	'minecraft:stone_hoe',
+
 
 	//Machines/Crafting Components
 
@@ -101,8 +113,17 @@ events.listen('recipes', function (event) {
 	'mekanism:transmitter/logistical_transporter/basic',
 	'mekanism:transmitter/logistical_transporter/restrictive_transporter',
 	'mekanism:transmitter/logistical_transporter/diversion_transporter',
-	'mekanism:structural_glass'
-
+	'mekanism:structural_glass',
+	//Tier 1 machines
+	'mekanism:factory/basic/smelting',
+	'mekanism:factory/basic/enriching',
+	'mekanism:factory/basic/crushing',
+	'mekanism:factory/basic/compressing',
+	'mekanism:factory/basic/combining',
+	'mekanism:factory/basic/purifying',
+	'mekanism:factory/basic/injecting',
+	'mekanism:factory/basic/infusing',
+	'mekanism:factory/basic/sawing'
 	]
 	idRemove.forEach(function (remove) {
 		event.remove({id: remove})

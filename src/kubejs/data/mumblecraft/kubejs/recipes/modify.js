@@ -267,4 +267,57 @@ events.listen('recipes', function (event) {
         B: '#forge:glass'
     })
     
+    //Electric Pump
+    event.shaped(item.of('mekanism:electric_pump', 1), [
+        ' A ',
+        'BCB',
+        'DDD',
+    ], {
+        A: 'immersiveengineering:fluid_pump',
+        B: 'mekanism:alloy_infused',
+        C: 'mekanism:steel_casing',
+        D: 'mekanism:ignot_osmium'
+    })
+
+    //Test script to modify a whole tier of machine recipes at once
+    //Initial tier of machines
+    var tierZero = [
+        'mekanism:energized_smelter',
+        'mekanism:enrichment_chamber',
+        'mekanism:crusher',
+        'mekanism:osmium_compressor',
+        'mekanism:combiner',
+        'mekanism:purification_chamber',
+        'mekanism:chemical_injection_chamber',
+        'mekanism:metallurgic_infuser',
+        'mekanism:precision_sawmill'
+    ]
+    //First tier of 'factory' machines
+    var tierOne =[
+        'mekanism:basic_smelting_factory',
+        'mekanism:basic_enriching_factory',
+        'mekanism:basic_crushing_factory',
+        'mekanism:basic_compressing_factory',
+        'mekanism:basic_combining_factory',
+        'mekanism:basic_purifying_factory',
+        'mekanism:basic_injecting_factory',
+        'mekanism:basic_infusing_factory',
+        'mekanism:basic_sawing_factory'
+    ]
+    var i = 0
+
+    tierOne.forEach(function (t1machine) {
+        event.shaped(item.of(t1machine, 1), [
+            'ABA',
+            'CDC',
+            'ABA',
+        ], {
+            A: 'immersiveengineering:rs_engineering',
+            B: 'mekanism:basic_control_circuit',
+            C: 'immersiveengineering:plate_iron',
+            D: tierZero[i]
+        })
+        i++
+    })
+
 })
