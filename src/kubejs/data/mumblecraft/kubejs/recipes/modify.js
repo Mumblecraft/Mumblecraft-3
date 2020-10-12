@@ -279,7 +279,7 @@ events.listen('recipes', function (event) {
         D: 'mekanism:ignot_osmium'
     })
 
-    //Test script to modify a whole tier of machine recipes at once
+    //Script to modify a whole tier of machine recipes at once
     //Initial tier of machines
     var tierZero = [
         'mekanism:energized_smelter',
@@ -304,6 +304,42 @@ events.listen('recipes', function (event) {
         'mekanism:basic_infusing_factory',
         'mekanism:basic_sawing_factory'
     ]
+    //Second tier of 'factory' machines
+    var tierTwo =[
+        'mekanism:advanced_smelting_factory',
+        'mekanism:advanced_enriching_factory',
+        'mekanism:advanced_crushing_factory',
+        'mekanism:advanced_compressing_factory',
+        'mekanism:advanced_combining_factory',
+        'mekanism:advanced_purifying_factory',
+        'mekanism:advanced_injecting_factory',
+        'mekanism:advanced_infusing_factory',
+        'mekanism:advanced_sawing_factory'
+    ]
+    //Third tier of 'factory' machines
+    var tierThree =[
+        'mekanism:elite_smelting_factory',
+        'mekanism:elite_enriching_factory',
+        'mekanism:elite_crushing_factory',
+        'mekanism:elite_compressing_factory',
+        'mekanism:elite_combining_factory',
+        'mekanism:elite_purifying_factory',
+        'mekanism:elite_injecting_factory',
+        'mekanism:elite_infusing_factory',
+        'mekanism:elite_sawing_factory'
+    ]
+    //Fourth tier of 'factory' machines
+    var tierFour =[
+        'mekanism:ultimate_smelting_factory',
+        'mekanism:ultimate_enriching_factory',
+        'mekanism:ultimate_crushing_factory',
+        'mekanism:ultimate_compressing_factory',
+        'mekanism:ultimate_combining_factory',
+        'mekanism:ultimate_purifying_factory',
+        'mekanism:ultimate_injecting_factory',
+        'mekanism:ultimate_infusing_factory',
+        'mekanism:ultimate_sawing_factory'
+    ]
     var i = 0
 
     tierOne.forEach(function (t1machine) {
@@ -319,5 +355,49 @@ events.listen('recipes', function (event) {
         })
         i++
     })
+    i = 0
 
+    tierTwo.forEach(function (t2machine) {
+        event.shaped(item.of(t2machine, 1), [
+            'ABA',
+            'CDC',
+            'ABA',
+        ], {
+            A: 'mekanism:alloy_infused',
+            B: 'mekanism:advanced_control_circuit',
+            C: 'immersiveengineering:plate_steel',
+            D: tierOne[i]
+        })
+        i++
+    })
+    i = 0
+
+    tierThree.forEach(function (t3machine) {
+        event.shaped(item.of(t3machine, 1), [
+            'ABA',
+            'CDC',
+            'ABA',
+        ], {
+            A: 'mekanism:alloy_reinforced',
+            B: 'mekanism:elite_control_circuit',
+            C: 'immersiveengineering:plate_aluminum',
+            D: tierTwo[i]
+        })
+        i++
+    })
+    i = 0
+
+    tierFour.forEach(function (t4machine) {
+        event.shaped(item.of(t4machine, 1), [
+            'ABA',
+            'CDC',
+            'ABA',
+        ], {
+            A: 'mekanism:alloy_atomic',
+            B: 'mekanism:ultimate_control_circuit',
+            C: 'immersiveengineering:plate_uranium',
+            D: tierThree[i]
+        })
+        i++
+    })
 })

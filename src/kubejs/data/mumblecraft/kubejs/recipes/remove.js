@@ -123,7 +123,37 @@ events.listen('recipes', function (event) {
 	'mekanism:factory/basic/purifying',
 	'mekanism:factory/basic/injecting',
 	'mekanism:factory/basic/infusing',
-	'mekanism:factory/basic/sawing'
+	'mekanism:factory/basic/sawing',
+	//Tier 2 machines
+	'mekanism:factory/advanced/smelting',
+	'mekanism:factory/advanced/enriching',
+	'mekanism:factory/advanced/crushing',
+	'mekanism:factory/advanced/compressing',
+	'mekanism:factory/advanced/combining',
+	'mekanism:factory/advanced/purifying',
+	'mekanism:factory/advanced/injecting',
+	'mekanism:factory/advanced/infusing',
+	'mekanism:factory/advanced/sawing',
+	//Tier 3 machines
+	'mekanism:factory/elite/smelting',
+	'mekanism:factory/elite/enriching',
+	'mekanism:factory/elite/crushing',
+	'mekanism:factory/elite/compressing',
+	'mekanism:factory/elite/combining',
+	'mekanism:factory/elite/purifying',
+	'mekanism:factory/elite/injecting',
+	'mekanism:factory/elite/infusing',
+	'mekanism:factory/elite/sawing',
+	//Tier 4 machines
+	'mekanism:factory/ultimate/smelting',
+	'mekanism:factory/ultimate/enriching',
+	'mekanism:factory/ultimate/crushing',
+	'mekanism:factory/ultimate/compressing',
+	'mekanism:factory/ultimate/combining',
+	'mekanism:factory/ultimate/purifying',
+	'mekanism:factory/ultimate/injecting',
+	'mekanism:factory/ultimate/infusing',
+	'mekanism:factory/ultimate/sawing'
 	]
 	idRemove.forEach(function (remove) {
 		event.remove({id: remove})
