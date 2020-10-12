@@ -7,6 +7,9 @@ events.listen('jei.hide.items', function (event) {
 	var idHide = [
 	//Ores/ingots
 
+	//AE2
+	'appliedenergistics2:iron_dust',
+	'appliedenergistics2:gold_dust',
 	//BluePower
 	'bluepower:copper_ingot',
 	'bluepower:silver_ingot',

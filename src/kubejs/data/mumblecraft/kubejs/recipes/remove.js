@@ -7,6 +7,11 @@ events.listen('recipes', function (event) {
 	var idRemove =[
 	//Ores and ingots
 
+	//AE2
+	'appliedenergistics2:grinder/gold_dust_ore',
+	'appliedenergistics2:grinder/gold_dust_ingot',
+	'appliedenergistics2:grinder/iron_dust_ore',
+	'appliedenergistics2:grinder/iron_dust_ingot',
 	//BluePower
 	'bluepower:copper_ingot',
 	'bluepower:silver_ingot',
