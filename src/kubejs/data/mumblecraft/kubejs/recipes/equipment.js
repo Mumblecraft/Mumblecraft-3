@@ -16,4 +16,13 @@ events.listen('recipes', function (event) {
         A: 'immersiveengineering:plate_steel',
         B: 'minecraft:shield'
     })
+
+    //Add coke torches
+    event.shaped(item.of('minecraft:torch', 6), [
+        'A',
+        'B',
+    ], {
+        A: '#forge:coal_coke',
+        B: '#forge:rods/wooden'
+    })
 })
