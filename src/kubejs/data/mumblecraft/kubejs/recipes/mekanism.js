@@ -4,18 +4,7 @@
 console.info('Kubejs: modifying recipes')
 
 events.listen('recipes', function (event) {
-    //Armor/Equipment
-
-    //Change Mekanism steel shield to require steel plates
-    event.shaped(item.of('mekanismtools:steel_shield', 1), [
-        'ABA',
-        'AAA',
-        ' A ',
-    ], {
-        A: 'immersiveengineering:plate_steel',
-        B: 'minecraft:shield'
-    })
-
+    
     //Machines/Components
 
     //Mekanism
@@ -267,4 +256,137 @@ events.listen('recipes', function (event) {
         B: '#forge:glass'
     })
     
+    //Electric Pump
+    event.shaped(item.of('mekanism:electric_pump', 1), [
+        ' A ',
+        'BCB',
+        'DDD',
+    ], {
+        A: 'immersiveengineering:fluid_pump',
+        B: 'mekanism:alloy_infused',
+        C: 'mekanism:steel_casing',
+        D: 'mekanism:ignot_osmium'
+    })
+
+    //Script to modify a whole tier of machine recipes at once
+    //Initial tier of machines
+    var tierZero = [
+        'mekanism:energized_smelter',
+        'mekanism:enrichment_chamber',
+        'mekanism:crusher',
+        'mekanism:osmium_compressor',
+        'mekanism:combiner',
+        'mekanism:purification_chamber',
+        'mekanism:chemical_injection_chamber',
+        'mekanism:metallurgic_infuser',
+        'mekanism:precision_sawmill'
+    ]
+    //First tier of 'factory' machines
+    var tierOne =[
+        'mekanism:basic_smelting_factory',
+        'mekanism:basic_enriching_factory',
+        'mekanism:basic_crushing_factory',
+        'mekanism:basic_compressing_factory',
+        'mekanism:basic_combining_factory',
+        'mekanism:basic_purifying_factory',
+        'mekanism:basic_injecting_factory',
+        'mekanism:basic_infusing_factory',
+        'mekanism:basic_sawing_factory'
+    ]
+    //Second tier of 'factory' machines
+    var tierTwo =[
+        'mekanism:advanced_smelting_factory',
+        'mekanism:advanced_enriching_factory',
+        'mekanism:advanced_crushing_factory',
+        'mekanism:advanced_compressing_factory',
+        'mekanism:advanced_combining_factory',
+        'mekanism:advanced_purifying_factory',
+        'mekanism:advanced_injecting_factory',
+        'mekanism:advanced_infusing_factory',
+        'mekanism:advanced_sawing_factory'
+    ]
+    //Third tier of 'factory' machines
+    var tierThree =[
+        'mekanism:elite_smelting_factory',
+        'mekanism:elite_enriching_factory',
+        'mekanism:elite_crushing_factory',
+        'mekanism:elite_compressing_factory',
+        'mekanism:elite_combining_factory',
+        'mekanism:elite_purifying_factory',
+        'mekanism:elite_injecting_factory',
+        'mekanism:elite_infusing_factory',
+        'mekanism:elite_sawing_factory'
+    ]
+    //Fourth tier of 'factory' machines
+    var tierFour =[
+        'mekanism:ultimate_smelting_factory',
+        'mekanism:ultimate_enriching_factory',
+        'mekanism:ultimate_crushing_factory',
+        'mekanism:ultimate_compressing_factory',
+        'mekanism:ultimate_combining_factory',
+        'mekanism:ultimate_purifying_factory',
+        'mekanism:ultimate_injecting_factory',
+        'mekanism:ultimate_infusing_factory',
+        'mekanism:ultimate_sawing_factory'
+    ]
+    var i = 0
+
+    tierOne.forEach(function (t1machine) {
+        event.shaped(item.of(t1machine, 1), [
+            'ABA',
+            'CDC',
+            'ABA',
+        ], {
+            A: 'immersiveengineering:rs_engineering',
+            B: 'mekanism:basic_control_circuit',
+            C: 'immersiveengineering:plate_iron',
+            D: tierZero[i]
+        })
+        i++
+    })
+    i = 0
+
+    tierTwo.forEach(function (t2machine) {
+        event.shaped(item.of(t2machine, 1), [
+            'ABA',
+            'CDC',
+            'ABA',
+        ], {
+            A: 'mekanism:alloy_infused',
+            B: 'mekanism:advanced_control_circuit',
+            C: 'immersiveengineering:plate_steel',
+            D: tierOne[i]
+        })
+        i++
+    })
+    i = 0
+
+    tierThree.forEach(function (t3machine) {
+        event.shaped(item.of(t3machine, 1), [
+            'ABA',
+            'CDC',
+            'ABA',
+        ], {
+            A: 'mekanism:alloy_reinforced',
+            B: 'mekanism:elite_control_circuit',
+            C: 'immersiveengineering:plate_aluminum',
+            D: tierTwo[i]
+        })
+        i++
+    })
+    i = 0
+
+    tierFour.forEach(function (t4machine) {
+        event.shaped(item.of(t4machine, 1), [
+            'ABA',
+            'CDC',
+            'ABA',
+        ], {
+            A: 'mekanism:alloy_atomic',
+            B: 'mekanism:ultimate_control_circuit',
+            C: 'immersiveengineering:plate_uranium',
+            D: tierThree[i]
+        })
+        i++
+    })
 })
