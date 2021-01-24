@@ -13,7 +13,7 @@
 	[wires.electrum]
 		#The transfer rate of electrum wire in IF/t
 		#Range: > 0
-		transferRate = 8096
+		transferRate = 8192
 		#The percentage of power lost every 16 blocks of distance in electrum wire
 		#Range: 0.0 ~ 1.0
 		loss = 0.025
@@ -87,6 +87,9 @@
 	#Output modifier for the energy created by the Thermoelectric Generator
 	#Range: 0.0 ~ 2.147483647E9
 	thermoelectric_output = 1.0
+	#The amount of damage a sawblade in the sawmill takes for a single recipe.
+	#Range: > 1
+	sawmill_bladeDamage = 5
 	#The Flux per tick the Charging Station can insert into an item
 	#Range: > 1
 	charger_consumption = 256
@@ -154,7 +157,7 @@
 		#Range: > -1
 		yield = 38400
 		#List of dimensions that can't contain minerals. Default: The End.
-		dimBlacklist = ["minecraft:dimension_type"]
+		dimBlacklist = ["minecraft:the_end"]
 		#The Flux per tick the Excavator will consume to dig
 		#Range: > 1
 		consumption = 4096
@@ -171,8 +174,6 @@
 		#A modifier to apply to the energy costs of every arc furnace recipe
 		#Range: 0.001 ~ 1000.0
 		energyModifier = 1.0
-		#Set this to true to make the blueprint for graphite electrodes craftable in addition to villager/dungeon loot
-		electrodeCrafting = false
 		#Set this to false to disable the Arc Furnace's recycling of armors and tools
 		recycle = true
 		#The maximum amount of damage Graphite Electrodes can take. While the furnace is working, electrodes sustain 1 damage per tick, so this is effectively the lifetime in ticks. The default value of 96000 makes them last for 8 consecutive ingame days
@@ -303,6 +304,14 @@
 		#The length in ticks it takes for the Core Sample Drill to figure out which mineral is found in a chunk
 		#Range: > 1
 		time = 200
+
+	[machines.sawmill]
+		#A modifier to apply to the energy costs of every sawmill recipe
+		#Range: 0.001 ~ 1000.0
+		energyModifier = 1.0
+		#A modifier to apply to the time of every sawmill recipe
+		#Range: 0.001 ~ 1000.0
+		timeModifier = 1.0
 
 	[machines.mixer]
 		#A modifier to apply to the energy costs of every mixer recipe
