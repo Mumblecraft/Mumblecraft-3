@@ -48,7 +48,7 @@ dotsScale:1.0
 headsScale:1.0
 dotNameScale:1.0
 compassOverWaypoints:false
-showBiome:false
+showBiome:true
 showEntityHeight:true
 showFlowers:true
 keepWaypointNames:false
