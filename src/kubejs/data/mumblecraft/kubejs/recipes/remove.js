@@ -104,6 +104,10 @@ events.listen('recipes', function (event) {
 
 	//Machines/Crafting Components
 
+	//AE2
+	'appliedenergistics2:misc/grindstone',
+	//Immersive Engineering
+	'immersiveengineering:crafting/conveyor_basic',
 	//Mekanism
 	'mekanism:metallurgic_infuser',
 	'mekanism:steel_casing',

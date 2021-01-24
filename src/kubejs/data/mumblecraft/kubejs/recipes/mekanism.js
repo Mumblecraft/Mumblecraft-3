@@ -27,7 +27,7 @@ events.listen('recipes', function (event) {
     ], {
         A: 'immersiveengineering:plate_steel',
         B: 'engineersdecor:small_electrical_furnace',
-        C: 'mekanism:rs_engineering',
+        C: 'immersiveengineering:rs_engineering',
         D: 'mekanism:steel_casing'
     })
 
@@ -194,7 +194,7 @@ events.listen('recipes', function (event) {
     ], {
         A: 'immersiveengineering:plate_constantan',
         B: 'immersiveengineering:plate_copper',
-        C: 'mekanism:rs_engineering'
+        C: 'immersiveengineering:rs_engineering'
     })
 
     //Basic Mechanical Pipe
@@ -265,7 +265,7 @@ events.listen('recipes', function (event) {
         A: 'immersiveengineering:fluid_pump',
         B: 'mekanism:alloy_infused',
         C: 'mekanism:steel_casing',
-        D: 'mekanism:ignot_osmium'
+        D: 'mekanism:ingot_osmium'
     })
 
     //Script to modify a whole tier of machine recipes at once
