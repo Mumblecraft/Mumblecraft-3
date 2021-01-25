@@ -21,6 +21,26 @@ events.listen('recipes', function (event) {
 	'notreepunching:gold_mattock',
 	'notreepunching:diamond_mattock',
 	
+	//Machines/Crafting Components
+	
+	//Immersive Engineering
+	'immersiveengineering:crafting/conveyor_basic',
+	'immersiveengineering:crafting/plate_copper_hammering',
+	'immersiveengineering:crafting/plate_aluminum_hammering',
+	'immersiveengineering:crafting/plate_lead_hammering',
+	'immersiveengineering:crafting/plate_silver_hammering',
+	'immersiveengineering:crafting/plate_nickel_hammering',
+	'immersiveengineering:crafting/plate_uranium_hammering',
+	'immersiveengineering:crafting/plate_constantan_hammering',
+	'immersiveengineering:crafting/plate_electrum_hammering',
+	'immersiveengineering:crafting/plate_steel_hammering',
+	'immersiveengineering:crafting/plate_iron_hammering',
+	'immersiveengineering:crafting/plate_gold_hammering',
+	'immersiveengineering:crafting/light_engineering',
+	
+	//Engineer's Decor
+	'engineersdecor:independent/small_electrical_furnace_recipe',
+	
 	]
 	idRemove.forEach(function (remove) {
 		event.remove({id: remove})
