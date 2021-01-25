@@ -450,7 +450,7 @@
 
 [tools]
 	#Set this to true to completely disable the ore-crushing recipes with the Engineers Hammer
-	disable_hammer_crushing = false
+	disable_hammer_crushing = true
 	#The maximum durability of the Wirecutter. Used up when cutting plates into wire.
 	#Range: > 1
 	cutter_durability = 250

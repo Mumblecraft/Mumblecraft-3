@@ -48,7 +48,7 @@ dotsScale:1.0
 headsScale:1.0
 dotNameScale:1.0
 compassOverWaypoints:false
-showBiome:true
+showBiome:false
 showEntityHeight:true
 showFlowers:true
 keepWaypointNames:false
@@ -58,7 +58,7 @@ waypointTp:tp @s
 arrowScale:1.5
 arrowColour:0
 smoothDots:true
-playerIcons:1
+playerIcons:2
 mobIcons:1
 hostileIcons:1
 tamedIcons:3
@@ -73,7 +73,7 @@ waypointOpacityMap:90
 hideWorldNames:1
 openSlimeSettings:true
 alwaysShowDistance:false
-playerNames:0
+playerNames:2
 otherTeamsNames:3
 friendlyMobNames:0
 hostileMobNames:0

@@ -10,6 +10,7 @@ events.listen('jei.hide.items', function (event) {
 	//AE2
 	'appliedenergistics2:iron_dust',
 	'appliedenergistics2:gold_dust',
+	'appliedenergistics2:facade',
 	
 	//Immersive Engineering
 	'immersiveengineering:ore_copper',

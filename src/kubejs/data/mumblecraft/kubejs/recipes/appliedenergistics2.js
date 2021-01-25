@@ -7,6 +7,8 @@ events.listen('recipes', function (event) {
 
     //Machines
     //Grindstone
+	event.remove({id: 'appliedenergistics2:misc/grindstone'})
+	
     event.shaped(item.of('appliedenergistics2:grindstone', 1), [
         'ABA',
         'CAC',
