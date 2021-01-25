@@ -7,8 +7,9 @@ events.listen('recipes', function (event) {
     
     //Machines/Components
 
-    //Mekanism
     //Steel Casing
+	event.remove({id: 'mekanism:steel_casing'})
+	
     event.shaped(item.of('mekanism:steel_casing', 1), [
         'ABA',
         'BCB',
@@ -16,10 +17,12 @@ events.listen('recipes', function (event) {
     ], {
         A: 'immersiveengineering:heavy_engineering',
         B: 'mekanism:structural_glass',
-        C: 'mekanism:block_osmium'
+        C: 'mekanism:ingot_osmium'
     })
 
     //Metallurgic Infuser
+	event.remove({id: 'mekanism:metallurgic_infuser'})
+	
     event.shaped(item.of('mekanism:metallurgic_infuser', 1), [
         'ABA',
         'CDC',
@@ -32,6 +35,8 @@ events.listen('recipes', function (event) {
     })
 
     //Energized Smelter
+	event.remove({id: 'mekanism:energized_smelter'})
+	
     event.shaped(item.of('mekanism:energized_smelter', 1), [
         'ABA',
         'CDC',
@@ -44,6 +49,8 @@ events.listen('recipes', function (event) {
     })
     
     //Enrichment Chamber
+	event.remove({id: 'mekanism:enrichment_chamber'})
+	
     event.shaped(item.of('mekanism:enrichment_chamber', 1), [
         'ABA',
         'CDC',
@@ -56,6 +63,8 @@ events.listen('recipes', function (event) {
     })
 
     //Crusher
+	event.remove({id: 'mekanism:crusher'})
+	
     event.shaped(item.of('mekanism:crusher', 1), [
         'ABA',
         'CDC',
@@ -68,6 +77,8 @@ events.listen('recipes', function (event) {
     })
 
     //Compressor
+	event.remove({id: 'mekanism:osmium_compressor'})
+	
     event.shaped(item.of('mekanism:osmium_compressor', 1), [
         'ABA',
         'CDC',
@@ -80,6 +91,8 @@ events.listen('recipes', function (event) {
     })
 
     //Purification Chamber
+	event.remove({id: 'mekanism:purification_chamber'})
+	
     event.shaped(item.of('mekanism:purification_chamber', 1), [
         'ABA',
         'CDC',
@@ -92,6 +105,8 @@ events.listen('recipes', function (event) {
     })
 
     //Chemical Injection Chamber
+	event.remove({id: 'mekanism:chemical_injection_chamber'})
+	
     event.shaped(item.of('mekanism:chemical_injection_chamber', 1), [
         'ABA',
         'CDC',
@@ -104,6 +119,8 @@ events.listen('recipes', function (event) {
     })
 
     //Sawmill
+	event.remove({id: 'mekanism:precision_sawmill'})
+	
     event.shaped(item.of('mekanism:precision_sawmill', 1), [
         'ABA',
         'CDC',
@@ -116,6 +133,8 @@ events.listen('recipes', function (event) {
     })
 
     //Basic Bin
+	event.remove({id: 'mekanism:bin/basic'})
+	
     event.shaped(item.of('mekanism:basic_bin', 1), [
         'ABA',
         'CDC',
@@ -123,11 +142,13 @@ events.listen('recipes', function (event) {
     ], {
         A: 'immersiveengineering:plate_iron',
         B: 'mekanism:basic_control_circuit',
-        C: 'immersiveengineering:crate',
+        C: 'create:adjustable_crate',
         D: 'mekanism:steel_casing'
     })
 
     //Advanced Bin
+	event.remove({id: 'mekanism:bin/advanced'})
+	
     event.shaped(item.of('mekanism:advanced_bin', 1), [
         'ABA',
         'CDC',
@@ -135,11 +156,13 @@ events.listen('recipes', function (event) {
     ], {
         A: 'immersiveengineering:plate_steel',
         B: 'mekanism:advanced_control_circuit',
-        C: 'immersiveengineering:reinforced_crate',
+        C: 'create:adjustable_crate',
         D: 'mekanism:basic_bin'
     })
 
     //Elite Bin
+	event.remove({id: 'mekanism:bin/elite'})
+	
     event.shaped(item.of('mekanism:elite_bin', 1), [
         'ABA',
         'CDC',
@@ -152,6 +175,8 @@ events.listen('recipes', function (event) {
     })
 
     //Ultimate Bin
+	event.remove({id: 'mekanism:bin/ultimate'})
+	
     event.shaped(item.of('mekanism:ultimate_bin', 1), [
         'ABA',
         'CDC',
@@ -164,17 +189,23 @@ events.listen('recipes', function (event) {
     })
 
     //Energy Tablet
+	event.remove({id: 'mekanism:energy_tablet'})
+	
     event.shaped(item.of('mekanism:energy_tablet', 1), [
-        'ABA',
+        'AEA',
         'CBC',
-        'ABA',
+        'ADA',
     ], {
         A: 'immersiveengineering:plate_lead',
         B: 'immersiveengineering:ingot_hop_graphite',
-        C: 'mekanism:alloy_infused'
+        C: 'mekanism:alloy_infused',
+		D: '#forge:ingots/zinc',
+		E: 'immersiveengineering:plate_constantan'
     })
 
     //Basic Energy Cube
+	event.remove({id: 'mekanism:energy_cube/basic'})
+	
     event.shaped(item.of('mekanism:basic_energy_cube', 1), [
         'ABA',
         'CDC',
@@ -187,28 +218,34 @@ events.listen('recipes', function (event) {
     })
 
     //Basic Universal Cable
-    event.shaped(item.of('mekanism:basic_universal_cable', 1), [
-        ' A ',
-        'BCB',
-        ' A ',
+	event.remove({id: 'mekanism:transmitter/universal_cable/basic'})
+	
+    event.shaped(item.of('mekanism:basic_universal_cable', 4), [
+        'BAB',
+        ' C ',
+        'BAB',
     ], {
         A: 'immersiveengineering:plate_constantan',
         B: 'immersiveengineering:plate_copper',
-        C: 'immersiveengineering:rs_engineering'
+        C: 'minecraft:redstone'
     })
 
     //Basic Mechanical Pipe
+	event.remove({id: 'mekanism:transmitter/mechanical_pipe/basic'})
+	
     event.shaped(item.of('mekanism:basic_mechanical_pipe', 1), [
         ' A ',
         'ABA',
         ' A ',
     ], {
         A: 'immersiveengineering:plate_lead',
-        B: 'immersiveengineering:fluid_pipe'
+        B: 'create:fluid_pipe'
     })
 
     //Basic Pressurized Tube
-    event.shaped(item.of('mekanism:basic_pressurized_tube', 1), [
+	event.remove({id: 'mekanism:transmitter/pressurized_tube/basic'})
+	
+    event.shaped(item.of('mekanism:basic_pressurized_tube', 4), [
         ' A ',
         'ABA',
         ' A ',
@@ -218,7 +255,9 @@ events.listen('recipes', function (event) {
     })
 
     //Basic Logistical Transporter
-    event.shaped(item.of('mekanism:basic_logistical_transporter', 1), [
+	event.remove({id: 'mekanism:transmitter/logistical_transporter/basic'})
+	
+    event.shaped(item.of('mekanism:basic_logistical_transporter', 4), [
         ' A ',
         'ABA',
         ' A ',
@@ -228,6 +267,8 @@ events.listen('recipes', function (event) {
     })
 
     //Restrictive Transporter
+	event.remove({id: 'mekanism:transmitter/logistical_transporter/restrictive_transporter'})
+	
     event.shaped(item.of('mekanism:restrictive_transporter', 1), [
         'ABA',
     ], {
@@ -236,6 +277,8 @@ events.listen('recipes', function (event) {
     })
 
     //Diversion Transporter
+	event.remove({id: 'mekanism:transmitter/logistical_transporter/diversion_transporter'})
+	
     event.shaped(item.of('mekanism:diversion_transporter', 1), [
         'CCC',
         'ABA',
@@ -247,6 +290,8 @@ events.listen('recipes', function (event) {
     })
 
     //Structural Glass
+	event.remove({id: 'mekanism:structural_glass'})
+	
     event.shaped(item.of('mekanism:structural_glass', 1), [
         ' A ',
         'ABA',
@@ -257,6 +302,8 @@ events.listen('recipes', function (event) {
     })
     
     //Electric Pump
+	event.remove({id: 'mekanism:electric_pump'})
+	
     event.shaped(item.of('mekanism:electric_pump', 1), [
         ' A ',
         'BCB',
@@ -267,8 +314,71 @@ events.listen('recipes', function (event) {
         C: 'mekanism:steel_casing',
         D: 'mekanism:ingot_osmium'
     })
+	
+	//Basic Chemical Tank
+	event.remove({id: 'mekanism:chemical_tank/basic'})
+	
+    event.shaped(item.of('mekanism:basic_chemical_tank', 1), [
+        'ABA',
+        'BCB',
+        'ABA',
+    ], {
+        A: 'minecraft:redstone',
+        B: '#forge:ingots/osmium',
+        C: 'mekanism:steel_casing'
+    })
 
     //Script to modify a whole tier of machine recipes at once
+	//First, remove the old recipes
+	var idRemove =[
+	//Tier 1 machines
+	'mekanism:factory/basic/smelting',
+	'mekanism:factory/basic/enriching',
+	'mekanism:factory/basic/crushing',
+	'mekanism:factory/basic/compressing',
+	'mekanism:factory/basic/combining',
+	'mekanism:factory/basic/purifying',
+	'mekanism:factory/basic/injecting',
+	'mekanism:factory/basic/infusing',
+	'mekanism:factory/basic/sawing',
+	
+	//Tier 2 machines
+	'mekanism:factory/advanced/smelting',
+	'mekanism:factory/advanced/enriching',
+	'mekanism:factory/advanced/crushing',
+	'mekanism:factory/advanced/compressing',
+	'mekanism:factory/advanced/combining',
+	'mekanism:factory/advanced/purifying',
+	'mekanism:factory/advanced/injecting',
+	'mekanism:factory/advanced/infusing',
+	'mekanism:factory/advanced/sawing',
+	
+	//Tier 3 machines
+	'mekanism:factory/elite/smelting',
+	'mekanism:factory/elite/enriching',
+	'mekanism:factory/elite/crushing',
+	'mekanism:factory/elite/compressing',
+	'mekanism:factory/elite/combining',
+	'mekanism:factory/elite/purifying',
+	'mekanism:factory/elite/injecting',
+	'mekanism:factory/elite/infusing',
+	'mekanism:factory/elite/sawing',
+	
+	//Tier 4 machines
+	'mekanism:factory/ultimate/smelting',
+	'mekanism:factory/ultimate/enriching',
+	'mekanism:factory/ultimate/crushing',
+	'mekanism:factory/ultimate/compressing',
+	'mekanism:factory/ultimate/combining',
+	'mekanism:factory/ultimate/purifying',
+	'mekanism:factory/ultimate/injecting',
+	'mekanism:factory/ultimate/infusing',
+	'mekanism:factory/ultimate/sawing',
+	]
+	idRemove.forEach(function (remove) {
+		event.remove({id: remove})
+	})
+	
     //Initial tier of machines
     var tierZero = [
         'mekanism:energized_smelter',
@@ -389,4 +499,9 @@ events.listen('recipes', function (event) {
         })
         i++
     })
+	
+	//World
+	
+	//Salt - Convert Pam's Kitchen Salt to Mekanism Salt
+	event.shapeless(Item.of('mekanism:salt', 1), 'pamhc2foodcore:saltitem')
 })
