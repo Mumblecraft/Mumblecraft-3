@@ -12,102 +12,23 @@ events.listen('recipes', function (event) {
 	'appliedenergistics2:grinder/gold_dust_ingot',
 	'appliedenergistics2:grinder/iron_dust_ore',
 	'appliedenergistics2:grinder/iron_dust_ingot',
-	//BluePower
-	'bluepower:copper_ingot',
-	'bluepower:silver_ingot',
-	'bluepower:copper_block',
-	'bluepower:silver_block',
-	'bluepower:copper_ore',
-	'bluepower:silver_ore',
-	'bluepower:alloy_furnace/energy_tabletgold_ingot_generated',
-	//Mekanism
-	'mekanism:copper_ore',
-	'mekanism:lead_ore',
-	'mekanism:uranium_ore',
-	'mekanism:block_copper',
-	'mekanism:block_lead',
-	'mekanism:block_uranium',
-	'mekanism:block_steel',
-	'mekanism:storage_blocks/steel',
-	'mekanism:ingot_copper',
-	'mekanism:ingot_lead',
-	'mekanism:ingot_uranium',
-	'mekanism:ingot_steel',
-	'mekanism:processing/uranium/ingot/from_dust_blasting',
-	'mekanism:processing/uranium/ingot/from_dust_smelting',
-	'mekanism:processing/copper/ingot/from_dust_blasting',
-	'mekanism:processing/copper/ingot/from_dust_smelting',
-	'mekanism:processing/lead/ingot/from_dust_blasting',
-	'mekanism:processing/lead/ingot/from_dust_smelting',
-	'mekanism:processing/steel/ingot/from_dust_blasting',
-	'mekanism:processing/steel/ingot/from_dust_smelting',
-	//Remove Mekanism nugs; favor IE
-	'mekanism:nugget_copper',
-	'mekanism:nugget_lead',
-	'mekanism:nugget_uranium',
-	'mekanism:nugget_steel',
-	//Remove Mekanism steel production
-	'mekanism:dust_steel',
-	//Disable enriched materials.
-	//Effectively resource cost x8 for Mekanism recipes
-	'mekanism:enriched_iron',
-	'mekanism:enriched_carbon',
-	'mekanism:enriched_redstone',
-	'mekanism:enriched_diamond',
-	'mekanism:enriched_refined_obsidian',
-	'mekanism:enriched_gold',
-	'mekanism:enriched_tin',
 
 	//Tools/armor
-
-	//Mekanism
-	'mekanismtools:steel_pickaxe',
-	'mekanismtools:steel_axe',
-	'mekanismtools:steel_shovel',
-	'mekanismtools:steel_hoe',
-	'mekanismtools:steel_sword',
-	'mekanismtools:steel_helmet',
-	'mekanismtools:steel_chestplate',
-	'mekanismtools:steel_leggings',
-	'mekanismtools:steel_boots',
-	//Should we remove paxels? I think we should. -Doxx
-	'mekanismtools:wood_paxel',
-	'mekanismtools:stone_paxel',
-	'mekanismtools:iron_paxel',
-	'mekanismtools:diamond_paxel',
-	'mekanismtools:gold_paxel',
-	'mekanismtools:netherite_paxel',
-	'mekanismtools:bronze_paxel',
-	'mekanismtools:lapis_lazuli_paxel',
-	'mekanismtools:osmium_paxel',
-	'mekanismtools:refined_glowstone_paxel',
-	'mekanismtools:refined_obsidian_paxel',
-	'mekanismtools:steel_paxel',
-	'mekanismtools:steel_shield',
+	
 	//No Tree Punching
 	//Remove mattocks
 	'notreepunching:iron_mattock',
 	'notreepunching:gold_mattock',
 	'notreepunching:diamond_mattock',
-	//Vanilla (Bypassed via flint)
-	'minecraft:wooden_sword',
-	'minecraft:wooden_shovel',
-	'minecraft:wooden_pickaxe',
-	'minecraft:wooden_axe',
-	'minecraft:wooden_hoe',
-	'minecraft:stone_sword',
-	'minecraft:stone_shovel',
-	'minecraft:stone_pickaxe',
-	'minecraft:stone_axe',
-	'minecraft:stone_hoe',
-
 
 	//Machines/Crafting Components
 
 	//AE2
 	'appliedenergistics2:misc/grindstone',
+	
 	//Immersive Engineering
 	'immersiveengineering:crafting/conveyor_basic',
+	
 	//Mekanism
 	'mekanism:metallurgic_infuser',
 	'mekanism:steel_casing',
@@ -131,6 +52,7 @@ events.listen('recipes', function (event) {
 	'mekanism:transmitter/logistical_transporter/restrictive_transporter',
 	'mekanism:transmitter/logistical_transporter/diversion_transporter',
 	'mekanism:structural_glass',
+	
 	//Tier 1 machines
 	'mekanism:factory/basic/smelting',
 	'mekanism:factory/basic/enriching',
@@ -141,6 +63,7 @@ events.listen('recipes', function (event) {
 	'mekanism:factory/basic/injecting',
 	'mekanism:factory/basic/infusing',
 	'mekanism:factory/basic/sawing',
+	
 	//Tier 2 machines
 	'mekanism:factory/advanced/smelting',
 	'mekanism:factory/advanced/enriching',
@@ -151,6 +74,7 @@ events.listen('recipes', function (event) {
 	'mekanism:factory/advanced/injecting',
 	'mekanism:factory/advanced/infusing',
 	'mekanism:factory/advanced/sawing',
+	
 	//Tier 3 machines
 	'mekanism:factory/elite/smelting',
 	'mekanism:factory/elite/enriching',
@@ -161,6 +85,7 @@ events.listen('recipes', function (event) {
 	'mekanism:factory/elite/injecting',
 	'mekanism:factory/elite/infusing',
 	'mekanism:factory/elite/sawing',
+	
 	//Tier 4 machines
 	'mekanism:factory/ultimate/smelting',
 	'mekanism:factory/ultimate/enriching',

@@ -46,7 +46,7 @@
 	[world_generation.copper]
 		#Chance that copper generates in a chunk.
 		#Range: 1 ~ 128
-		perChunk = 16
+		perChunk = 12
 		#Top offset for calculating height that veins of copper can spawn. Height is calculated by: random.nextInt(maxHeight - topOffset) + bottomOffset
 		topOffset = 0
 		#Bottom offset for calculating height that veins of copper can spawn. Height is calculated by: random.nextInt(maxHeight - topOffset) + bottomOffset
@@ -94,13 +94,13 @@
 		shouldGenerate = true
 		#Maximum number of blocks in a vein of fluorite.
 		#Range: 1 ~ 512
-		maxVeinSize = 12
+		maxVeinSize = 10
 
 	#Generation Settings for uranium ore.
 	[world_generation.uranium]
 		#Chance that uranium generates in a chunk.
 		#Range: 1 ~ 128
-		perChunk = 8
+		perChunk = 6
 		#Top offset for calculating height that veins of uranium can spawn. Height is calculated by: random.nextInt(maxHeight - topOffset) + bottomOffset
 		topOffset = 0
 		#Bottom offset for calculating height that veins of uranium can spawn. Height is calculated by: random.nextInt(maxHeight - topOffset) + bottomOffset
@@ -118,7 +118,7 @@
 	[world_generation.lead]
 		#Chance that lead generates in a chunk.
 		#Range: 1 ~ 128
-		perChunk = 8
+		perChunk = 6
 		#Top offset for calculating height that veins of lead can spawn. Height is calculated by: random.nextInt(maxHeight - topOffset) + bottomOffset
 		topOffset = 0
 		#Bottom offset for calculating height that veins of lead can spawn. Height is calculated by: random.nextInt(maxHeight - topOffset) + bottomOffset
