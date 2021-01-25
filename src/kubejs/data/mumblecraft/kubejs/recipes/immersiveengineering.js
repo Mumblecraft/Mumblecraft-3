@@ -7,6 +7,8 @@ events.listen('recipes', function (event) {
 
     //Machines
     //Conveyor
+	event.remove({id: 'immersiveengineering:crafting/conveyor_basic'})
+	
     event.shaped(item.of('immersiveengineering:conveyor_basic', 1), [
         '   ',
         'AAA',
