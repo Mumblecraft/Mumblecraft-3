@@ -8,16 +8,19 @@ events.listen('recipes', function (event) {
     //Machines/Components
 
     //Steel Casing
-	event.remove({id: 'mekanism:steel_casing'})
+    event.remove({id: 'mekanism:steel_casing'})
 	
-    event.shaped(item.of('mekanism:steel_casing', 1), [
-        'ABA',
-        'BCB',
-        'ABA',
+    event.recipes.create.mechanical_crafting(item.of('mekanism:steel_casing', 1), [
+        '  A  ',
+        ' BCB ',
+        'ACDCA',
+	' BCB ',
+	'  A  ',
     ], {
-        A: 'immersiveengineering:heavy_engineering',
-        B: 'mekanism:structural_glass',
-        C: 'mekanism:ingot_osmium'
+	A: 'create:shadow_steel',
+        B: 'immersiveengineering:plate_steel',
+        C: 'immersiveengineering:component_steel',
+        D: 'mekanism:block_osmium'
     })
 
     //Metallurgic Infuser
@@ -26,23 +29,25 @@ events.listen('recipes', function (event) {
     event.shaped(item.of('mekanism:metallurgic_infuser', 1), [
         'ABA',
         'CDC',
-        'ABA',
+        'EBF',
     ], {
-        A: 'immersiveengineering:plate_steel',
-        B: 'engineersdecor:small_electrical_furnace',
-        C: 'immersiveengineering:rs_engineering',
-        D: 'mekanism:steel_casing'
+	A: 'kubejs:redstone_alloy',
+	B: 'engineersdecor:small_electrical_furnace',
+	C: 'create:integrated_circuit',
+	D: 'mekanism:steel_casing',
+	E: 'immersiveengineering:rs_engineering',
+	F: 'immersiveengineering:heavy_engineering'
     })
 
     //Energized Smelter
-	event.remove({id: 'mekanism:energized_smelter'})
+    event.remove({id: 'mekanism:energized_smelter'})
 	
     event.shaped(item.of('mekanism:energized_smelter', 1), [
         'ABA',
         'CDC',
         'ABA',
     ], {
-        A: 'immersiveengineering:plate_steel',
+        A: 'kubejs:redstone_alloy',
         B: 'mekanism:basic_control_circuit',
         C: 'engineersdecor:small_electrical_furnace',
         D: 'mekanism:steel_casing'
@@ -56,7 +61,7 @@ events.listen('recipes', function (event) {
         'CDC',
         'ABA',
     ], {
-        A: 'immersiveengineering:plate_steel',
+        A: 'kubejs:redstone_alloy',
         B: 'mekanism:basic_control_circuit',
         C: 'immersiveengineering:storage_steel',
         D: 'mekanism:steel_casing'
@@ -70,7 +75,7 @@ events.listen('recipes', function (event) {
         'CDC',
         'ABA',
     ], {
-        A: 'immersiveengineering:plate_steel',
+        A: 'kubejs:redstone_alloy',
         B: 'mekanism:basic_control_circuit',
         C: 'minecraft:lava_bucket',
         D: 'mekanism:steel_casing'
@@ -227,7 +232,7 @@ events.listen('recipes', function (event) {
     ], {
         A: 'immersiveengineering:plate_constantan',
         B: 'immersiveengineering:plate_copper',
-        C: 'minecraft:redstone'
+        C: 'kubejs:redstone_alloy'
     })
 
     //Basic Mechanical Pipe
@@ -286,7 +291,7 @@ events.listen('recipes', function (event) {
     ], {
         A: 'immersiveengineering:plate_steel',
         B: 'minecraft:iron_bars',
-        C: 'minecraft:redstone'
+        C: 'kubejs:redstone_alloy'
     })
 
     //Structural Glass
@@ -323,9 +328,21 @@ events.listen('recipes', function (event) {
         'BCB',
         'ABA',
     ], {
-        A: 'minecraft:redstone',
+        A: 'kubejs:redstone_alloy',
         B: '#forge:ingots/osmium',
         C: 'mekanism:steel_casing'
+    })
+
+    //Fission Reactor Casing
+	event.remove({id: 'mekanismgenerators:fission_reactor/casing'})
+	
+    event.shaped(item.of('mekanismgenerators:fission_reactor_casing', 2), [
+        'AAA',
+        'ABA',
+        'AAA',
+    ], {
+	A: 'immersiveengineering:plate_lead',
+	B: 'mekanism:steel_casing',
     })
 
     //Script to modify a whole tier of machine recipes at once

@@ -6,23 +6,23 @@ console.info('Kubejs: modifying recipes')
 events.listen('recipes', function (event) {
 
     //Machines/Components
+
     //Machine Frame
-	event.remove({id: 'rftoolsbase:machine_frame'})
+    event.remove({id: 'rftoolsbase:machine_frame'})
 	
     event.recipes.create.mechanical_crafting(item.of('rftoolsbase:machine_frame', 1), [
-        'AAAAA',
-        'ABCBA',
-        'ADEDA',
-	'ABCBA',
-	'AAAAA',
+        '  A  ',
+        ' BCB ',
+        'AD DA',
+	' BCB ',
+	'  A  ',
     ], {
-        A: 'immersiveengineering:plate_steel',
-        B: 'mekanism:alloy_atomic',
-        C: 'minecraft:blue_dye',
-	D: 'minecraft:gold_ingot',
-	E: 'mekanism:steel_casing',
+        A: 'mekanism:ingot_refined_obsidian',
+        B: 'immersiveengineering:plate_steel',
+        C: 'appliedenergistics2:engineering_processor',
+	D: '#forge:ingots/electrum',
     })
-
+	
     //Machine Base
     event.remove({id: 'rftoolsbase:machine_base'})
 
