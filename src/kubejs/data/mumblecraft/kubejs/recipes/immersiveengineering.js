@@ -5,7 +5,20 @@ console.info('Kubejs: modifying recipes')
 
 events.listen('recipes', function (event) {
 
-    //Machines
+    //Machines/Components
+
+    //Kiln Brick
+    event.remove({id: 'immersiveengineering:crafting/alloybrick'})
+
+    event.shaped(item.of('immersiveengineering:alloybrick', 2), [
+        'ABA',
+        'BCB',
+        'ABA',
+    ], {
+        A: '#forge:sandstone',
+        B: 'minecraft:brick',
+        C: 'minecraft:netherite_ingot',
+    })
 
     //Redstone Engineering Block
     event.remove({id: 'immersiveengineering:crafting/rs_engineering'})
