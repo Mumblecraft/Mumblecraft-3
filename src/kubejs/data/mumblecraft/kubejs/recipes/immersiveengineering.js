@@ -43,10 +43,10 @@ events.listen('recipes', function (event) {
 	' BCB ',
 	'  A  ',
     ], {
-	A:'minecraft:nether_brick',
-	B:'minecraft:brick',
-	C:'minecraft:magma_block',
-	D:'minecraft:netherite_ingot'
+	    A:'minecraft:nether_brick',
+	    B:'minecraft:brick',
+	    C:'minecraft:magma_block',
+	    D:'minecraft:netherite_ingot'
     })
 
     //Redstone Engineering Block
