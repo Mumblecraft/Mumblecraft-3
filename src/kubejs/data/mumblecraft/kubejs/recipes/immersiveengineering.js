@@ -43,10 +43,10 @@ events.listen('recipes', function (event) {
 	' BCB ',
 	'  A  ',
     ], {
-	    A:'minecraft:nether_brick',
-	    B:'minecraft:brick',
-	    C:'minecraft:magma_block',
-	    D:'minecraft:netherite_ingot'
+	A:'minecraft:nether_brick',
+	B:'minecraft:brick',
+	C:'minecraft:magma_block',
+	D:'minecraft:netherite_ingot'
     })
 
     //Redstone Engineering Block
@@ -56,13 +56,13 @@ events.listen('recipes', function (event) {
         '  A  ',
         ' BCB ',
         'ACDCA',
-		' BCB ',
-		'  A  ',
+	' BCB ',
+	'  A  ',
     ], {
         A: '#forge:ingots/constantan',
         B: 'immersiveengineering:sheetmetal_iron',
         C: 'minecraft:redstone',
-		D: '#forge:ingots/copper',
+	D: '#forge:ingots/copper',
     })
 
     //Light Engineering Block
@@ -72,13 +72,13 @@ events.listen('recipes', function (event) {
         '  A  ',
         ' BCB ',
         'ACDCA',
-		' BCB ',
-		'  A  ',
+	' BCB ',
+	'  A  ',
     ], {
         A: 'create:brass_ingot',
         B: 'immersiveengineering:sheetmetal_iron',
         C: 'immersiveengineering:component_iron',
-		D: '#forge:ingots/copper',
+	D: '#forge:ingots/copper',
     })
 
     //Heavy Engineering Block
@@ -88,13 +88,13 @@ events.listen('recipes', function (event) {
         '  A  ',
         ' BCB ',
         'ACDCA',
-		' BCB ',
-		'  A  ',
+	' BCB ',
+	'  A  ',
     ], {
         A: '#forge:ingots/bronze',
         B: 'immersiveengineering:sheetmetal_steel',
         C: 'immersiveengineering:component_steel',
-		D: '#forge:ingots/electrum',
+	D: '#forge:ingots/electrum',
     })
 
     //Conveyor
@@ -120,15 +120,15 @@ events.listen('recipes', function (event) {
         A: '#forge:plates/iron',
         B: 'immersiveengineering:connector_lv',
         C: 'create:electron_tube',
-		D: 'minecraft:furnace',
+	D: 'minecraft:furnace',
     })
 
     //Processing
-    //Redstone Alloy
-	event.recipes.immersiveengineering.arc_furnace(['kubejs:redstone_alloy'],
+    //Mumble Alloy
+	event.recipes.immersiveengineering.arc_furnace(['kubejs:mumble_alloy'],
 	'#forge:ingots/iron',
 	[
-	'#forge:dusts/redstone',
+	'create:shadow_steel',
 	'#forge:dusts/coal_coke'
 	]).time(400).energy(204800)
 })
