@@ -14,10 +14,10 @@ events.listen('recipes', function (event) {
         '  A  ',
         ' BCB ',
         'ACDCA',
-	' BCB ',
-	'  A  ',
+		' BCB ',
+		'  A  ',
     ], {
-	A: 'create:shadow_steel',
+		A: 'create:shadow_steel',
         B: 'immersiveengineering:plate_steel',
         C: 'immersiveengineering:component_steel',
         D: 'mekanism:block_osmium'
@@ -31,12 +31,12 @@ events.listen('recipes', function (event) {
         'CDC',
         'EBF',
     ], {
-	A: 'kubejs:redstone_alloy',
-	B: 'engineersdecor:small_electrical_furnace',
-	C: 'create:integrated_circuit',
-	D: 'mekanism:steel_casing',
-	E: 'immersiveengineering:rs_engineering',
-	F: 'immersiveengineering:heavy_engineering'
+		A: 'kubejs:redstone_alloy',
+		B: 'engineersdecor:small_electrical_furnace',
+		C: 'create:integrated_circuit',
+		D: 'mekanism:steel_casing',
+		E: 'immersiveengineering:rs_engineering',
+		F: 'immersiveengineering:heavy_engineering'
     })
 
     //Energized Smelter
@@ -341,8 +341,8 @@ events.listen('recipes', function (event) {
         'ABA',
         'AAA',
     ], {
-	A: 'immersiveengineering:plate_lead',
-	B: 'mekanism:steel_casing',
+		A: 'immersiveengineering:plate_lead',
+		B: 'mekanism:steel_casing',
     })
 
     //Script to modify a whole tier of machine recipes at once
