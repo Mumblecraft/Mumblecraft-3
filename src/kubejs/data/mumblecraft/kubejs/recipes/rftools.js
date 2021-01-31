@@ -14,8 +14,8 @@ events.listen('recipes', function (event) {
         '  A  ',
         ' BCB ',
         'AD DA',
-		' BCB ',
-		'  A  ',
+	' BCB ',
+	'  A  ',
     ], {
         A: 'mekanism:ingot_refined_obsidian',
         B: 'immersiveengineering:plate_steel',

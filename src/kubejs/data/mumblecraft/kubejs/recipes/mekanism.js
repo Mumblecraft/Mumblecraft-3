@@ -14,10 +14,10 @@ events.listen('recipes', function (event) {
         '  A  ',
         ' BCB ',
         'ACDCA',
-		' BCB ',
-		'  A  ',
+	' BCB ',
+	'  A  ',
     ], {
-		A: 'create:shadow_steel',
+	A: 'kubejs:mumble_alloy',
         B: 'immersiveengineering:plate_steel',
         C: 'immersiveengineering:component_steel',
         D: 'mekanism:block_osmium'
@@ -31,12 +31,12 @@ events.listen('recipes', function (event) {
         'CDC',
         'EBF',
     ], {
-		A: 'kubejs:redstone_alloy',
-		B: 'engineersdecor:small_electrical_furnace',
-		C: 'create:integrated_circuit',
-		D: 'mekanism:steel_casing',
-		E: 'immersiveengineering:rs_engineering',
-		F: 'immersiveengineering:heavy_engineering'
+	A: 'minecraft:redstone',
+	B: 'engineersdecor:small_electrical_furnace',
+	C: 'create:integrated_circuit',
+	D: 'mekanism:steel_casing',
+	E: 'immersiveengineering:rs_engineering',
+	F: 'immersiveengineering:heavy_engineering'
     })
 
     //Energized Smelter
@@ -47,7 +47,7 @@ events.listen('recipes', function (event) {
         'CDC',
         'ABA',
     ], {
-        A: 'kubejs:redstone_alloy',
+        A: 'minecraft:redstone',
         B: 'mekanism:basic_control_circuit',
         C: 'engineersdecor:small_electrical_furnace',
         D: 'mekanism:steel_casing'
@@ -61,7 +61,7 @@ events.listen('recipes', function (event) {
         'CDC',
         'ABA',
     ], {
-        A: 'kubejs:redstone_alloy',
+        A: 'minecraft:redstone',
         B: 'mekanism:basic_control_circuit',
         C: 'immersiveengineering:storage_steel',
         D: 'mekanism:steel_casing'
@@ -75,7 +75,7 @@ events.listen('recipes', function (event) {
         'CDC',
         'ABA',
     ], {
-        A: 'kubejs:redstone_alloy',
+        A: 'minecraft:redstone',
         B: 'mekanism:basic_control_circuit',
         C: 'minecraft:lava_bucket',
         D: 'mekanism:steel_casing'
@@ -232,7 +232,7 @@ events.listen('recipes', function (event) {
     ], {
         A: 'immersiveengineering:plate_constantan',
         B: 'immersiveengineering:plate_copper',
-        C: 'kubejs:redstone_alloy'
+        C: 'minecraft:redstone'
     })
 
     //Basic Mechanical Pipe
@@ -291,7 +291,7 @@ events.listen('recipes', function (event) {
     ], {
         A: 'immersiveengineering:plate_steel',
         B: 'minecraft:iron_bars',
-        C: 'kubejs:redstone_alloy'
+        C: 'minecraft:redstone'
     })
 
     //Structural Glass
@@ -328,7 +328,7 @@ events.listen('recipes', function (event) {
         'BCB',
         'ABA',
     ], {
-        A: 'kubejs:redstone_alloy',
+        A: 'minecraft:redstone',
         B: '#forge:ingots/osmium',
         C: 'mekanism:steel_casing'
     })
@@ -341,8 +341,8 @@ events.listen('recipes', function (event) {
         'ABA',
         'AAA',
     ], {
-		A: 'immersiveengineering:plate_lead',
-		B: 'mekanism:steel_casing',
+	A: 'immersiveengineering:plate_lead',
+	B: 'mekanism:steel_casing',
     })
 
     //Script to modify a whole tier of machine recipes at once

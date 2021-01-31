@@ -31,7 +31,7 @@ break_in_creative = false
 	#INSTANTANEOUS will break it in one go.
 	#SHIFT_DOWN will make the tree fall down as you cut it, so you still have to break x blocks but don't have to climb the tree for them.
 	#Allowed Values: INSTANTANEOUS, SHIFT_DOWN
-	break_mode = "INSTANTANEOUS"
+	break_mode = "SHIFT_DOWN"
 	#List of blocks that should not be considered as leaves.
 	#INFO: This wins over the whitelist.
 	logs_blacklisted = []
