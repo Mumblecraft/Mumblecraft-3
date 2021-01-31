@@ -1,5 +1,5 @@
 #Makes blocks take forever to mine if using the wrong tool
-noMiningWithoutCorrectTool = false
+noMiningWithoutCorrectTool = true
 #Makes blocks not drop anything when broken with the wrong tool
 noBlockDropsWithoutCorrectTool = true
 #Makes blocks that would otherwise be broken instantly unbreakable if using the wrong tool.
