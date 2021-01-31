@@ -1,14 +1,24 @@
 // This file is for hiding items in JEI
 
 //Write to console that this file is executing
-console.info('Kubejs Removing blocks from JEI')
+console.info('Kubejs: removing blocks from JEI')
 
 events.listen('jei.hide.items', function (event) {
-	//BluePower
-	event.hide('bluepower:copper_ingot')
-	event.hide('bluepower:silver_ingot')
-	event.hide('bluepower:copper_block')
-	event.hide('bluepower:silver_block')
-	event.hide('bluepower:copper_ore')
-	event.hide('bluepower:silver_ore')
+	var idHide = [
+	//Ores/ingots
+
+	//AE2
+	'appliedenergistics2:iron_dust',
+	'appliedenergistics2:gold_dust',
+	'appliedenergistics2:facade',
+	
+	//Immersive Engineering
+	'immersiveengineering:ore_copper',
+	'immersiveengineering:ore_uranium',
+	'immersiveengineering:ore_lead',
+
+	]
+	idHide.forEach(function (hide) {
+		event.hide(hide)
+	})
 })
