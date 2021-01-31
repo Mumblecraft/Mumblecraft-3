@@ -4,7 +4,19 @@
 console.info('Kubejs: modifying recipes')
 
 events.listen('recipes', function (event) {
+
+	//Chest
+    event.remove({id: 'minecraft:chest'})
 	
+    event.shaped(item.of('minecraft:chest', 1), [
+        'AAA',
+        'ABA',
+        'AAA',
+    ], {
+        A: '#minecraft:planks',
+        B: 'minecraft:iron_nugget',
+    })
+
 	//Noteblock
     event.remove({id: 'minecraft:note_block'})
 	
@@ -17,7 +29,7 @@ events.listen('recipes', function (event) {
         B: 'minecraft:redstone',
         C: '#forge:ingots/brass'
     })
-	
+
 	//Torches
 	//Add torches to campfire with a long  processing time
 	event.recipes.minecraft.campfire_cooking({

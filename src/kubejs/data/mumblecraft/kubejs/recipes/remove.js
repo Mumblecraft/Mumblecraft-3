@@ -37,6 +37,7 @@ events.listen('recipes', function (event) {
 	'immersiveengineering:crafting/plate_iron_hammering',
 	'immersiveengineering:crafting/plate_gold_hammering',
 	'immersiveengineering:crafting/light_engineering',
+	'immersiveengineering:crafting/hammercrushing_iron',
 	
 	//Engineer's Decor
 	'engineersdecor:independent/small_electrical_furnace_recipe',
