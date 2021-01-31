@@ -34,4 +34,20 @@ events.listen('recipes', function (event) {
         event.recipes.create.pressing(item.of(output, 1), pressingInput[i])
         i++
     })
+
+    //Ingots
+
+    event.remove({id: 'minecraft:netherite_ingot'})
+
+    event.recipes.create.mixing('minecraft:netherite_ingot', [
+ 	'minecraft:netherite_scrap',
+ 	'minecraft:netherite_scrap',
+ 	'minecraft:netherite_scrap',
+ 	'minecraft:netherite_scrap',
+ 	'#forge:ingots/gold',
+ 	'#forge:ingots/gold',
+ 	'#forge:ingots/gold',
+	'#forge:ingots/gold'
+]).superheated()
+
 })

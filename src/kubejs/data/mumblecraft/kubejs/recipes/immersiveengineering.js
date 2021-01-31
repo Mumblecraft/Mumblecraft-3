@@ -7,6 +7,19 @@ events.listen('recipes', function (event) {
 
     //Machines/Components
 
+    //Coke Brick
+    event.remove({id: 'immersiveengineering:crafting/cokebrick'})
+
+    event.shaped(item.of('immersiveengineering:cokebrick', 3), [
+        'ABA',
+        'BCB',
+        'ABA',
+    ], {
+        A: 'minecraft:clay_ball',
+        B: 'minecraft:brick',
+        C: 'minecraft:basalt',
+    })
+
     //Kiln Brick
     event.remove({id: 'immersiveengineering:crafting/alloybrick'})
 
@@ -18,6 +31,22 @@ events.listen('recipes', function (event) {
         A: '#forge:sandstone',
         B: 'minecraft:brick',
         C: 'minecraft:netherite_ingot',
+    })
+
+    //Blast brick
+    event.remove({id: 'immersiveengineering:crafting/blastbrick'})
+
+    event.recipes.create.mechanical_crafting(item.of('immersiveengineering:blastbrick', 3), [
+	'  A  ',
+	' BCB ',
+	'ACDCA',
+	' BCB ',
+	'  A  ',
+    ], {
+	A:'minecraft:nether_brick',
+	B:'minecraft:brick',
+	C:'minecraft:magma_block',
+	D:'minecraft:netherite_ingot'
     })
 
     //Redstone Engineering Block
@@ -94,12 +123,12 @@ events.listen('recipes', function (event) {
 	D: 'minecraft:furnace',
     })
 
-    //Ingot
+    //Processing
     //Redstone Alloy
 	event.recipes.immersiveengineering.arc_furnace(['kubejs:redstone_alloy'],
-	'#forge:ingots/iron', [
+	'#forge:ingots/iron',
+	[
 	'#forge:dusts/redstone',
 	'#forge:dusts/coal_coke'
-    ])
-	.time(400).energy(204800)
+	]).time(400).energy(204800)
 })
