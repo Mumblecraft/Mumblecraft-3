@@ -6,7 +6,7 @@ onEvent('item.registry', event => {
   // Register new items here
   // event.create('example_item').displayName('Example Item')
 
-    event.create('mumble_alloy').displayName('Mumble Alloy')
+    event.create('dark_steel_ingot').displayName('Dark Steel Ingot')
 })
 
 onEvent('block.registry', event => {

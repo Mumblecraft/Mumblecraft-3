@@ -37,6 +37,16 @@ events.listen('recipes', function (event) {
 
     //Ingots
 
+    //Make bronze with Create mixer
+    event.recipes.create.mixing(item.of('mekanism:ingot_bronze', 4), [
+ 	'#forge:ingots/copper',
+ 	'#forge:ingots/copper',
+ 	'#forge:ingots/copper',
+ 	'#forge:ingots/tin'
+        ]).heated()
+
+
+    //Make netherite ingot with Create Mixer
     event.remove({id: 'minecraft:netherite_ingot'})
 
     event.recipes.create.mixing('minecraft:netherite_ingot', [
@@ -48,6 +58,5 @@ events.listen('recipes', function (event) {
  	'#forge:ingots/gold',
  	'#forge:ingots/gold',
 	'#forge:ingots/gold'
-]).superheated()
-
+        ]).superheated()
 })

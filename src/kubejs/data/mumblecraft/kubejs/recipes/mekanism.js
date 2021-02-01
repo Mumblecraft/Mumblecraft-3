@@ -4,7 +4,7 @@
 console.info('Kubejs: modifying recipes')
 
 events.listen('recipes', function (event) {
-    
+
     //Machines/Components
 
     //Steel Casing
@@ -14,10 +14,10 @@ events.listen('recipes', function (event) {
         '  A  ',
         ' BCB ',
         'ACDCA',
-	' BCB ',
-	'  A  ',
+	    ' BCB ',
+	    '  A  ',
     ], {
-	A: 'kubejs:mumble_alloy',
+	A: 'kubejs:dark_steel_ingot',
         B: 'immersiveengineering:plate_steel',
         C: 'immersiveengineering:component_steel',
         D: 'mekanism:block_osmium'
