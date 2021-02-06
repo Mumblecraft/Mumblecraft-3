@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "notreepunching:flint_pickaxe"
+        },
+        "title": {
+            "text": "Create a Flint Pickaxe"
+        },
+        "description": {
+            "text": "Create a pickaxe so you can mine rocks"
+        }
+    },
+    "parent": "mumblecraft3-adv:string",
+    "criteria": {
+        "craft": {
+            "trigger": "minecraft:inventory_changed",
+			"conditions": {
+                "items": [
+                    {
+                        "item": "notreepunching:flint_pickaxe",
+						"count" : {
+							"min": 1
+						}
+                    }
+                ]
+            }
+        }
+    }
+}

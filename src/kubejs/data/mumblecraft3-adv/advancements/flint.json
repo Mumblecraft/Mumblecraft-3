@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "notreepunching:flint_shard"
+        },
+        "title": {
+            "text": "Prehistoric Tools"
+        },
+        "description": {
+            "text": "You're going to need some flint to create your first tools. Gather some flint from gravel and sharpen it (right-click) on a stone"
+        }
+    },
+    "parent": "mumblecraft3-adv:root",
+    "criteria": {
+        "craft": {
+            "trigger": "minecraft:inventory_changed",
+			"conditions": {
+                "items": [
+                    {
+                        "item": "notreepunching:flint_shard",
+						"count" : {
+							"min": 3
+						}
+                    }
+                ]
+            }
+        }
+    }
+}

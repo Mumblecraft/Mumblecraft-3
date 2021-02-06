@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "notreepunching:flint_shovel"
+        },
+        "title": {
+            "text": "Create a Flint Shovel"
+        },
+        "description": {
+            "text": "Create a shovel so you can move dirt and sand around"
+        }
+    },
+    "parent": "mumblecraft3-adv:string",
+    "criteria": {
+        "craft": {
+            "trigger": "minecraft:inventory_changed",
+			"conditions": {
+                "items": [
+                    {
+                        "item": "notreepunching:flint_shovel",
+						"count" : {
+							"min": 1
+						}
+                    }
+                ]
+            }
+        }
+    }
+}

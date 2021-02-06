@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "notreepunching:flint_axe"
+        },
+        "title": {
+            "text": "Create a Flint Axe"
+        },
+        "description": {
+            "text": "Create an axe so you can harvest wood in a much better way"
+        }
+    },
+    "parent": "mumblecraft3-adv:string",
+    "criteria": {
+        "craft": {
+            "trigger": "minecraft:inventory_changed",
+			"conditions": {
+                "items": [
+                    {
+                        "item": "notreepunching:flint_axe",
+						"count" : {
+							"min": 1
+						}
+                    }
+                ]
+            }
+        }
+    }
+}
