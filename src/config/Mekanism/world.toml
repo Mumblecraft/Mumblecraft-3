@@ -58,13 +58,13 @@
 		shouldGenerate = true
 		#Maximum number of blocks in a vein of copper.
 		#Range: 1 ~ 512
-		maxVeinSize = 8
+		maxVeinSize = 12
 
 	#Generation Settings for osmium ore.
 	[world_generation.osmium]
 		#Chance that osmium generates in a chunk.
 		#Range: 1 ~ 128
-		perChunk = 12
+		perChunk = 8
 		#Top offset for calculating height that veins of osmium can spawn. Height is calculated by: random.nextInt(maxHeight - topOffset) + bottomOffset
 		topOffset = 0
 		#Bottom offset for calculating height that veins of osmium can spawn. Height is calculated by: random.nextInt(maxHeight - topOffset) + bottomOffset
