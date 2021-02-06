@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "notreepunching:fire_starter"
+        },
+        "title": {
+            "text": "Start a campfire"
+        },
+        "description": {
+            "text": "Create a fire starter, then place 3 sticks and 1 plank on the ground. Right click on it with the fire starter until you have a campfire"
+        }
+    },
+    "parent": "mumblecraft3-adv:flint_axe",
+    "criteria": {
+        "craft": {
+            "trigger": "minecraft:inventory_changed",
+			"conditions": {
+                "items": [
+                    {
+                        "item": "notreepunching:fire_starter",
+						"count" : {
+							"min": 1
+						}
+                    }
+                ]
+            }
+        }
+    }
+}

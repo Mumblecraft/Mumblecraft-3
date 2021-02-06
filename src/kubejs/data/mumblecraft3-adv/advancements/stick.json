@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:stick"
+        },
+        "title": {
+            "text": "Gather Sticks"
+        },
+        "description": {
+            "text": "You're going to need some sticks for your tools. Break some leaves off trees"
+        }
+    },
+    "parent": "mumblecraft3-adv:root",
+    "criteria": {
+        "craft": {
+            "trigger": "minecraft:inventory_changed",
+			"conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:stick",
+						"count" : {
+							"min": 3
+						}
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "notreepunching:flint_knife"
+        },
+        "title": {
+            "text": "Create a Flint Knife"
+        },
+        "description": {
+            "text": "Create a knife so you can harvest grass, as well as protect yourself"
+        }
+    },
+    "parent": "mumblecraft3-adv:flint",
+    "criteria": {
+        "craft": {
+            "trigger": "minecraft:inventory_changed",
+			"conditions": {
+                "items": [
+                    {
+                        "item": "notreepunching:flint_knife",
+						"count" : {
+							"min": 1
+						}
+                    }
+                ]
+            }
+        }
+    }
+}
