@@ -1,7 +1,7 @@
 // This file is for modifying existing recipes
 
 //Write to console that this file is executing
-console.info('Kubejs: modifying recipes')
+console.info('Kubejs: Modifying Minecraft recipes')
 
 events.listen('recipes', function (event) {
 
