@@ -594,7 +594,7 @@
 		bronzeToolMaxUses = 800
 		#Maximum durability of bronze boots.
 		#Range: > 1
-		bronzeBootDurability = 455
+		bronzeBootDurability = 420
 		#Protection value of bronze leggings.
 		#Range: > 0
 		bronzeLeggingArmor = 5
@@ -605,7 +605,7 @@
 		#Range: 0.0 ~ 3.4028234663852886E38
 		bronzeKnockbackResistance = 0.0
 		#Efficiency of bronze tools.
-		bronzeEfficiency = 14.0
+		bronzeEfficiency = 11.0
 		#Natural enchantability factor of bronze items.
 		#Range: > 0
 		bronzeEnchantability = 10
@@ -615,21 +615,21 @@
 		bronzeShovelAtkSpeed = -3.0
 		#Maximum durability of bronze chestplates.
 		#Range: > 1
-		bronzeChestplateDurability = 560
+		bronzeChestplateDurability = 510
 		#Maximum durability of bronze leggings.
 		#Range: > 1
-		bronzeLeggingDurability = 525
+		bronzeLeggingDurability = 475
 		#Natural enchantability factor of bronze paxels.
 		#Range: > 0
 		bronzePaxelEnchantability = 14
 		#Base attack damage of bronze items.
 		#Range: 0.0 ~ 3.4028234663852886E38
-		bronzeAttackDamage = 6.0
+		bronzeAttackDamage = 3.0
 		#Attack speed of bronze swords.
 		bronzeSwordAtkSpeed = -2.4000000953674316
 		#Maximum durability of bronze helmets.
 		#Range: > 1
-		bronzeHelmetDurability = 385
+		bronzeHelmetDurability = 320
 		#Attack damage modifier of bronze shovels.
 		#Range: 0.0 ~ 3.4028234663852886E38
 		bronzeShovelDamage = 1.5
