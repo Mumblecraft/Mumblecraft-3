@@ -41,9 +41,10 @@ events.listen('recipes', function (event) {
 	
 	//Engineer's Decor
 	'engineersdecor:independent/small_electrical_furnace_recipe',
-	
 	]
 	idRemove.forEach(function (remove) {
 		event.remove({id: remove})
 	})
+	
+	event.remove({type: 'valhelsia_structures:axe_crafting'})
 })
