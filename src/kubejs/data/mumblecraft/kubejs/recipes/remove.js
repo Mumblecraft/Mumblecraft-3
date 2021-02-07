@@ -1,7 +1,7 @@
 // This file is for removing recipes
 
 //Write to console that this file is executing
-console.info('Kubejs: removing recipes')
+console.info('Kubejs: Removing recipes')
 
 events.listen('recipes', function (event) {
 	var idRemove =[
