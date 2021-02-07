@@ -374,6 +374,7 @@ events.listen('recipes', function (event) {
 	'mekanism:factory/basic/injecting',
 	'mekanism:factory/basic/infusing',
 	'mekanism:factory/basic/sawing',
+	'mekanism:tier_installer/basic',
 	
 	//Tier 2 machines
 	'mekanism:factory/advanced/smelting',
@@ -385,6 +386,7 @@ events.listen('recipes', function (event) {
 	'mekanism:factory/advanced/injecting',
 	'mekanism:factory/advanced/infusing',
 	'mekanism:factory/advanced/sawing',
+	'mekanism:tier_installer/advanced',
 	
 	//Tier 3 machines
 	'mekanism:factory/elite/smelting',
@@ -396,6 +398,7 @@ events.listen('recipes', function (event) {
 	'mekanism:factory/elite/injecting',
 	'mekanism:factory/elite/infusing',
 	'mekanism:factory/elite/sawing',
+	'mekanism:tier_installer/elite',
 	
 	//Tier 4 machines
 	'mekanism:factory/ultimate/smelting',
@@ -407,6 +410,7 @@ events.listen('recipes', function (event) {
 	'mekanism:factory/ultimate/injecting',
 	'mekanism:factory/ultimate/infusing',
 	'mekanism:factory/ultimate/sawing',
+	'mekanism:tier_installer/ultimate',
 	]
 	idRemove.forEach(function (remove) {
 		event.remove({id: remove})
@@ -422,7 +426,8 @@ events.listen('recipes', function (event) {
         'mekanism:purification_chamber',
         'mekanism:chemical_injection_chamber',
         'mekanism:metallurgic_infuser',
-        'mekanism:precision_sawmill'
+        'mekanism:precision_sawmill',
+		'#minecraft:planks'
     ]
     //First tier of 'factory' machines
     var tierOne =[
@@ -434,7 +439,8 @@ events.listen('recipes', function (event) {
         'mekanism:basic_purifying_factory',
         'mekanism:basic_injecting_factory',
         'mekanism:basic_infusing_factory',
-        'mekanism:basic_sawing_factory'
+        'mekanism:basic_sawing_factory',
+        'mekanism:basic_tier_installer'
     ]
     //Second tier of 'factory' machines
     var tierTwo =[
@@ -446,7 +452,7 @@ events.listen('recipes', function (event) {
         'mekanism:advanced_purifying_factory',
         'mekanism:advanced_injecting_factory',
         'mekanism:advanced_infusing_factory',
-        'mekanism:advanced_sawing_factory'
+        'mekanism:advanced_sawing_factory',
     ]
     //Third tier of 'factory' machines
     var tierThree =[
@@ -458,7 +464,7 @@ events.listen('recipes', function (event) {
         'mekanism:elite_purifying_factory',
         'mekanism:elite_injecting_factory',
         'mekanism:elite_infusing_factory',
-        'mekanism:elite_sawing_factory'
+        'mekanism:elite_sawing_factory',
     ]
     //Fourth tier of 'factory' machines
     var tierFour =[
@@ -470,7 +476,7 @@ events.listen('recipes', function (event) {
         'mekanism:ultimate_purifying_factory',
         'mekanism:ultimate_injecting_factory',
         'mekanism:ultimate_infusing_factory',
-        'mekanism:ultimate_sawing_factory'
+        'mekanism:ultimate_sawing_factory',
     ]
     var i = 0
 
@@ -531,6 +537,40 @@ events.listen('recipes', function (event) {
             D: tierThree[i]
         })
         i++
+    })
+	
+	//Tier Installers
+	event.shaped(item.of('mekanism:advanced_tier_installer', 1), [
+        'ABA',
+        'CDC',
+        'ABA',
+    ], {
+        A: 'mekanism:alloy_infused',
+        B: 'mekanism:advanced_control_circuit',
+        C: 'immersiveengineering:plate_steel',
+        D: '#minecraft:planks'
+    })
+		
+    event.shaped(item.of('mekanism:elite_tier_installer', 1), [
+        'ABA',
+        'CDC',
+        'ABA',
+    ], {
+        A: 'mekanism:alloy_reinforced',
+        B: 'mekanism:elite_control_circuit',
+        C: 'immersiveengineering:plate_aluminum',
+        D: '#minecraft:planks'
+    })
+	
+	event.shaped(item.of('mekanism:ultimate_tier_installer'), [
+        'ABA',
+        'CDC',
+        'ABA',
+    ], {
+        A: 'mekanism:alloy_atomic',
+        B: 'mekanism:ultimate_control_circuit',
+        C: 'rftoolsbase:infused_diamond',
+        D: '#minecraft:planks'
     })
 	
 	//World
