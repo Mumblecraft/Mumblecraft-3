@@ -27,7 +27,7 @@
 	[wires.electrum]
 		#The maximum length of electrum wires
 		#Range: > 0
-		maxLength = 16
+		maxLength = 32
 		#The transfer rate of electrum wire in IF/t
 		#Range: > 0
 		transferRate = 8192
@@ -41,7 +41,7 @@
 	[wires.hv]
 		#The maximum length of hv wires
 		#Range: > 0
-		maxLength = 32
+		maxLength = 96
 		#The transfer rate of hv wire in IF/t
 		#Range: > 0
 		transferRate = 32768
