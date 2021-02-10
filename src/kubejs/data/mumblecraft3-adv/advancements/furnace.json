@@ -1,23 +1,23 @@
 {
     "display": {
         "icon": {
-            "item": "notreepunching:flint_axe"
+            "item": "minecraft:furnace"
         },
         "title": {
-            "text": "Finally, a Good Way to Harvest Wood"
+            "text": "Finally, Some Efficiency"
         },
         "description": {
-            "text": "Create an axe so you can harvest wood in a much better way"
+            "text": "Create a furnace to be able to start smelting"
         }
     },
-    "parent": "mumblecraft3-adv:string",
+    "parent": "mumblecraft3-adv:clay_tool",
     "criteria": {
         "craft": {
             "trigger": "minecraft:inventory_changed",
 			"conditions": {
                 "items": [
                     {
-                        "item": "notreepunching:flint_axe",
+                        "item": "minecraft:furnace",
 						"count" : {
 							"min": 1
 						}

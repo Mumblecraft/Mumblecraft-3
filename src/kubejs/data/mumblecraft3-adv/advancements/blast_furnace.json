@@ -1,23 +1,23 @@
 {
     "display": {
         "icon": {
-            "item": "notreepunching:flint_axe"
+            "item": "minecraft:blast_furnace"
         },
         "title": {
-            "text": "Finally, a Good Way to Harvest Wood"
+            "text": "And The Chain of Efficiency Begins"
         },
         "description": {
-            "text": "Create an axe so you can harvest wood in a much better way"
+            "text": "Create a blast furnace to speed up smelting"
         }
     },
-    "parent": "mumblecraft3-adv:string",
+    "parent": "mumblecraft3-adv:furnace",
     "criteria": {
         "craft": {
             "trigger": "minecraft:inventory_changed",
 			"conditions": {
                 "items": [
                     {
-                        "item": "notreepunching:flint_axe",
+                        "item": "minecraft:blast_furnace",
 						"count" : {
 							"min": 1
 						}

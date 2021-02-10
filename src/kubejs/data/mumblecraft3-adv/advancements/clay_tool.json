@@ -1,23 +1,23 @@
 {
     "display": {
         "icon": {
-            "item": "notreepunching:flint_axe"
+            "item": "notreepunching:clay_tool"
         },
         "title": {
-            "text": "Finally, a Good Way to Harvest Wood"
+            "text": "Pottery Time"
         },
         "description": {
-            "text": "Create an axe so you can harvest wood in a much better way"
+            "text": "Create a clay tool so you can start making clay-based items"
         }
     },
-    "parent": "mumblecraft3-adv:string",
+    "parent": "mumblecraft3-adv:fire_starter",
     "criteria": {
         "craft": {
             "trigger": "minecraft:inventory_changed",
 			"conditions": {
                 "items": [
                     {
-                        "item": "notreepunching:flint_axe",
+                        "item": "notreepunching:clay_tool",
 						"count" : {
 							"min": 1
 						}
