@@ -1,23 +1,23 @@
 {
     "display": {
         "icon": {
-            "item": "notreepunching:flint_axe"
+            "item": "notreepunching:ceramic_large_vessel"
         },
         "title": {
-            "text": "Finally, a Good Way to Harvest Wood"
+            "text": "We Can Store Things!"
         },
         "description": {
-            "text": "Create an axe so you can harvest wood in a much better way"
+            "text": "Create a large clay vessel as the first means to storage"
         }
     },
-    "parent": "mumblecraft3-adv:string",
+    "parent": "mumblecraft3-adv:clay_tool",
     "criteria": {
         "craft": {
             "trigger": "minecraft:inventory_changed",
 			"conditions": {
                 "items": [
                     {
-                        "item": "notreepunching:flint_axe",
+                        "item": "notreepunching:ceramic_large_vessel",
 						"count" : {
 							"min": 1
 						}

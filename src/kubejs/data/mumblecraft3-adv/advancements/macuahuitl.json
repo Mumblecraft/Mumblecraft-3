@@ -1,23 +1,23 @@
 {
     "display": {
         "icon": {
-            "item": "notreepunching:flint_axe"
+            "item": "notreepunching:macuahuitl"
         },
         "title": {
-            "text": "Finally, a Good Way to Harvest Wood"
+            "text": "Me Big Caveman!"
         },
         "description": {
-            "text": "Create an axe so you can harvest wood in a much better way"
+            "text": "Create a Macuahuitl as an early-game sword"
         }
     },
-    "parent": "mumblecraft3-adv:string",
+    "parent": "mumblecraft3-adv:stick",
     "criteria": {
         "craft": {
             "trigger": "minecraft:inventory_changed",
 			"conditions": {
                 "items": [
                     {
-                        "item": "notreepunching:flint_axe",
+                        "item": "notreepunching:macuahuitl",
 						"count" : {
 							"min": 1
 						}

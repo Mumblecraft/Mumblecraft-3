@@ -4,10 +4,10 @@
             "item": "notreepunching:flint_knife"
         },
         "title": {
-            "text": "Create a Flint Knife"
+            "text": "Stabby Stab"
         },
         "description": {
-            "text": "Create a knife so you can harvest grass, as well as protect yourself"
+            "text": "Create a knife so you can harvest grass to make tools"
         }
     },
     "parent": "mumblecraft3-adv:flint",
