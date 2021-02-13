@@ -48,7 +48,7 @@
 	#Energy per operation tick (Joules).
 	electricPump = "600"
 	#Energy per operation tick (Joules).
-	enrichmentChamber = "600"
+	enrichmentChamber = "300"
 	#Energy per operation tick (Joules).
 	chemicalDissolutionChamber = "2400"
 	#Energy per operation tick (Joules).
