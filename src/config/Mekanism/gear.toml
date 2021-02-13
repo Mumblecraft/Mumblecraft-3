@@ -8,19 +8,19 @@
 		#Range: 1 ~ 9223372036854775807
 		nutritionalMaxStorage = 128000
 		#Energy usage (Joules) of MekaSuit per tick when flying via Gravitational Modulation.
-		energyUsageGravitationalModulation = "1000"
+		energyUsageGravitationalModulation = "6000"
 		#Energy cost/multiplier in Joules for reducing magic damage via the inhalation purification unit. Energy cost is: MagicDamage * energyUsageMagicPrevent. (1 MagicDamage is 1 half heart).
 		energyUsageMagicReduce = "1000"
 		#Energy usage (Joules) of MekaSuit when adding 0.1 to jump motion.
-		baseJumpEnergyUsage = "1000"
+		baseJumpEnergyUsage = "6000"
 		#Energy usage (Joules) of MekaSuit per tick of using vision enhancement.
-		energyUsageVisionEnhancement = "500"
+		energyUsageVisionEnhancement = "3000"
 		#Solar recharging rate (Joules) of helmet per tick, per upgrade installed.
-		solarRechargingRate = "500"
+		solarRechargingRate = "3000"
 		#Energy usage (Joules) of MekaSuit per tick of attracting a single item.
-		energyUsageItemAttraction = "250"
+		energyUsageItemAttraction = "1500"
 		#Energy usage (Joules) of MekaSuit when adding 0.1 to sprint motion.
-		energyUsageSprintBoost = "100"
+		energyUsageSprintBoost = "600"
 		#Maximum amount of Hydrogen storable in the jetpack unit.
 		#Range: 1 ~ 9223372036854775807
 		jetpackMaxStorage = 48000
@@ -28,58 +28,58 @@
 		#Range: 1 ~ 9223372036854775807
 		jetpackTransferRate = 256
 		#Energy usage (Joules) of MekaSuit when lessening a potion effect.
-		energyUsagePotionTick = "40000"
+		energyUsagePotionTick = "240000"
 		#Energy capacity (Joules) of MekaSuit items without any installed upgrades. Quadratically scaled by upgrades.
-		baseEnergyCapacity = "16000000"
+		baseEnergyCapacity = "96000000"
 		#Amount (joules) of energy the MekaSuit can accept per tick. Quadratically scaled by upgrades.
-		chargeRate = "100000"
+		chargeRate = "600000"
 		#Energy usage (Joules) of MekaSuit per unit of damage applied.
-		energyUsageDamage = "100000"
+		energyUsageDamage = "600000"
 		#Rate at which Nutritional Paste can be transferred into the nutritional injection unit.
 		#Range: 1 ~ 9223372036854775807
 		nutritionalTransferRate = 256
 		#Charge rate of inventory items (Joules) per tick.
-		inventoryChargeRate = "10000"
+		inventoryChargeRate = "60000"
 		#Energy usage (Joules) of MekaSuit per half-food of nutritional injection.
-		energyUsageNutritionalInjection = "20000"
+		energyUsageNutritionalInjection = "120000"
 
 	#Network Reader Settings
 	[gear.network_reader]
 		#Maximum amount (joules) of energy the Network Reader can contain.
-		maxEnergy = "60000"
+		maxEnergy = "360000"
 		#Amount (joules) of energy the Network Reader can accept per tick.
-		chargeRate = "300"
+		chargeRate = "1800"
 		#Energy usage in joules for each network reading.
-		energyUsage = "400"
+		energyUsage = "2400"
 
 	#Free Runner Settings
 	[gear.free_runner]
 		#Maximum amount (joules) of energy Free Runners can contain.
-		maxEnergy = "64000"
+		maxEnergy = "384000"
 		#Amount (joules) of energy the Free Runners can accept per tick.
-		chargeRate = "320"
+		chargeRate = "1920"
 		#Energy cost/multiplier in Joules for reducing fall damage with free runners. Energy cost is: FallDamage * freeRunnerFallEnergyCost. (1 FallDamage is 1 half heart)
-		fallEnergyCost = "128"
+		fallEnergyCost = "768"
 
 	#Portable Teleporter Settings
 	[gear.portable_teleporter]
 		#Maximum amount (joules) of energy the Portable Teleporter can contain.
-		maxEnergy = "1000000"
+		maxEnergy = "6000000"
 		#Amount (joules) of energy the Portable Teleporter can accept per tick.
-		chargeRate = "5000"
+		chargeRate = "30000"
 		#Delay in ticks before a player is teleported after clicking the Teleport button in the portable teleporter.
 		delay = 0
 
 	#Atomic Disassembler Settings
 	[gear.atomic_disassembler]
 		#Maximum amount (joules) of energy the Atomic Disassembler can contain.
-		maxEnergy = "1000000"
+		maxEnergy = "6000000"
 		#Amount (joules) of energy the Atomic Disassembler can accept per tick.
-		chargeRate = "5000"
+		chargeRate = "30000"
 		#Cost in Joules of using the Atomic Disassembler as a weapon.
-		energyUsageWeapon = "2000"
+		energyUsageWeapon = "12000"
 		#Base Energy (Joules) usage of the Atomic Disassembler. (Gets multiplied by speed factor)
-		energyUsage = "10"
+		energyUsage = "60"
 		#Enable the 'Slow' mode for the Atomic Disassembler.
 		slowMode = true
 		#Enable the 'Fast' mode for the Atomic Disassembler.
@@ -100,20 +100,20 @@
 	#Energy Tablet Settings
 	[gear.energy_tablet]
 		#Maximum amount (joules) of energy the Energy Tablet can contain.
-		maxEnergy = "100000"
+		maxEnergy = "600000"
 		#Amount (joules) of energy the Energy Tablet can accept per tick.
-		chargeRate = "5000"
+		chargeRate = "30000"
 
 	#Configurator Settings
 	[gear.configurator]
 		#Maximum amount (joules) of energy the Configurator can contain.
-		maxEnergy = "60000"
+		maxEnergy = "360000"
 		#Amount (joules) of energy the Configurator can accept per tick.
-		chargeRate = "300"
+		chargeRate = "1800"
 		#Energy usage in joules of using the configurator to configure machines.
-		energyPerConfigure = "400"
+		energyPerConfigure = "2400"
 		#Energy cost in joules for each item the configurator ejects from a machine on empty mode.
-		energyPerItem = "8"
+		energyPerItem = "48"
 
 	#Scuba Tank Settings
 	[gear.scuba_tank]
@@ -127,11 +127,11 @@
 	#Electric Bow Settings
 	[gear.electric_bow]
 		#Maximum amount (joules) of energy the Electric Bow can contain.
-		maxEnergy = "120000"
+		maxEnergy = "720000"
 		#Amount (joules) of energy the Electric Bow can accept per tick.
-		chargeRate = "600"
+		chargeRate = "3600"
 		#Cost in Joules of using the Electric Bow with flame mode active.
-		energyUsage = "1200"
+		energyUsage = "7200"
 
 	#Flamethrower Settings
 	[gear.flamethrower]
@@ -170,30 +170,30 @@
 	#Seismic Reader Settings
 	[gear.seismic_reader]
 		#Maximum amount (joules) of energy the Seismic Reader can contain.
-		maxEnergy = "12000"
+		maxEnergy = "72000"
 		#Amount (joules) of energy the Seismic Reader can accept per tick.
-		chargeRate = "60"
+		chargeRate = "360"
 		#Energy usage in joules required to use the Seismic Reader.
-		energyUsage = "250"
+		energyUsage = "1500"
 
 	#Meka-Tool Settings
 	[gear.mekatool]
 		#Energy capacity (Joules) of the Meka-Tool without any installed upgrades. Quadratically scaled by upgrades.
-		baseEnergyCapacity = "16000000"
+		baseEnergyCapacity = "96000000"
 		#Amount (joules) of energy the Meka-Tool can accept per tick. Quadratically scaled by upgrades.
-		chargeRate = "100000"
+		chargeRate = "600000"
 		#Cost in Joules of using the Meka-Tool to teleport 10 blocks.
-		energyUsageTeleport = "10000"
+		energyUsageTeleport = "60000"
 		#Cost in Joules of using the Meka-Tool as a shovel for making paths.
-		energyUsageShovel = "10"
+		energyUsageShovel = "60"
 		#Cost in Joules of using the Meka-Tool to deal 4 units of damage.
-		energyUsageWeapon = "2000"
+		energyUsageWeapon = "12000"
 		#Cost in Joules of using the Meka-Tool as a hoe.
-		energyUsageHoe = "10"
+		energyUsageHoe = "60"
 		#Cost in Joules of using the Meka-Tool as an axe for stripping logs.
-		energyUsageAxe = "10"
+		energyUsageAxe = "60"
 		#Maximum distance a player can teleport with the Meka-Tool.
-		maxTeleportReach = 100
+		maxTeleportReach = 600
 		#Damage applied by Meka-Tool without using any energy.
 		baseDamage = 4
 		#Efficiency of the Meka-Tool with energy but without any upgrades.
