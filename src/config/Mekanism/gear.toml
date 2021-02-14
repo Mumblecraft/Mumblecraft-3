@@ -193,7 +193,7 @@
 		#Cost in Joules of using the Meka-Tool as an axe for stripping logs.
 		energyUsageAxe = "60"
 		#Maximum distance a player can teleport with the Meka-Tool.
-		maxTeleportReach = 600
+		maxTeleportReach = 100
 		#Damage applied by Meka-Tool without using any energy.
 		baseDamage = 4
 		#Efficiency of the Meka-Tool with energy but without any upgrades.
