@@ -101,6 +101,8 @@
 		#Defines the energy consumption (per tick) for speeding up the smelting process. If IE is installed, an external heater has to be inserted into an auxiliary slot of the lab furnace. The power source needs to be able to provide at least 4 times this consumption (fixed threshold value). The value can be changed on-the-fly for tuning. The default value corresponds to the IE heater consumption.
 		#Range: 2 ~ 1024
 		furnace_boost_energy_consumption = 24
+		#Defines (as comma separated list of full registry names) which items are allowed as external heaters in the Aux slot for powered speed boosting.
+		furnace_accepted_heaters = "immersiveengineering:furnace_heater"
 		#Defines, in percent, how high the probability is that a mob sits on a chair when colliding with it. Can be changed on-the-fly for tuning.
 		#Range: 0.0 ~ 80.0
 		chair_mob_sitting_probability_percent = 10.0
