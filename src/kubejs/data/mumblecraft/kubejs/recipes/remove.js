@@ -24,7 +24,7 @@ events.listen('recipes', function (event) {
 	//Machines/Crafting Components
 	
 	//Immersive Engineering
-	'immersiveengineering:crafting/conveyor_basic',
+    //Plates
 	'immersiveengineering:crafting/plate_copper_hammering',
 	'immersiveengineering:crafting/plate_aluminum_hammering',
 	'immersiveengineering:crafting/plate_lead_hammering',
@@ -36,11 +36,24 @@ events.listen('recipes', function (event) {
 	'immersiveengineering:crafting/plate_steel_hammering',
 	'immersiveengineering:crafting/plate_iron_hammering',
 	'immersiveengineering:crafting/plate_gold_hammering',
-	'immersiveengineering:crafting/light_engineering',
 	'immersiveengineering:crafting/hammercrushing_iron',
+	//Rods
+	'immersiveengineering:crafting/stick_iron',
+	'immersiveengineering:crafting/stick_steel',
+	'immersiveengineering:crafting/stick_aluminum',
+	'immersiveposts:has_gold_rod',
+	'immersiveposts:has_copper_rod',
+	'immersiveposts:has_lead_rod',
+	'immersiveposts:has_silver_rod',
+	'immersiveposts:has_nickel_rod',
+	'immersiveposts:has_constantan_rod',
+	'immersiveposts:has_electrum_rod',
+	'immersiveposts:has_uranium_rod',
 	
-	//Engineer's Decor
-	'engineersdecor:independent/small_electrical_furnace_recipe',
+	
+	
+	
+
 	]
 	idRemove.forEach(function (remove) {
 		event.remove({id: remove})
