@@ -45,8 +45,10 @@
 	#TODO
 	enableEffects = true
 	#Power unit shown in AE UIs
-	#Allowed Values: AE, EU, RF
+	#Allowed Values: AE, RF
 	PowerUnit = "AE"
+	#Show debugging GUI overlays
+	showDebugGuiOverlays = false
 
 [terminals]
 	#Allowed Values: TALL, FULL, SMALL

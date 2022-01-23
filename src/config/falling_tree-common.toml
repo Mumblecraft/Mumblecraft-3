@@ -5,6 +5,8 @@ break_in_creative = false
 
 #Falling Tree configuration
 [trees]
+	#Additional list of blocks considered as leaves but that doesn't decay (need to be broken by tool).
+	leaves_non_decay_whitelisted = []
 	#When set to true nether tree warts (leaves) will be broken along with the trunk.
 	break_nether_tree_warts = true
 	#This defines the area in which the tree is searched. If any branch is going out of this area it won't be cut.
@@ -32,7 +34,7 @@ break_in_creative = false
 	#SHIFT_DOWN will make the tree fall down as you cut it, so you still have to break x blocks but don't have to climb the tree for them.
 	#Allowed Values: INSTANTANEOUS, SHIFT_DOWN
 	break_mode = "SHIFT_DOWN"
-	#List of blocks that should not be considered as leaves.
+	#List of blocks that should not be considered as logs.
 	#INFO: This wins over the whitelist.
 	logs_blacklisted = []
 	#When set to true, the mod will cut trees with one cut.
@@ -45,13 +47,18 @@ break_in_creative = false
 	#ABOVE_Y will break only blocks that are above the y value of the cut point.
 	#Allowed Values: WHOLE_TREE, ABOVE_CUT, ABOVE_Y
 	detection_mode = "WHOLE_TREE"
-	#Additional list of blocks considered as leaves.
-	#INFO: Blocks marked with the leaves tag will already be whitelisted.
+	#List of blocks that should not be considered as leaves.
+	#INFO: This wins over the whitelist.
+	leaves_blacklisted = []
+	#Additional list of blocks considered as logs and that will be destroyed by the mod.
+	#INFO: Blocks marked with the log tag will already be whitelisted.
 	logs_whitelisted = []
 	#The maximum size of a tree. If there's more logs than this value the tree won't be cut.
-	#INFO: Only in INSTANTANEOUS mode.
 	#Range: > 1
 	logs_max_count = 100
+	#Additional list of blocks considered as leaves (decay naturally).
+	#INFO: Blocks marked with the leaves tag will already be whitelisted.
+	leaves_whitelisted = []
 	#When set to true this allow to have any kind of log in a tree trunk.
 	#Otherwise (false) the trunk will be considered as being only one kind of log.
 	allow_mixed_logs = false
