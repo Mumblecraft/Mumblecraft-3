@@ -1,8 +1,10 @@
-console.info('Hello, World! (Running Start-Up Script)')
+// priority: 0
 
 onEvent('item.registry', event => {
+  // Register new items here
+  // event.create('example_item').displayName('Example Item')
 
-    event.create('dark_steel_ingot').displayName('Dark Steel Ingot')
+    event.create('mumble_alloy').displayName('Mumble Alloy')
 })
 
 onEvent('item.modification', event => {

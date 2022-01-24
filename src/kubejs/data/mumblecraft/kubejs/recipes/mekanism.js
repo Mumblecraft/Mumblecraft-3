@@ -8,51 +8,48 @@ events.listen('recipes', function (event) {
     //Machines/Components
 
     //Steel Casing
-    event.remove({id: 'mekanism:steel_casing'})
-
-    event.recipes.create.mechanical_crafting(item.of('mekanism:steel_casing', 1), [
-        '  A  ',
-        ' BCB ',
-        'ACDCA',
-        ' BCB ',
-        '  A  ',
+	event.remove({id: 'mekanism:steel_casing'})
+	
+    event.recipes.create.mechanical_crafting(item.of('mekanism:steel_casing'), [
+        ' ABABA ',
+        ' BCDCB ',
+        ' ADEDA ',
+		' BCDCB ',
+		' ABABA ',
     ], {
-	A: 'kubejs:dark_steel_ingot',
-        B: 'immersiveengineering:plate_steel',
-        C: 'immersiveengineering:component_steel',
-        D: 'mekanism:block_osmium'
+        A: 'immersiveengineering:plate_steel',
+        B: '#forge:ingots/steel',
+        C: 'kubejs:mumble_alloy',
+		D: '#forge:glass',
+		E: 'mekanism:block_osmium'
     })
-
+	
     //Heat Generator
-	event.remove({id: 'mekanismgenerators:generator/heat'})
+    event.remove({id: 'mekanismgenerators:generator/heat'})
 	
     event.shaped(item.of('mekanismgenerators:heat_generator', 1), [
-        'ABA',
-        'CDC',
-        'EFE',
+        'AAA',
+        'BCB',
+        'DED',
     ], {
     A: 'minecraft:iron_ingot',
-    B: 'kubejs:dark_steel_ingot',
-    C: '#minecraft:planks',
-    D: 'mekanism:block_osmium',
-    E: '#forge:ingots/copper',
-    F: 'engineersdecor:small_electrical_furnace'
+    B: '#minecraft:planks',
+    C: 'mekanism:steel_casing',
+    D: '#forge:ingots/copper',
+	E: 'minecraft:furnace'
     })
-
     //Metallurgic Infuser
     event.remove({id: 'mekanism:metallurgic_infuser'})
 	
     event.shaped(item.of('mekanism:metallurgic_infuser', 1), [
         'ABA',
         'CDC',
-        'EBF',
+        'ABA',
     ], {
-    A: 'minecraft:redstone',
+    A: 'minecraft:iron_ingot',
     B: 'engineersdecor:small_electrical_furnace',
-    C: 'create:integrated_circuit',
+    C: 'minecraft:redstone',
     D: 'mekanism:steel_casing',
-    E: 'immersiveengineering:rs_engineering',
-    F: 'immersiveengineering:heavy_engineering'
     })
 
     //Energized Smelter

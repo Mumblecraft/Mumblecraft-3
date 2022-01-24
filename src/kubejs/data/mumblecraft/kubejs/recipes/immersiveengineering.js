@@ -8,107 +8,51 @@ events.listen('recipes', function (event) {
     //Machines/Components
 
     //Coke Brick
-    event.remove({id: 'immersiveengineering:crafting/cokebrick'})
-
-    event.shaped(item.of('immersiveengineering:cokebrick', 3), [
-        'ABA',
-        'BCB',
-        'ABA',
-    ], {
-        A: 'minecraft:clay_ball',
-        B: 'minecraft:brick',
-        C: 'minecraft:basalt',
-    })
 
     //Kiln Brick
-    event.remove({id: 'immersiveengineering:crafting/alloybrick'})
-
-    event.shaped(item.of('immersiveengineering:alloybrick', 2), [
-        'ABA',
-        'BCB',
-        'ABA',
-    ], {
-        A: '#forge:sandstone',
-        B: 'minecraft:brick',
-        C: 'mekanism:ingot_bronze',
-    })
 
     //Blast brick
-    event.remove({id: 'immersiveengineering:crafting/blastbrick'})
-
-    event.recipes.create.mechanical_crafting(item.of('immersiveengineering:blastbrick', 3), [
-	    '  A  ',
-	    ' BCB ',
-	    'ACDCA',
-	    ' BCB ',
-	    '  A  ',
-    ], {
-	    A:'minecraft:nether_brick',
-	    B:'minecraft:brick',
-	    C:'minecraft:magma_block',
-	    D:'minecraft:netherite_ingot'
-    })
 
     //Redstone Engineering Block
-    event.remove({id: 'immersiveengineering:crafting/rs_engineering'})
+	event.remove({id: 'immersiveengineering:crafting/rs_engineering'})
 	
     event.recipes.create.mechanical_crafting(item.of('immersiveengineering:rs_engineering', 4), [
-        '  A  ',
+        ' ABA ',
         ' BCB ',
-        'ACDCA',
-	    ' BCB ',
-	    '  A  ',
+        ' ABA ',
     ], {
-		A: '#forge:ingots/constantan',
-		B: 'immersiveengineering:sheetmetal_iron',
-		C: 'minecraft:redstone',
-		D: '#forge:ingots/copper',
+        A: 'immersiveengineering:sheetmetal_iron',
+        B: 'minecraft:redstone',
+        C: '#forge:ingots/copper',
     })
 
     //Light Engineering Block
-    event.remove({id: 'immersiveengineering:light_engineering'})
+	event.remove({id: 'immersiveengineering:crafting/light_engineering'})
 	
     event.recipes.create.mechanical_crafting(item.of('immersiveengineering:light_engineering', 4), [
-        '  A  ',
+        ' ABA ',
         ' BCB ',
-        'ACDCA',
-	    ' BCB ',
-	    '  A  ',
+        ' ABA ',
     ], {
-        A: 'create:brass_ingot',
-        B: 'immersiveengineering:sheetmetal_iron',
-        C: 'immersiveengineering:component_iron',
-	    D: '#forge:ingots/copper',
+        A: 'immersiveengineering:sheetmetal_iron',
+        B: 'immersiveengineering:component_iron',
+        C: '#forge:ingots/copper',
     })
 
     //Heavy Engineering Block
-    event.remove({id: 'immersiveengineering:crafting/heavy_engineering'})
+	event.remove({id: 'immersiveengineering:crafting/heavy_engineering'})
 	
     event.recipes.create.mechanical_crafting(item.of('immersiveengineering:heavy_engineering', 4), [
-        '  A  ',
+        ' ABA ',
         ' BCB ',
-        'ACDCA',
-	    ' BCB ',
-	    '  A  ',
+        ' ABA ',
     ], {
-        A: '#forge:ingots/bronze',
-        B: 'immersiveengineering:sheetmetal_steel',
-        C: 'immersiveengineering:component_steel',
-	    D: '#forge:ingots/electrum',
+        A: 'immersiveengineering:sheetmetal_steel',
+        B: 'immersiveengineering:component_steel',
+        C: '#forge:ingots/electrum',
     })
 
     //Conveyor
-    event.remove({id: 'immersiveengineering:crafting/conveyor_basic'})
-	
-    event.shaped(item.of('immersiveengineering:conveyor_basic', 1), [
-        '   ',
-        'AAA',
-        'BCB',
-    ], {
-        A: 'minecraft:leather',
-        B: 'create:brass_ingot',
-        C: 'minecraft:redstone',
-    })
 
     //Engineer's Decor
     //Small Electrical Furnace
@@ -124,11 +68,11 @@ events.listen('recipes', function (event) {
     })
 
     //Processing
-    //Dark Steel Ingot
-	event.recipes.immersiveengineering.arc_furnace(['kubejs:dark_steel_ingot'],
+    //Mumble Alloy
+	event.recipes.immersiveengineering.arc_furnace(['kubejs:mumble_alloy'],
 	    '#forge:ingots/iron',
 	    [
 	    'create:shadow_steel',
-	    '#forge:dusts/coal_coke'
+	    '#forge:dusts/coal_coke',
 	]).time(400).energy(204800)
 })
