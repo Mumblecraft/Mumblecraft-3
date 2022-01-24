@@ -47,4 +47,12 @@ events.listen('recipes', function (event) {
 	})
 	
 	event.remove({type: 'valhelsia_structures:axe_crafting'})
+	
+	//Immersive Engineering Steel Pickaxe
+	event.remove({id: 'immersiveengineering:crafting/pickaxe_steel'})
+	
+	
+	//Minecraft Furnace
+	//Remove recipes to cook ores in furnace
+	event.remove({input: '#forge:ores', type: 'minecraft:smelting'})
 })

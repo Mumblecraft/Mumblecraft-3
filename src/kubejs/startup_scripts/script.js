@@ -4,3 +4,9 @@ onEvent('item.registry', event => {
 
     event.create('dark_steel_ingot').displayName('Dark Steel Ingot')
 })
+
+onEvent('item.modification', event => {
+  event.modify('mekanism:steel_pickaxe', item => {
+    item.tier.level = 3
+  })
+})

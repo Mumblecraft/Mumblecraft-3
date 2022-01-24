@@ -35,7 +35,7 @@ events.listen('recipes', function (event) {
 	event.recipes.minecraft.campfire_cooking({
 		ingredient: '#forge:rods/wooden',
 		result: 'minecraft:torch',
-		cookingtime: 400
+		cookingtime: 240
 	})
 	
 	//event.recipes.minecraft.campfire_cooking('minecraft:torch', '#forge:rods/wooden')
@@ -61,4 +61,6 @@ events.listen('recipes', function (event) {
         A: 'minecraft:bricks',
 		B: 'minecraft:cobblestone'
     })
+	
+	
 })

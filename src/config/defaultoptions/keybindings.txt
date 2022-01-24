@@ -89,7 +89,7 @@ key_gui.xaero_reverse_entity_radar:key.keyboard.unknown:NONE
 key_gui.xaero_minimap_settings:key.keyboard.y:NONE
 key_create.keyinfo.toolmenu:key.keyboard.left.alt:NONE
 key_create.keyinfo.toolbelt:key.keyboard.left.alt:NONE
-key_gui.xaero_open_map:key.keyboard.m:NONE
+key_gui.xaero_open_map:key.keyboard.comma:NONE
 key_gui.xaero_open_settings:key.keyboard.right.bracket:NONE
 key_gui.xaero_map_zoom_in:key.keyboard.unknown:NONE
 key_gui.xaero_map_zoom_out:key.keyboard.unknown:NONE
