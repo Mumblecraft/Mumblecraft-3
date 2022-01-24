@@ -27,8 +27,6 @@ events.listen('recipes', function (event) {
 	'biomesoplenty:magic_planks',
 	'biomesoplenty:umbran_planks',
 	'biomesoplenty:hellbark_planks',
-	'botania:livingwood_planks',
-	'botania:dreamwood_planks',
 	
 	]
 	
@@ -58,8 +56,6 @@ events.listen('recipes', function (event) {
         'biomesoplenty:hellbark_planks',
 		'minecraft:warped_planks',
 		'minecraft:crimson_planks',
-		'botania:livingwood_planks',
-		'botania:dreamwood_planks',
     ]
 
     var logsList =[
@@ -76,8 +72,6 @@ events.listen('recipes', function (event) {
         '#biomesoplenty:hellbark_logs',
 		'minecraft:warped_stem',
 		'minecraft:crimson_stem',
-		'botania:livingwood',
-		'botania:dreamwood',
     ]
     var i = 0
 

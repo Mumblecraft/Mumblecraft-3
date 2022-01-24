@@ -17,6 +17,8 @@ events.listen('recipes', function (event) {
         A: '#forge:stone',
         B: 'create:cogwheel',
         C: '#appliedenergistics2:crystals/quartz',
-	D: '#forge:cobblestone',
+		D: '#forge:cobblestone',
     })
+	
+	event.remove({id: 'appliedenergistics2:grinder/flour'})
 })

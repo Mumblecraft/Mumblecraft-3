@@ -577,4 +577,25 @@ events.listen('recipes', function (event) {
 	
 	//Salt - Convert Pam's Kitchen Salt to Mekanism Salt
 	event.shapeless(Item.of('mekanism:salt', 1), 'pamhc2foodcore:saltitem')
+	
+	//Bronze Dust
+	event.shapeless(Item.of('mekanism:dust_bronze',4), [
+		Item.of('create:crushed_copper_ore',3),
+		'create:crushed_tin_ore'
+	])
+	
+	event.shapeless(Item.of('mekanism:dust_bronze',4), [
+		Item.of('create:crushed_copper_ore',3),
+		'#forge:dusts/tin'
+	])
+	
+	event.shapeless(Item.of('mekanism:dust_bronze',4), [
+		Item.of('#forge:dusts/copper',3),
+		'create:crushed_tin_ore'
+	])
+	
+	event.shapeless(Item.of('mekanism:dust_bronze',4), [
+		Item.of('#forge:dusts/copper',3),
+		'#forge:dusts/tin'
+	])
 })
