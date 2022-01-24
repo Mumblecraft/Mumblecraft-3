@@ -25,7 +25,19 @@ events.listen('recipes', function (event) {
     })
 	
     //Heat Generator
-
+    event.remove({id: 'mekanismgenerators:generator/heat'})
+	
+    event.shaped(item.of('mekanismgenerators:heat_generator', 1), [
+        'AAA',
+        'BCB',
+        'DED',
+    ], {
+    A: 'minecraft:iron_ingot',
+    B: '#minecraft:planks',
+    C: 'mekanism:steel_casing',
+    D: '#forge:ingots/copper',
+	E: 'minecraft:furnace'
+    })
     //Metallurgic Infuser
     event.remove({id: 'mekanism:metallurgic_infuser'})
 	
@@ -38,7 +50,7 @@ events.listen('recipes', function (event) {
     B: 'engineersdecor:small_electrical_furnace',
     C: 'minecraft:redstone',
     D: 'mekanism:steel_casing',
-})
+    })
 
     //Energized Smelter
     event.remove({id: 'mekanism:energized_smelter'})

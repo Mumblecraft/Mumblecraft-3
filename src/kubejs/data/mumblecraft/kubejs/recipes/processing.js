@@ -59,4 +59,31 @@ events.listen('recipes', function (event) {
  	'#forge:ingots/gold',
 	'#forge:ingots/gold'
         ]).superheated()
+
+    //Make Alloy Kiln Slower
+	event.remove({id: 'immersiveengineering:alloysmelter/brass'})
+	event.remove({id: 'immersiveengineering:alloysmelter/constantan'})
+	event.remove({id: 'immersiveengineering:alloysmelter/electrum'})
+	event.remove({id: 'immersiveengineering:alloysmelter/bronze'})
+	
+	event.recipes.immersiveengineeringAlloy(item.of('create:brass_ingot',2),
+	'#forge:ingots/copper',
+	'#forge:ingots/zinc',
+	).time(1600)
+	
+		event.recipes.immersiveengineeringAlloy(item.of('immersiveengineering:ingot_constantan',2),
+	'#forge:ingots/copper',
+	'#forge:ingots/nickel',
+	).time(1600)
+	
+		event.recipes.immersiveengineeringAlloy(item.of('immersiveengineering:ingot_electrum',2),
+	'#forge:ingots/gold',
+	'#forge:ingots/silver',
+	).time(1600)
+	
+		event.recipes.immersiveengineeringAlloy(item.of('mekanism:ingot_bronze',4),
+	'3x #forge:ingots/copper',
+	'#forge:ingots/tin',
+	).time(1600)
+
 })
