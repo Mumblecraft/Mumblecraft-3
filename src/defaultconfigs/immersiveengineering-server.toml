@@ -310,8 +310,15 @@
 		#The maximum amount of damage Graphite Electrodes can take. While the furnace is working, electrodes sustain 1 damage per tick, so this is effectively the lifetime in ticks. The default value of 96000 makes them last for 8 consecutive ingame days
 		#Range: > 1
 		electrodeDamage = 96000
-		#Set this to false to disable the Arc Furnace's recycling of armors and tools
-		recycle = true
+		#The recycling functionality of the arc furnace is no longer controlled by a config option.
+		#Like all IE recipes, this is now controlled via a datapack, using the recipe file:
+		#immersiveengineering/recipes/arc_recycling_list.json
+		#To disable recycling, add that file to your datapack and fill it with the following content:
+		#{
+		#  "type": "immersiveengineering:generated_list",
+		#  "conditions": [ { "type": "forge:false" } ]
+		#}
+		recycle = ""
 
 	[machines.excavator]
 		#The Flux per tick the Excavator will consume to dig
@@ -356,7 +363,7 @@
 		max_y = 72
 		#The average number of veins per chunk
 		#Range: > 0
-		avg_veins_per_chunk = 0
+		avg_veins_per_chunk = 8
 		#Set this to true to allow retro-generation of copper Ore.
 		retrogen_enable = false
 
@@ -373,7 +380,7 @@
 		max_y = 85
 		#The average number of veins per chunk
 		#Range: > 0
-		avg_veins_per_chunk = 4
+		avg_veins_per_chunk = 8
 		#Set this to true to allow retro-generation of bauxite Ore.
 		retrogen_enable = false
 
@@ -398,7 +405,7 @@
 	[ores.silver]
 		#The maximum size of a vein. Set to 0 to disable generation
 		#Range: > 0
-		vein_size = 6
+		vein_size = 8
 		#The minimum Y coordinate this ore can spawn at
 		#Range: > -2147483648
 		min_y = 8
@@ -407,7 +414,7 @@
 		max_y = 40
 		#The average number of veins per chunk
 		#Range: > 0
-		avg_veins_per_chunk = 3
+		avg_veins_per_chunk = 4
 		#Set this to true to allow retro-generation of silver Ore.
 		retrogen_enable = false
 
@@ -424,7 +431,7 @@
 		max_y = 24
 		#The average number of veins per chunk
 		#Range: > 0
-		avg_veins_per_chunk = 1
+		avg_veins_per_chunk = 2
 		#Set this to true to allow retro-generation of nickel Ore.
 		retrogen_enable = false
 
@@ -441,13 +448,11 @@
 		max_y = 24
 		#The average number of veins per chunk
 		#Range: > 0
-		avg_veins_per_chunk = 0
+		avg_veins_per_chunk = 2
 		#Set this to true to allow retro-generation of uranium Ore.
 		retrogen_enable = false
 
 [tools]
-	#Set this to true to completely disable the ore-crushing recipes with the Engineers Hammer
-	disable_hammer_crushing = false
 	#The maximum durability of the Engineer's Hammer. Used up when hammering ingots into plates.
 	#Range: > 1
 	hammer_durability = 100

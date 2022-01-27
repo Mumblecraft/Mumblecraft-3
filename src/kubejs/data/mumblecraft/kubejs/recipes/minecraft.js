@@ -68,12 +68,11 @@ events.listen('recipes', function (event) {
 	
     event.shaped(item.of('minecraft:blast_furnace', 1), [
         'AAA',
-        'BCB',
-        'DDD',
+        'ABA',
+        'CCC',
     ], {
-        A: '#forge:ingots/iron',
-		B: '#forge:ingots/bronze',
-		C: 'minecraft:furnace',
-		D: 'minecraft:smooth_stone'
+		A: '#forge:ingots/bronze',
+		B: 'minecraft:furnace',
+		C: 'minecraft:smooth_stone'
     })
 })
