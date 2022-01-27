@@ -6,13 +6,44 @@ console.info('Kubejs: Modifying Immersive Engineering recipes')
 events.listen('recipes', function (event) {
 
     //Machines/Components
-
-    //Coke Brick
-
-    //Kiln Brick
-
-    //Blast brick
-
+	
+	//Kiln Brick
+	event.remove({id: 'immersiveengineering:crafting/alloybrick'})
+	
+	event.shaped(item.of('immersiveengineering:alloybrick', 2), [
+        'AB',
+        'BA',
+    ], {
+        A: '#forge:sandstone',
+        B: 'minecraft:bricks',
+    })
+	
+	//Coke Brick
+	event.remove({id: 'immersiveengineering:crafting/cokebrick'})
+	
+	event.shaped(item.of('immersiveengineering:cokebrick', 3), [
+        'ABA',
+        'BCB',
+		'ABA',
+    ], {
+        A: 'minecraft:clay_ball',
+        B: 'minecraft:bricks',
+		C: '#forge:sandstone',
+    })
+	
+	//Blast Brick
+	event.remove({id: 'immersiveengineering:crafting/blastbrick'})
+	
+	event.shaped(item.of('immersiveengineering:blastbrick', 3), [
+        'ABA',
+        'BCB',
+		'ABA',
+    ], {
+        A: 'minecraft:nether_bricks',
+        B: 'minecraft:bricks',
+		C: 'minecraft:magma_block',
+    })
+	
     //Redstone Engineering Block
 	event.remove({id: 'immersiveengineering:crafting/rs_engineering'})
 	
@@ -23,7 +54,7 @@ events.listen('recipes', function (event) {
     ], {
         A: 'immersiveengineering:sheetmetal_iron',
         B: 'minecraft:redstone',
-        C: '#forge:ingots/copper',
+        C: '#forge:storage_blocks/copper',
     })
 
     //Light Engineering Block
@@ -36,7 +67,7 @@ events.listen('recipes', function (event) {
     ], {
         A: 'immersiveengineering:sheetmetal_iron',
         B: 'immersiveengineering:component_iron',
-        C: '#forge:ingots/copper',
+        C: '#forge:storage_blocks/copper',
     })
 
     //Heavy Engineering Block
@@ -49,7 +80,7 @@ events.listen('recipes', function (event) {
     ], {
         A: 'immersiveengineering:sheetmetal_steel',
         B: 'immersiveengineering:component_steel',
-        C: '#forge:ingots/electrum',
+        C: '#forge:storage_blocks/electrum',
     })
 
     //Conveyor

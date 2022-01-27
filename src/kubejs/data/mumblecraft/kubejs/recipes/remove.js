@@ -5,6 +5,12 @@ console.info('Kubejs: Removing recipes')
 
 events.listen('recipes', function (event) {
 	var idRemove =[
+	//Minecraft
+	'minecraft:bread',
+	'pamhc2crops:bread_grain',
+	'pamhc2foodcore:bread_dough',
+	'pamhc2trees:bread_breadfruit',
+	
 	//Ores and ingots
 
 	//AE2
