@@ -85,5 +85,16 @@ events.listen('recipes', function (event) {
 	'3x #forge:ingots/copper',
 	'#forge:ingots/tin',
 	).time(1600)
-
+	
+	//Food
+	//Merge Create and Pam's flour and dough
+		event.replaceInput({type: 'minecraft:crafting_shapeless'},
+	'pamhc2foodcore:doughitem', '#forge:dough'
+	)
+		event.replaceInput({type: 'minecraft:crafting_shapeless'},
+	'pamhc2foodcore:flouritem', '#forge:flour'
+	)
+		event.replaceInput({type: 'minecraft:crafting_shapeless'},
+	'create:dough', '#forge:dough'
+	)
 })
