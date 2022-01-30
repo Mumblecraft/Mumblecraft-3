@@ -11,8 +11,9 @@ events.listen('recipes', function (event) {
 	event.remove({id: 'immersiveengineering:crafting/alloybrick'})
 	
 	event.shaped(item.of('immersiveengineering:alloybrick', 2), [
-        'AB',
-        'BA',
+        'ABA',
+        'BAB',
+		'ABA',
     ], {
         A: '#forge:sandstone',
         B: 'minecraft:bricks',
@@ -48,9 +49,11 @@ events.listen('recipes', function (event) {
 	event.remove({id: 'immersiveengineering:crafting/rs_engineering'})
 	
     event.recipes.create.mechanical_crafting(item.of('immersiveengineering:rs_engineering', 4), [
-        ' ABA ',
-        ' BCB ',
-        ' ABA ',
+        ' AAA ',
+        'ABBBA',
+        'ABCBA',
+		'ABBBA',
+		' AAA ',
     ], {
         A: 'immersiveengineering:sheetmetal_iron',
         B: 'minecraft:redstone',
@@ -61,9 +64,11 @@ events.listen('recipes', function (event) {
 	event.remove({id: 'immersiveengineering:crafting/light_engineering'})
 	
     event.recipes.create.mechanical_crafting(item.of('immersiveengineering:light_engineering', 4), [
-        ' ABA ',
-        ' BCB ',
-        ' ABA ',
+        ' AAA ',
+        'ABBBA',
+        'ABCBA',
+		'ABBBA',
+		' AAA ',
     ], {
         A: 'immersiveengineering:sheetmetal_iron',
         B: 'immersiveengineering:component_iron',
@@ -74,9 +79,11 @@ events.listen('recipes', function (event) {
 	event.remove({id: 'immersiveengineering:crafting/heavy_engineering'})
 	
     event.recipes.create.mechanical_crafting(item.of('immersiveengineering:heavy_engineering', 4), [
-        ' ABA ',
-        ' BCB ',
-        ' ABA ',
+        ' AAA ',
+        'ABBBA',
+        'ABCBA',
+		'ABBBA',
+		' AAA ',
     ], {
         A: 'immersiveengineering:sheetmetal_steel',
         B: 'immersiveengineering:component_steel',

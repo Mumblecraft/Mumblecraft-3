@@ -11,17 +11,16 @@ events.listen('recipes', function (event) {
 	event.remove({id: 'mekanism:steel_casing'})
 	
     event.recipes.create.mechanical_crafting(item.of('mekanism:steel_casing'), [
-        ' AADAA ',
-        ' ACBCA ',
-        ' DBEBD ',
-		' ACBCA ',
-		' AADAA ',
+        ' AAA ',
+        'ABCBA',
+        'ACDCA',
+		'ABCBA',
+		' AAA ',
     ], {
         A: 'immersiveengineering:plate_steel',
-        B: '#forge:ingots/steel',
-        C: 'kubejs:mumble_alloy',
-		D: '#forge:glass',
-		E: 'mekanism:block_osmium'
+        B: 'kubejs:mumble_alloy',
+        C: '#forge:glass',
+		D: 'mekanism:block_osmium',
     })
 	
     //Heat Generator
@@ -357,6 +356,18 @@ events.listen('recipes', function (event) {
         A: 'immersiveengineering:plate_lead',
         B: 'mekanism:steel_casing',
     })
+	
+	//Turbine Casing
+	event.remove({id: 'mekanismgenerators:turbine/casing'})
+	
+    event.shaped(item.of('mekanismgenerators:turbine_casing', 4), [
+        'AAA',
+        'ABA',
+        'AAA',
+    ], {
+        A: 'immersiveengineering:plate_steel',
+        B: 'mekanism:block_osmium',
+    })
 
     //Script to modify a whole tier of machine recipes at once
 	//First, remove the old recipes
@@ -595,4 +606,8 @@ events.listen('recipes', function (event) {
 		Item.of('#forge:dusts/copper',3),
 		'#forge:dusts/tin'
 	])
+	//Dough
+	event.replaceInput({type: 'minecraft:crafting_shapeless'},
+		'#pamhc2foodcore:doughitem', '#forge:dough'
+	)
 })
