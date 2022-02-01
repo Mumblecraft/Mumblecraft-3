@@ -61,18 +61,4 @@ events.listen('recipes', function (event) {
         A: 'minecraft:bricks',
 		B: 'minecraft:cobblestone'
     })
-	
-	//Blast Furnace
-	//Make blast furnace require bronze
-	event.remove({id: 'minecraft:blast_furnace'})
-	
-    event.shaped(item.of('minecraft:blast_furnace', 1), [
-        'AAA',
-        'ABA',
-        'CCC',
-    ], {
-		A: '#forge:ingots/bronze',
-		B: 'minecraft:furnace',
-		C: 'minecraft:smooth_stone'
-    })
 })
