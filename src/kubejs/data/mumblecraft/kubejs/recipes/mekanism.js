@@ -11,17 +11,16 @@ events.listen('recipes', function (event) {
 	event.remove({id: 'mekanism:steel_casing'})
 	
     event.recipes.create.mechanical_crafting(item.of('mekanism:steel_casing'), [
-        ' ABABA ',
-        ' BCDCB ',
-        ' ADEDA ',
-		' BCDCB ',
-		' ABABA ',
+        ' AAA ',
+        'ABCBA',
+        'ACDCA',
+		'ABCBA',
+		' AAA ',
     ], {
         A: 'immersiveengineering:plate_steel',
-        B: '#forge:ingots/steel',
-        C: 'kubejs:mumble_alloy',
-		D: '#forge:glass',
-		E: 'mekanism:block_osmium'
+        B: 'kubejs:mumble_alloy',
+        C: '#forge:glass',
+		D: 'mekanism:block_osmium',
     })
 	
     //Heat Generator
@@ -357,6 +356,18 @@ events.listen('recipes', function (event) {
         A: 'immersiveengineering:plate_lead',
         B: 'mekanism:steel_casing',
     })
+	
+	//Turbine Casing
+	event.remove({id: 'mekanismgenerators:turbine/casing'})
+	
+    event.shaped(item.of('mekanismgenerators:turbine_casing', 4), [
+        'AAA',
+        'ABA',
+        'AAA',
+    ], {
+        A: 'immersiveengineering:plate_steel',
+        B: 'mekanism:block_osmium',
+    })
 
     //Script to modify a whole tier of machine recipes at once
 	//First, remove the old recipes
@@ -575,24 +586,28 @@ events.listen('recipes', function (event) {
 	//Salt - Convert Pam's Kitchen Salt to Mekanism Salt
 	event.shapeless(Item.of('mekanism:salt', 1), 'pamhc2foodcore:saltitem')
 	
-	//Bronze Dust
+		//Bronze Dust
 	event.shapeless(Item.of('mekanism:dust_bronze',4), [
 		Item.of('create:crushed_copper_ore',3),
 		'create:crushed_tin_ore'
 	])
-	
+
 	event.shapeless(Item.of('mekanism:dust_bronze',4), [
 		Item.of('create:crushed_copper_ore',3),
 		'#forge:dusts/tin'
 	])
-	
+
 	event.shapeless(Item.of('mekanism:dust_bronze',4), [
 		Item.of('#forge:dusts/copper',3),
 		'create:crushed_tin_ore'
 	])
-	
+
 	event.shapeless(Item.of('mekanism:dust_bronze',4), [
 		Item.of('#forge:dusts/copper',3),
 		'#forge:dusts/tin'
 	])
+	//Dough
+	event.replaceInput({type: 'minecraft:crafting_shapeless'},
+		'#pamhc2foodcore:doughitem', '#forge:dough'
+	)
 })
