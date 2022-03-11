@@ -10,7 +10,7 @@
             "text": "Create a fire starter, then place 3 sticks and 1 plank on the ground. Right click on it with the fire starter until you have a campfire"
         }
     },
-    "parent": "mumblecraft3-adv:flint_axe",
+    "parent": "mumblecraft3-adv:root",
     "criteria": {
         "craft": {
             "trigger": "minecraft:inventory_changed",

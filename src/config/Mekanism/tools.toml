@@ -428,7 +428,7 @@
 		osmiumEfficiency = 4.0
 		#Harvest level of Osmium paxels.
 		#Range: > 0
-		osmiumPaxelHarvestLevel = 6
+		osmiumPaxelHarvestLevel = 3
 		#Attack damage modifier of Osmium paxels.
 		osmiumPaxelDamage = 9.0
 		#Attack speed of Osmium paxels.
@@ -443,7 +443,7 @@
 		osmiumPaxelMaxUses = 2048
 		#Harvest level of Osmium tools.
 		#Range: > 0
-		osmiumHarvestLevel = 6
+		osmiumHarvestLevel = 3
 		#Natural enchantability factor of Osmium items.
 		#Range: > 0
 		osmiumEnchantability = 14
@@ -683,7 +683,7 @@
 		steelEfficiency = 8.0
 		#Harvest level of Steel paxels.
 		#Range: > 0
-		steelPaxelHarvestLevel = 4
+		steelPaxelHarvestLevel = 3
 		#Attack damage modifier of Steel paxels.
 		steelPaxelDamage = 8.0
 		#Attack speed of Steel paxels.
@@ -698,7 +698,7 @@
 		steelPaxelMaxUses = 1000
 		#Harvest level of Steel tools.
 		#Range: > 0
-		steelHarvestLevel = 4
+		steelHarvestLevel = 3
 		#Natural enchantability factor of Steel items.
 		#Range: > 0
 		steelEnchantability = 16

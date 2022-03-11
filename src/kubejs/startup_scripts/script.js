@@ -6,9 +6,3 @@ onEvent('item.registry', event => {
 
     event.create('mumble_alloy').displayName('Mumble Alloy')
 })
-
-onEvent('item.modification', event => {
-  event.modify('mekanism:steel_pickaxe', item => {
-    item.tier.level = 3
-  })
-})

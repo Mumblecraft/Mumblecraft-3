@@ -17,7 +17,7 @@ events.listen('recipes', function (event) {
 		'ABCBA',
 		' AAA ',
     ], {
-        A: 'immersiveengineering:plate_steel',
+        A: '#forge:plates/steel',
         B: 'kubejs:mumble_alloy',
         C: '#forge:glass',
 		D: 'mekanism:block_osmium',
@@ -32,11 +32,12 @@ events.listen('recipes', function (event) {
         'DED',
     ], {
     A: 'minecraft:iron_ingot',
-    B: '#minecraft:planks',
+    B: '#forge:ingots/constantan',
     C: 'mekanism:steel_casing',
     D: '#forge:ingots/copper',
 	E: 'minecraft:furnace'
     })
+	
     //Metallurgic Infuser
     event.remove({id: 'mekanism:metallurgic_infuser'})
 	
@@ -143,7 +144,7 @@ events.listen('recipes', function (event) {
         'CDC',
         'ABA',
     ], {
-        A: 'immersiveengineering:plate_steel',
+        A: '#forge:plates/steel',
         B: 'mekanism:basic_control_circuit',
         C: 'mekanism:alloy_infused',
         D: 'mekanism:steel_casing'
@@ -171,7 +172,7 @@ events.listen('recipes', function (event) {
         'CDC',
         'AAA',
     ], {
-        A: 'immersiveengineering:plate_steel',
+        A: '#forge:plates/steel',
         B: 'mekanism:advanced_control_circuit',
         C: 'create:adjustable_crate',
         D: 'mekanism:basic_bin'
@@ -213,11 +214,11 @@ events.listen('recipes', function (event) {
         'CBC',
         'ADA',
     ], {
-        A: 'immersiveengineering:plate_lead',
+        A: '#forge:plates/lead',
         B: 'immersiveengineering:ingot_hop_graphite',
         C: 'mekanism:alloy_infused',
         D: '#forge:ingots/zinc',
-        E: 'immersiveengineering:plate_constantan'
+        E: '#forge:plates/constantan'
     })
 
     //Basic Energy Cube
@@ -228,7 +229,7 @@ events.listen('recipes', function (event) {
         'CDC',
         'ABA',
     ], {
-        A: 'immersiveengineering:plate_lead',
+        A: '#forge:plates/lead',
         B: 'mekanism:energy_tablet',
         C: 'immersiveengineering:rs_engineering',
         D: 'mekanism:steel_casing'
@@ -242,9 +243,22 @@ events.listen('recipes', function (event) {
         ' C ',
         'BAB',
     ], {
-        A: 'immersiveengineering:plate_constantan',
-        B: 'immersiveengineering:plate_copper',
+        A: '#forge:plates/constantan',
+        B: '#forge:plates/copper',
         C: 'minecraft:redstone'
+    })
+	
+	//Basic Thermodynamic Conductor
+	event.remove({id: 'mekanism:transmitter/thermodynamic_conductor/basic'})
+	
+    event.shaped(item.of('mekanism:basic_thermodynamic_conductor', 4), [
+        'BAB',
+        ' C ',
+        'BAB',
+    ], {
+        A: '#forge:plates/constantan',
+        B: '#forge:plates/steel',
+        C: '#forge:plates/copper'
     })
 
     //Basic Mechanical Pipe
@@ -255,7 +269,7 @@ events.listen('recipes', function (event) {
         'ABA',
         ' A ',
     ], {
-        A: 'immersiveengineering:plate_lead',
+        A: '#forge:plates/lead',
         B: 'create:fluid_pipe'
     })
 
@@ -267,7 +281,7 @@ events.listen('recipes', function (event) {
         'ABA',
         ' A ',
     ], {
-        A: 'immersiveengineering:plate_steel',
+        A: '#forge:plates/steel',
         B: 'mekanism:structural_glass'
     })
 
@@ -279,17 +293,17 @@ events.listen('recipes', function (event) {
         'ABA',
         ' A ',
     ], {
-        A: 'immersiveengineering:plate_steel',
+        A: '#forge:plates/steel',
         B: 'mekanism:basic_control_circuit'
     })
-
+	
     //Restrictive Transporter
     event.remove({id: 'mekanism:transmitter/logistical_transporter/restrictive_transporter'})
 	
     event.shaped(item.of('mekanism:restrictive_transporter', 1), [
         'ABA',
     ], {
-        A: 'immersiveengineering:plate_steel',
+        A: '#forge:plates/steel',
         B: 'minecraft:iron_bars'
     })
 
@@ -301,7 +315,7 @@ events.listen('recipes', function (event) {
         'ABA',
         'CCC',
     ], {
-        A: 'immersiveengineering:plate_steel',
+        A: '#forge:plates/steel',
         B: 'minecraft:iron_bars',
         C: 'minecraft:redstone'
     })
@@ -314,7 +328,7 @@ events.listen('recipes', function (event) {
         'ABA',
         ' A ',
     ], {
-        A: 'immersiveengineering:plate_steel',
+        A: '#forge:plates/steel',
         B: '#forge:glass'
     })
     
@@ -353,7 +367,7 @@ events.listen('recipes', function (event) {
         'ABA',
         'AAA',
     ], {
-        A: 'immersiveengineering:plate_lead',
+        A: '#forge:plates/lead',
         B: 'mekanism:steel_casing',
     })
 	
@@ -365,7 +379,7 @@ events.listen('recipes', function (event) {
         'ABA',
         'AAA',
     ], {
-        A: 'immersiveengineering:plate_steel',
+        A: '#forge:plates/steel',
         B: 'mekanism:block_osmium',
     })
 
@@ -511,7 +525,7 @@ events.listen('recipes', function (event) {
         ], {
             A: 'mekanism:alloy_infused',
             B: 'mekanism:advanced_control_circuit',
-            C: 'immersiveengineering:plate_steel',
+            C: '#forge:plates/steel',
             D: tierOne[i]
         })
         i++
@@ -555,7 +569,7 @@ events.listen('recipes', function (event) {
     ], {
         A: 'mekanism:alloy_infused',
         B: 'mekanism:advanced_control_circuit',
-        C: 'immersiveengineering:plate_steel',
+        C: '#forge:plates/steel',
         D: '#minecraft:planks'
     })
 		
