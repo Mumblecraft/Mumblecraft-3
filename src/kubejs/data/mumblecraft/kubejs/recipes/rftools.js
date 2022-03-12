@@ -11,16 +11,17 @@ events.listen('recipes', function (event) {
     event.remove({id: 'rftoolsbase:machine_frame'})
 	
     event.recipes.create.mechanical_crafting(item.of('rftoolsbase:machine_frame', 1), [
-        '  A  ',
-        ' BCB ',
-        'AD DA',
-	' BCB ',
-	'  A  ',
+        ' AAA ',
+        'ABCBA',
+        'ADEDA',
+	    'ABCBA',
+	    ' AAA ',
     ], {
-        A: 'mekanism:ingot_refined_obsidian',
-        B: 'immersiveengineering:plate_steel',
+        B: 'mekanism:ingot_refined_obsidian',
+        A: 'immersiveengineering:plate_steel',
         C: 'appliedenergistics2:engineering_processor',
-		D: '#forge:ingots/electrum',
+	    D: '#forge:ingots/electrum',
+	    E: 'mekanism:steel_casing',
     })
 	
     //Machine Base
@@ -107,7 +108,7 @@ events.listen('recipes', function (event) {
         A: 'minecraft:red_dye',
         B: '#forge:chests/ender',
         C: 'mekanism:alloy_infused',
-	D: 'appliedenergistics2:logic_processor',
+	    D: 'appliedenergistics2:logic_processor',
     })
 
     event.remove({id: 'xnet:connector_green'})
@@ -120,7 +121,7 @@ events.listen('recipes', function (event) {
         A: 'minecraft:green_dye',
         B: '#forge:chests/ender',
         C: 'mekanism:alloy_infused',
-	D: 'appliedenergistics2:logic_processor',
+	    D: 'appliedenergistics2:logic_processor',
     })
 
     event.remove({id: 'xnet:connector_blue'})
@@ -133,7 +134,7 @@ events.listen('recipes', function (event) {
         A: 'minecraft:blue_dye',
         B: '#forge:chests/ender',
         C: 'mekanism:alloy_infused',
-	D: 'appliedenergistics2:logic_processor',
+	    D: 'appliedenergistics2:logic_processor',
     })
 
     event.remove({id: 'xnet:connector_yellow'})
@@ -146,7 +147,7 @@ events.listen('recipes', function (event) {
         A: '#forge:dyes/yellow',
         B: '#forge:chests/ender',
         C: 'mekanism:alloy_infused',
-	D: 'appliedenergistics2:logic_processor',
+	    D: 'appliedenergistics2:logic_processor',
     })
 
     event.remove({id: 'xnet:advanced_connector_red'})
@@ -159,7 +160,7 @@ events.listen('recipes', function (event) {
         A: 'xnet:connector_red',
         B: 'rftoolsbase:infused_enderpearl',
         C: 'appliedenergistics2:engineering_processor',
-	D: 'mekanism:alloy_atomic',
+	    D: 'mekanism:alloy_atomic',
     })
 
     event.remove({id: 'xnet:advanced_connector_green'})
@@ -172,7 +173,7 @@ events.listen('recipes', function (event) {
         A: 'xnet:connector_green',
         B: 'rftoolsbase:infused_enderpearl',
         C: 'appliedenergistics2:engineering_processor',
-	D: 'mekanism:alloy_atomic',
+	    D: 'mekanism:alloy_atomic',
     })
 
 
@@ -186,7 +187,7 @@ events.listen('recipes', function (event) {
         A: 'xnet:connector_blue',
         B: 'rftoolsbase:infused_enderpearl',
         C: 'appliedenergistics2:engineering_processor',
-	D: 'mekanism:alloy_atomic',
+	    D: 'mekanism:alloy_atomic',
     })
 
     event.remove({id: 'xnet:advanced_connector_yellow'})
@@ -199,7 +200,7 @@ events.listen('recipes', function (event) {
         A: 'xnet:connector_yellow',
         B: 'rftoolsbase:infused_enderpearl',
         C: 'appliedenergistics2:engineering_processor',
-	D: 'mekanism:alloy_atomic',
+	    D: 'mekanism:alloy_atomic',
     })
 
     event.remove({id: 'xnet:advanced_connector_routing'})
@@ -212,7 +213,7 @@ events.listen('recipes', function (event) {
         A: 'xnet:connector_routing',
         B: 'rftoolsbase:infused_enderpearl',
         C: 'appliedenergistics2:engineering_processor',
-	D: 'mekanism:alloy_atomic',
+	    D: 'mekanism:alloy_atomic',
     })
 
     event.remove({id: 'xnet:connector_upgrade'})
@@ -225,6 +226,6 @@ events.listen('recipes', function (event) {
         A: 'minecraft:paper',
         B: 'rftoolsbase:infused_enderpearl',
         C: 'appliedenergistics2:engineering_processor',
-	D: 'mekanism:alloy_atomic',
+	    D: 'mekanism:alloy_atomic',
     })
 })
