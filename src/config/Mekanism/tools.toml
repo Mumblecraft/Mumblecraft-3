@@ -155,7 +155,7 @@
 	[tools.iron]
 		#Harvest level of Iron paxels.
 		#Range: > 0
-		ironPaxelHarvestLevel = 3
+		ironPaxelHarvestLevel = 2
 		#Attack damage modifier of Iron paxels.
 		ironPaxelDamage = 7.0
 		#Attack speed of Iron paxels.
@@ -173,7 +173,7 @@
 	[tools.diamond]
 		#Harvest level of Diamond paxels.
 		#Range: > 0
-		diamondPaxelHarvestLevel = 4
+		diamondPaxelHarvestLevel = 3
 		#Attack damage modifier of Diamond paxels.
 		diamondPaxelDamage = 6.0
 		#Attack speed of Diamond paxels.
@@ -191,7 +191,7 @@
 	[tools.gold]
 		#Harvest level of Gold paxels.
 		#Range: > 0
-		goldPaxelHarvestLevel = 3
+		goldPaxelHarvestLevel = 0
 		#Attack damage modifier of Gold paxels.
 		goldPaxelDamage = 7.0
 		#Attack speed of Gold paxels.
@@ -209,7 +209,7 @@
 	[tools.netherite]
 		#Harvest level of Netherite paxels.
 		#Range: > 0
-		netheritePaxelHarvestLevel = 5
+		netheritePaxelHarvestLevel = 4
 		#Attack damage modifier of Netherite paxels.
 		netheritePaxelDamage = 6.0
 		#Attack speed of Netherite paxels.
