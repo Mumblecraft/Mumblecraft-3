@@ -71,7 +71,7 @@ break_in_creative = false
 [tools]
 	#List of tools that should not be considered as tools.
 	#INFO: This wins over the whitelist.
-	blacklisted = [notreepunching:flint_axe]
+	blacklisted = ["notreepunching:flint_axe"]
 	#When set to true, the mod will be activated no matter what you have in your hand (or empty hand).
 	#INFO: Blacklist still can be use to restrict some tools.
 	ignore_tools = false
@@ -82,7 +82,7 @@ break_in_creative = false
 	#INFO: Only in INSTANTANEOUS mode.
 	#WARNING: If you are on a server, this either has to be set to 0 or every player should have the mod. Else they'll have a weird effect of breaking the block but the block is still there.
 	#Range: 0.0 ~ 50.0
-	speed_multiplicand = 1
+	speed_multiplicand = 1.0
 	#Additional list of tools that can be used to chop down a tree.
 	#INFO: Items marked with the axe tag will already be whitelisted.
 	whitelisted = []
