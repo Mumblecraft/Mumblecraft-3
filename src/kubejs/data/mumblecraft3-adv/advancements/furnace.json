@@ -10,7 +10,7 @@
             "text": "Create a furnace to be able to start smelting"
         }
     },
-    "parent": "mumblecraft3-adv:clay_tool",
+    "parent": "mumblecraft3-adv:fire_starter",
     "criteria": {
         "craft": {
             "trigger": "minecraft:inventory_changed",

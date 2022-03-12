@@ -137,7 +137,7 @@
 	[tools.stone]
 		#Harvest level of Stone paxels.
 		#Range: > 0
-		stonePaxelHarvestLevel = 1
+		stonePaxelHarvestLevel = 0
 		#Attack damage modifier of Stone paxels.
 		stonePaxelDamage = 8.0
 		#Attack speed of Stone paxels.
@@ -255,7 +255,7 @@
 		#Range: > 1
 		bronzeToolMaxUses = 375
 		#Efficiency of Bronze tools.
-		bronzeEfficiency = 11
+		bronzeEfficiency = 7.0
 		#Harvest level of Bronze paxels.
 		#Range: > 0
 		bronzePaxelHarvestLevel = 2
@@ -338,12 +338,12 @@
 		lapis_lazuliHoeAtkSpeed = -2.0
 		#Maximum durability of Lapis Lazuli tools.
 		#Range: > 1
-		lapis_lazuliToolMaxUses = 128
+		lapis_lazuliToolMaxUses = 225
 		#Efficiency of Lapis Lazuli tools.
 		lapis_lazuliEfficiency = 9.0
 		#Harvest level of Lapis Lazuli paxels.
 		#Range: > 0
-		lapis_lazuliPaxelHarvestLevel = 1
+		lapis_lazuliPaxelHarvestLevel = 2
 		#Attack damage modifier of Lapis Lazuli paxels.
 		lapis_lazuliPaxelDamage = 5.0
 		#Attack speed of Lapis Lazuli paxels.
@@ -358,7 +358,7 @@
 		lapis_lazuliPaxelMaxUses = 256
 		#Harvest level of Lapis Lazuli tools.
 		#Range: > 0
-		lapis_lazuliHarvestLevel = 1
+		lapis_lazuliHarvestLevel = 2
 		#Natural enchantability factor of Lapis Lazuli items.
 		#Range: > 0
 		lapis_lazuliEnchantability = 32
@@ -428,7 +428,7 @@
 		osmiumEfficiency = 4.0
 		#Harvest level of Osmium paxels.
 		#Range: > 0
-		osmiumPaxelHarvestLevel = 2
+		osmiumPaxelHarvestLevel = 3
 		#Attack damage modifier of Osmium paxels.
 		osmiumPaxelDamage = 9.0
 		#Attack speed of Osmium paxels.
@@ -443,7 +443,7 @@
 		osmiumPaxelMaxUses = 2048
 		#Harvest level of Osmium tools.
 		#Range: > 0
-		osmiumHarvestLevel = 2
+		osmiumHarvestLevel = 3
 		#Natural enchantability factor of Osmium items.
 		#Range: > 0
 		osmiumEnchantability = 14
@@ -513,7 +513,7 @@
 		refined_glowstoneEfficiency = 15.0
 		#Harvest level of Refined Glowstone paxels.
 		#Range: > 0
-		refined_glowstonePaxelHarvestLevel = 3
+		refined_glowstonePaxelHarvestLevel = 4
 		#Attack damage modifier of Refined Glowstone paxels.
 		refined_glowstonePaxelDamage = 7.0
 		#Attack speed of Refined Glowstone paxels.
@@ -528,7 +528,7 @@
 		refined_glowstonePaxelMaxUses = 768
 		#Harvest level of Refined Glowstone tools.
 		#Range: > 0
-		refined_glowstoneHarvestLevel = 3
+		refined_glowstoneHarvestLevel = 4
 		#Natural enchantability factor of Refined Glowstone items.
 		#Range: > 0
 		refined_glowstoneEnchantability = 20
@@ -598,7 +598,7 @@
 		refined_obsidianEfficiency = 12.0
 		#Harvest level of Refined Obsidian paxels.
 		#Range: > 0
-		refined_obsidianPaxelHarvestLevel = 4
+		refined_obsidianPaxelHarvestLevel = 6
 		#Attack damage modifier of Refined Obsidian paxels.
 		refined_obsidianPaxelDamage = 8.0
 		#Attack speed of Refined Obsidian paxels.
@@ -613,7 +613,7 @@
 		refined_obsidianPaxelMaxUses = 8192
 		#Harvest level of Refined Obsidian tools.
 		#Range: > 0
-		refined_obsidianHarvestLevel = 4
+		refined_obsidianHarvestLevel = 6
 		#Natural enchantability factor of Refined Obsidian items.
 		#Range: > 0
 		refined_obsidianEnchantability = 18
