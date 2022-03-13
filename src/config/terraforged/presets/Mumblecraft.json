@@ -8,7 +8,7 @@
     "plainStoneErosion": false,
     "naturalSnowDecorator": true,
     "customBiomeFeatures": true,
-    "vanillaLakes": false,
+    "vanillaLakes": true,
     "vanillaSprings": true,
     "vanillaLavaLakes": true,
     "vanillaLavaSprings": true,
@@ -29,8 +29,8 @@
   },
   "structures": {
     "stronghold": {
-      "distance": 32,
-      "spread": 3,
+      "distance": 80,
+      "spread": 76,
       "count": 128,
       "salt": 0,
       "constrainToBiomes": false,
@@ -223,14 +223,14 @@
       "continentSizeVariance": 0.25,
       "continentNoiseOctaves": 5,
       "continentNoiseGain": 0.259,
-      "continentNoiseLacunarity": 4.329
+      "continentNoiseLacunarity": 4.328
     },
     "controlPoints": {
       "deepOcean": 0.1,
       "shallowOcean": 0.25,
       "beach": 0.326,
       "coast": 0.448,
-      "inland": 0.501
+      "inland": 0.5
     },
     "properties": {
       "spawnType": "CONTINENT_CENTER",
@@ -335,17 +335,17 @@
   },
   "rivers": {
     "seedOffset": 0,
-    "riverCount": 8,
+    "riverCount": 16,
     "mainRivers": {
-      "bedDepth": 5,
-      "minBankHeight": 2,
+      "bedDepth": 6,
+      "minBankHeight": 1,
       "maxBankHeight": 6,
       "bedWidth": 8,
-      "bankWidth": 20,
+      "bankWidth": 28,
       "fade": 0.75
     },
     "branchRivers": {
-      "bedDepth": 4,
+      "bedDepth": 3,
       "minBankHeight": 1,
       "maxBankHeight": 4,
       "bedWidth": 5,
@@ -355,7 +355,7 @@
     "lakes": {
       "chance": 0.6,
       "minStartDistance": 0.0,
-      "maxStartDistance": 0.029,
+      "maxStartDistance": 0.028,
       "depth": 15,
       "sizeMin": 50,
       "sizeMax": 200,
@@ -380,7 +380,7 @@
     "smoothing": {
       "iterations": 1,
       "smoothingRadius": 1.799,
-      "smoothingRate": 0.899
+      "smoothingRate": 0.898
     }
   }
 }
