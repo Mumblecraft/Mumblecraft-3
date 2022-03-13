@@ -48,4 +48,27 @@ events.listen('recipes', function (event) {
         B: '#appliedenergistics2:crystals/fluix',
 		C: 'mekanism:ingot_refined_obsidian',
     })
+	
+	//Make sky stone chests require iron nugget
+	event.remove({id: 'appliedenergistics2:misc/chests_sky_stone'})
+	
+	event.shaped(item.of('appliedenergistics2:sky_stone_chest'), [
+        'AAA',
+        'ABA',
+		'AAA',
+    ], {
+        A: 'appliedenergistics2:sky_stone_block',
+        B: 'minecraft:iron_nugget',
+    })
+	
+	event.remove({id: 'appliedenergistics2:misc/chests_smooth_sky_stone'})
+	
+	event.shaped(item.of('appliedenergistics2:smooth_sky_stone_chest'), [
+        'AAA',
+        'ABA',
+		'AAA',
+    ], {
+        A: 'appliedenergistics2:smooth_sky_stone_block',
+        B: 'minecraft:iron_nugget',
+    })
 })
