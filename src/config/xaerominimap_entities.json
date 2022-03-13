@@ -18,8 +18,8 @@
     "dotSize": 2.0,
     "startFadingAt": 0.0,
     "icons": 1.0,
-    "heightLimit": 20.0,
     "names": 2.0,
+    "heightLimit": 20.0,
     "iconScale": 1.0
   },
   "subCategories": [
@@ -105,7 +105,9 @@
           "excludeList": [],
           "name": "gui.xaero_entity_category_friendly",
           "protection": true,
-          "settingOverrides": {},
+          "settingOverrides": {
+            "names": 1.0
+          },
           "subCategories": [
             {
               "hardInclude": "tamed",
@@ -132,7 +134,8 @@
       "protection": true,
       "settingOverrides": {
         "renderOrder": 1.0,
-        "color": 12.0
+        "color": 12.0,
+        "names": 0.0
       },
       "subCategories": []
     },
