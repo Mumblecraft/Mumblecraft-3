@@ -10,19 +10,19 @@ events.listen('recipes', function (event) {
 	//Kiln Brick
 	event.remove({id: 'immersiveengineering:crafting/alloybrick'})
 	
-	event.shaped(item.of('immersiveengineering:alloybrick', 2), [
+	event.shaped(item.of('immersiveengineering:alloybrick', 1), [
         'ABA',
         'BAB',
 		'ABA',
     ], {
-        A: '#forge:sandstone',
+        A: '#forge:sandstone/smooth',
         B: 'minecraft:bricks',
     })
 	
 	//Coke Brick
 	event.remove({id: 'immersiveengineering:crafting/cokebrick'})
 	
-	event.shaped(item.of('immersiveengineering:cokebrick', 3), [
+	event.shaped(item.of('immersiveengineering:cokebrick', 2), [
         'ABA',
         'BCB',
 		'ABA',
@@ -35,7 +35,7 @@ events.listen('recipes', function (event) {
 	//Blast Brick
 	event.remove({id: 'immersiveengineering:crafting/blastbrick'})
 	
-	event.shaped(item.of('immersiveengineering:blastbrick', 3), [
+	event.shaped(item.of('immersiveengineering:blastbrick', 2), [
         'ABA',
         'BCB',
 		'ABA',
@@ -48,7 +48,7 @@ events.listen('recipes', function (event) {
     //Redstone Engineering Block
 	event.remove({id: 'immersiveengineering:crafting/rs_engineering'})
 	
-    event.recipes.create.mechanical_crafting(item.of('immersiveengineering:rs_engineering', 4), [
+    event.recipes.create.mechanical_crafting(item.of('immersiveengineering:rs_engineering', 2), [
         ' AAA ',
         'ABBBA',
         'ABCBA',
@@ -63,7 +63,7 @@ events.listen('recipes', function (event) {
     //Light Engineering Block
 	event.remove({id: 'immersiveengineering:crafting/light_engineering'})
 	
-    event.recipes.create.mechanical_crafting(item.of('immersiveengineering:light_engineering', 4), [
+    event.recipes.create.mechanical_crafting(item.of('immersiveengineering:light_engineering', 2), [
         ' AAA ',
         'ABBBA',
         'ABCBA',
@@ -78,7 +78,7 @@ events.listen('recipes', function (event) {
     //Heavy Engineering Block
 	event.remove({id: 'immersiveengineering:crafting/heavy_engineering'})
 	
-    event.recipes.create.mechanical_crafting(item.of('immersiveengineering:heavy_engineering', 4), [
+    event.recipes.create.mechanical_crafting(item.of('immersiveengineering:heavy_engineering', 2), [
         ' AAA ',
         'ABBBA',
         'ABCBA',

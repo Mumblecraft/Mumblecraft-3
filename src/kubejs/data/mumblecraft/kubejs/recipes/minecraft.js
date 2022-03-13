@@ -163,4 +163,18 @@ events.listen('recipes', function (event) {
     ], {
         A: '#forge:plates/steel',
     })
+	
+	//Weapons
+	//Make bow craftable with plant string
+	event.remove({id: 'minecraft:bow'})
+	
+    event.shaped(item.of('minecraft:bow', 1), [
+        ' AB',
+        'A B',
+		' AB',
+    ], {
+		A: '#forge:rods/wooden',
+        B: '#forge:string',
+    })
+	
 })
