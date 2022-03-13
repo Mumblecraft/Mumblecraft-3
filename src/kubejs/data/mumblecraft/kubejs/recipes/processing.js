@@ -30,8 +30,8 @@ events.listen('recipes', function (event) {
     ]
 
     var i = 0
-    pressingOutput.forEach(function (output) {
-        event.recipes.create.pressing(item.of(output, 1), pressingInput[i])
+    pressingOutput.forEach(function (plates) {
+        event.recipes.create.pressing(item.of(plates, 1), pressingInput[i])
         i++
     })
 
@@ -44,8 +44,52 @@ events.listen('recipes', function (event) {
  	'#forge:ingots/copper',
  	'#forge:ingots/tin'
         ]).heated()
-
-
+	
+	//Nuggets
+	event.remove({type: 'minecraft:smelting', input: '#create:crushed_ores'})
+	
+	var smeltingInput = [
+	'create:crushed_iron_ore',
+	'create:crushed_gold_ore',
+	'create:crushed_copper_ore',
+	'create:crushed_zinc_ore',
+	'create:crushed_brass',
+	'create:crushed_osmium_ore',
+	'create:crushed_silver_ore',
+	'create:crushed_tin_ore',
+	'create:crushed_lead_ore',
+	'create:crushed_aluminum_ore',
+	'create:crushed_uranium_ore',
+	'create:crushed_nickel_ore',
+	'#forge:ores/copper',
+	'#forge:ores/tin',
+	'#forge:ores/zinc'
+	]
+	
+	var smeltingOutput = [
+	'4x minecraft:iron_nugget',
+	'4x minecraft:gold_nugget',
+	'4x create:copper_nugget',
+	'4x create:zinc_nugget',
+	'4x create:brass_nugget',
+	'4x mekanism:nugget_osmium',
+	'4x immersiveengineering:nugget_silver',
+	'4x mekanism:nugget_tin',
+	'4x mekanism:nugget_lead',
+	'4x immersiveengineering:nugget_aluminum',
+	'4x mekanism:nugget_uranium',
+	'4x immersiveengineering:nugget_nickel',
+	'3x create:copper_nugget',
+	'3x mekanism:nugget_tin',
+	'3x create:zinc_nugget'
+	]
+	
+    var i = 0
+    smeltingOutput.forEach(function (nuggets) {
+        event.smelting(nuggets, smeltingInput[i])
+        i++
+    })
+	
     //Make netherite ingot with Create Mixer
     event.remove({id: 'minecraft:netherite_ingot'})
 
