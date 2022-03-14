@@ -21,6 +21,11 @@ events.listen('recipes', function (event) {
 	'appliedenergistics2:grinder/gold_dust_ingot',
 	'appliedenergistics2:grinder/iron_dust_ore',
 	'appliedenergistics2:grinder/iron_dust_ingot',
+	
+	//Dust alloys
+	'immersiveengineering:crafting/ingot_constantan_from_dust',
+	'immersiveengineering:crafting/ingot_electrum_from_dust',
+	'mekanism:processing/bronze/ingot/from_dust_smelting',
 
 	//Tools/armor
 	
