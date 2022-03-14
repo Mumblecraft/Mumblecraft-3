@@ -14,11 +14,11 @@ events.listen('recipes', function (event) {
         'CAC',
         'DCD',
     ], {
-        A: '#forge:stone',
-        B: 'create:cogwheel',
+        A: 'minecraft:smooth_stone',
+        B: 'appliedenergistics2:wooden_gear',
         C: '#appliedenergistics2:crystals/quartz',
 		D: '#forge:cobblestone',
-    })
+   })
 	
 	event.remove({id: 'appliedenergistics2:grinder/flour'})
 	

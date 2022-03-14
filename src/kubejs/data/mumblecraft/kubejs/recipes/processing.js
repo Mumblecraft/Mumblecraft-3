@@ -61,9 +61,6 @@ events.listen('recipes', function (event) {
 	'create:crushed_aluminum_ore',
 	'create:crushed_uranium_ore',
 	'create:crushed_nickel_ore',
-	'#forge:ores/copper',
-	'#forge:ores/tin',
-	'#forge:ores/zinc'
 	]
 	
 	var smeltingOutput = [
@@ -79,16 +76,53 @@ events.listen('recipes', function (event) {
 	'4x immersiveengineering:nugget_aluminum',
 	'4x mekanism:nugget_uranium',
 	'4x immersiveengineering:nugget_nickel',
-	'3x create:copper_nugget',
-	'3x mekanism:nugget_tin',
-	'3x create:zinc_nugget'
 	]
 	
     var i = 0
     smeltingOutput.forEach(function (nuggets) {
         event.smelting(nuggets, smeltingInput[i])
         i++
-    })
+    })	
+		
+	//Crushed Ores
+	event.custom({
+		"type": "appliedenergistics2:grinder",
+		"input": {
+			"item": "create:zinc_ore"
+		},
+		"result": {
+			"primary": {
+			"item": "create:crushed_zinc_ore"
+			},
+		},
+		"turns": 16
+	})
+	
+	event.custom({
+		"type": "appliedenergistics2:grinder",
+		"input": {
+			"item": "mekanism:tin_ore"
+		},
+		"result": {
+			"primary": {
+			"item": "create:crushed_tin_ore"
+			},
+		},
+		"turns": 16
+	})
+	
+	event.custom({
+		"type": "appliedenergistics2:grinder",
+		"input": {
+			"item": "create:copper_ore"
+		},
+		"result": {
+			"primary": {
+			"item": "create:crushed_copper_ore"
+			},
+		},
+		"turns": 16
+	})
 	
     //Make netherite ingot with Create Mixer
     event.remove({id: 'minecraft:netherite_ingot'})
