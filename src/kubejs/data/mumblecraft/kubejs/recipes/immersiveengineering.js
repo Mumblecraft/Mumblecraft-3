@@ -31,7 +31,7 @@ events.listen('recipes', function (event) {
     })
 	
 	//Coke Brick
-/*	event.remove({id: 'immersiveengineering:crafting/cokebrick'})
+	event.remove({id: 'immersiveengineering:crafting/cokebrick'})
 	
 	event.shaped(item.of('immersiveengineering:cokebrick', 2), [
         'ABA',
@@ -54,7 +54,7 @@ events.listen('recipes', function (event) {
         A: 'minecraft:nether_bricks',
         B: 'minecraft:bricks',
 		C: 'minecraft:magma_block',
-    })*/
+    })
 	
     //Redstone Engineering Block
 	event.remove({id: 'immersiveengineering:crafting/rs_engineering'})
