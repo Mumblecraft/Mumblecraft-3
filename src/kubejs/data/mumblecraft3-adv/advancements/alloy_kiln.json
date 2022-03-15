@@ -17,7 +17,7 @@
 			"conditions": {
                 "items": [
                     {
-                        "item": "#forge:ingots/bronze",
+                        "item": "emendatusenigmatica:bronze_ingot",
 						"count" : {
 							"min": 1
 						}

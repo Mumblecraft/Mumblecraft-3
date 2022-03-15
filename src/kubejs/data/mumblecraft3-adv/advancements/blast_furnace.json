@@ -10,7 +10,7 @@
             "text": "Create a blast furnace to speed up smelting"
         }
     },
-    "parent": "mumblecraft3-adv:furnace",
+    "parent": "mumblecraft3-adv:alloy_kiln",
     "criteria": {
         "craft": {
             "trigger": "minecraft:inventory_changed",
