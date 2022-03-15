@@ -8,7 +8,6 @@ events.listen('jei.hide.items', function (event) {
 	//AE2
 	'appliedenergistics2:iron_dust',
 	'appliedenergistics2:gold_dust',
-	'appliedenergistics2:facade',
 	
 	//Immersive Engineering
 	'immersiveengineering:ore_copper',
@@ -71,6 +70,21 @@ events.listen('jei.hide.items', function (event) {
 	'emendatusenigmatica:lumium_gear',
 	'emendatusenigmatica:enderium_gear',
 	'emendatusenigmatica:cobalt_gear',
+	'emendatusenigmatica:emerald_gear',
+	'emendatusenigmatica:quartz_gear',
+	'emendatusenigmatica:copper_gear',
+	'emendatusenigmatica:aluminum_gear',
+	'emendatusenigmatica:silver_gear',
+	'emendatusenigmatica:lead_gear',
+	'emendatusenigmatica:nickel_gear',
+	'emendatusenigmatica:uranium_gear',
+	'emendatusenigmatica:osmium_gear',
+	'emendatusenigmatica:tin_gear',
+	'emendatusenigmatica:zinc_gear',
+	'emendatusenigmatica:brass_gear',
+	'emendatusenigmatica:constantan_gear',
+	'emendatusenigmatica:electrum_gear',
+	'emendatusenigmatica:cast_iron_gear',
 	
 	//Plate
 	'emendatusenigmatica:iridium_plate',
@@ -82,6 +96,16 @@ events.listen('jei.hide.items', function (event) {
 	'emendatusenigmatica:lumium_plate',
 	'emendatusenigmatica:enderium_plate',
 	'emendatusenigmatica:cobalt_plate',
+	'emendatusenigmatica:emerald_plate',
+	'emendatusenigmatica:quartz_plate',
+	'emendatusenigmatica:aluminum_plate',
+	'emendatusenigmatica:silver_plate',
+	'emendatusenigmatica:lead_plate',
+	'emendatusenigmatica:uranium_plate',
+	'emendatusenigmatica:osmium_plate',
+	'emendatusenigmatica:constantan_plate',
+	'emendatusenigmatica:electrum_plate',
+	'emendatusenigmatica:cast_iron_plate',
 	
 	//Cluster
 	'emendatusenigmatica:iridium_cluster',
@@ -186,6 +210,13 @@ events.listen('jei.hide.items', function (event) {
 	'emendatusenigmatica:lumium_rod',
 	'emendatusenigmatica:enderium_rod',
 	'emendatusenigmatica:cobalt_rod',
+	'emendatusenigmatica:emerald_rod',
+	'emendatusenigmatica:quartz_rod',
+	'emendatusenigmatica:aluminum_rod',
+	'emendatusenigmatica:osmium_rod',
+	'emendatusenigmatica:constantan_rod',
+	'emendatusenigmatica:electrum_rod',
+	'emendatusenigmatica:cast_iron_rod',
 	
 	//Ingot
 	'emendatusenigmatica:iridium_ingot',
@@ -221,6 +252,10 @@ events.listen('jei.hide.items', function (event) {
 	'emendatusenigmatica:lumium_block',
 	'emendatusenigmatica:enderium_block',
 	'emendatusenigmatica:cobalt_block',
+	
+	//Fence
+	'immersiveposts:fence_constantan',
+	'immersiveposts:fence_electrum',
 	
 	]
 	idHide.forEach(function (hide) {
