@@ -137,7 +137,7 @@
 	[tools.stone]
 		#Harvest level of Stone paxels.
 		#Range: > 0
-		stonePaxelHarvestLevel = 1
+		stonePaxelHarvestLevel = 0
 		#Attack damage modifier of Stone paxels.
 		stonePaxelDamage = 8.0
 		#Attack speed of Stone paxels.
@@ -343,7 +343,7 @@
 		lapis_lazuliEfficiency = 9.0
 		#Harvest level of Lapis Lazuli paxels.
 		#Range: > 0
-		lapis_lazuliPaxelHarvestLevel = 1
+		lapis_lazuliPaxelHarvestLevel = 2
 		#Attack damage modifier of Lapis Lazuli paxels.
 		lapis_lazuliPaxelDamage = 5.0
 		#Attack speed of Lapis Lazuli paxels.
@@ -358,7 +358,7 @@
 		lapis_lazuliPaxelMaxUses = 256
 		#Harvest level of Lapis Lazuli tools.
 		#Range: > 0
-		lapis_lazuliHarvestLevel = 1
+		lapis_lazuliHarvestLevel = 2
 		#Natural enchantability factor of Lapis Lazuli items.
 		#Range: > 0
 		lapis_lazuliEnchantability = 32
