@@ -5,6 +5,17 @@ console.info('Kubejs: Modifying Immersive Engineering recipes')
 
 events.listen('recipes', function (event) {
 
+	//Tools
+	event.shaped(item.of('immersiveengineering:hammer', 1), [
+        ' AB',
+        ' CA',
+		'C  ',
+    ], {
+        A: '#forge:ingots/copper',
+        B: '#forge:string',
+		C: 'minecraft:stick'
+    })
+	
     //Machines/Components
 	
 	//Kiln Brick
@@ -27,7 +38,7 @@ events.listen('recipes', function (event) {
         'BCB',
 		'ABA',
     ], {
-        A: 'minecraft:clay_ball',
+        A: 'minecraft:clay',
         B: 'minecraft:bricks',
 		C: '#forge:sandstone',
     })
@@ -89,8 +100,6 @@ events.listen('recipes', function (event) {
         B: 'immersiveengineering:component_steel',
         C: '#forge:storage_blocks/electrum',
     })
-
-    //Conveyor
 
     //Engineer's Decor
     //Small Electrical Furnace

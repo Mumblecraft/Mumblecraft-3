@@ -11,6 +11,8 @@ global["UNIFY_ORE_GEN"] = true
 
 // Mod priorities
 global["unifypriorities"] = [
+	"emendatusenigmatica",
+	"createaddition",
     "create",
     "mekanism",
     "immersiveengineering",
@@ -20,7 +22,20 @@ global["unifypriorities"] = [
 // Add oredictionary tags here to unify (or use javascript to generate it!)
 var tags = [
     "forge:plates/iron",
-    "forge:gears/iron"
+	"forge:plates/uranium",
+	"forge:plates/constantan",
+	"forge:plates/steel",
+	"forge:plates/electrum",
+    "forge:gears/iron",	
+	"forge:rods/copper",
+	"forge:rods/iron",
+	"forge:rods/gold",
+	"forge:rods/aluminum",
+	"forge:rods/brass",
+	"forge:rods/steel",
+	"forge:rods/uranium"
+	
+	
 ]
 // Block tags for ore gen unification (an equal item tag is required for this to work, which is the case with ores normally)
 /*var btags = [

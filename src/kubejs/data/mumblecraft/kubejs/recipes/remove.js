@@ -34,39 +34,6 @@ events.listen('recipes', function (event) {
 	'notreepunching:iron_mattock',
 	'notreepunching:gold_mattock',
 	'notreepunching:diamond_mattock',
-	
-	//Machines/Crafting Components
-	
-	//Immersive Engineering
-    //Plates
-	'immersiveengineering:crafting/plate_copper_hammering',
-	'immersiveengineering:crafting/plate_aluminum_hammering',
-	'immersiveengineering:crafting/plate_lead_hammering',
-	'immersiveengineering:crafting/plate_silver_hammering',
-	'immersiveengineering:crafting/plate_nickel_hammering',
-	'immersiveengineering:crafting/plate_uranium_hammering',
-	'immersiveengineering:crafting/plate_constantan_hammering',
-	'immersiveengineering:crafting/plate_electrum_hammering',
-	'immersiveengineering:crafting/plate_steel_hammering',
-	'immersiveengineering:crafting/plate_iron_hammering',
-	'immersiveengineering:crafting/plate_gold_hammering',
-	'immersiveengineering:crafting/hammercrushing_iron',
-	//Rods
-	'immersiveengineering:crafting/stick_iron',
-	'immersiveengineering:crafting/stick_steel',
-	'immersiveengineering:crafting/stick_aluminum',
-	'immersiveposts:has_gold_rod',
-	'immersiveposts:has_copper_rod',
-	'immersiveposts:has_lead_rod',
-	'immersiveposts:has_silver_rod',
-	'immersiveposts:has_nickel_rod',
-	'immersiveposts:has_constantan_rod',
-	'immersiveposts:has_electrum_rod',
-	'immersiveposts:has_uranium_rod',
-	
-	
-	
-	
 
 	]
 	idRemove.forEach(function (remove) {
@@ -82,4 +49,14 @@ events.listen('recipes', function (event) {
 	//Minecraft Furnace
 	//Remove recipes to cook ores in furnace
 	event.remove({input: '#forge:ores', type: 'minecraft:smelting'})
+	
+	//Remove Rod Crafting
+	event.remove({output: '#forge:rods', type: 'minecraft:crafting_shaped'})
+	
+	//Remove Plate Crafting
+	event.remove({output: '#forge:plates', type: 'minecraft:crafting_shapeless'})
+	
+	//Remove Dust Crafting
+	event.remove({output: '#forge:dusts', type: 'minecraft:crafting_shapeless'})
+	event.remove({type: 'immersiveengineering:hammer_crushing'})
 })
