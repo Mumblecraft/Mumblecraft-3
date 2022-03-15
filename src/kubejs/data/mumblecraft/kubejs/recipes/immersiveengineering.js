@@ -5,6 +5,17 @@ console.info('Kubejs: Modifying Immersive Engineering recipes')
 
 events.listen('recipes', function (event) {
 
+	//Tools
+	event.shaped(item.of('immersiveengineering:hammer', 1), [
+        ' AB',
+        ' CA',
+		'C  ',
+    ], {
+        A: '#forge:ingots/copper',
+        B: '#forge:string',
+		C: 'minecraft:stick'
+    })
+	
     //Machines/Components
 	
 	//Kiln Brick
@@ -20,14 +31,14 @@ events.listen('recipes', function (event) {
     })
 	
 	//Coke Brick
-	event.remove({id: 'immersiveengineering:crafting/cokebrick'})
+/*	event.remove({id: 'immersiveengineering:crafting/cokebrick'})
 	
 	event.shaped(item.of('immersiveengineering:cokebrick', 2), [
         'ABA',
         'BCB',
 		'ABA',
     ], {
-        A: 'minecraft:clay_ball',
+        A: 'minecraft:clay',
         B: 'minecraft:bricks',
 		C: '#forge:sandstone',
     })
@@ -43,7 +54,7 @@ events.listen('recipes', function (event) {
         A: 'minecraft:nether_bricks',
         B: 'minecraft:bricks',
 		C: 'minecraft:magma_block',
-    })
+    })*/
 	
     //Redstone Engineering Block
 	event.remove({id: 'immersiveengineering:crafting/rs_engineering'})
@@ -89,8 +100,6 @@ events.listen('recipes', function (event) {
         B: 'immersiveengineering:component_steel',
         C: '#forge:storage_blocks/electrum',
     })
-
-    //Conveyor
 
     //Engineer's Decor
     //Small Electrical Furnace

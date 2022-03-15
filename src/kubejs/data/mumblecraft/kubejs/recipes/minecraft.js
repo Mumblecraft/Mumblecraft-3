@@ -62,6 +62,19 @@ events.listen('recipes', function (event) {
 		B: 'minecraft:cobblestone'
     })
 	
+	//Blast Furnace
+	event.remove({id: 'minecraft:blast_furnace'})
+	
+    event.shaped(item.of('minecraft:blast_furnace', 1), [
+        'AAA',
+        'ABA',
+        'CCC',
+    ], {
+        A: 'emendatusenigmatica:iron_plate',
+		B: 'minecraft:furnace',
+		C: 'minecraft:smooth_stone',
+    })
+	
 	//Rails
 	//Powered Rail
 	event.remove({id: 'minecraft:powered_rail'})
