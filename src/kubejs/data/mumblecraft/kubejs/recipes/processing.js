@@ -21,7 +21,9 @@ events.listen('recipes', function (event) {
 	'minecraft:lapis_lazuli',
 	'#forge:ingots/osmium',
 	'#forge:ingots/tin',
-	'#forge:ingots/zinc'
+	'#forge:ingots/zinc',
+	'#forge:ingots/bronze',
+	'#forge:ingots/brass'
     ]
 
     var pressingOutput = [
@@ -38,7 +40,9 @@ events.listen('recipes', function (event) {
 	'emendatusenigmatica:lapis_plate',
 	'emendatusenigmatica:osmium_plate',
 	'emendatusenigmatica:tin_plate',
-	'emendatusenigmatica:zinc_plate'
+	'emendatusenigmatica:zinc_plate',
+	'emendatusenigmatica:bronze_plate',
+	'emendatusenigmatica:brass_plate'
 	
     ]
 
