@@ -324,7 +324,7 @@ events.listen('recipes', function (event) {
 	event.custom({
 		"type": "appliedenergistics2:grinder",
 		"input": {
-			"item": "create:zinc_ore"
+			"tag": "forge:ores/zinc"
 		},
 		"result": {
 			"primary": {
@@ -337,7 +337,7 @@ events.listen('recipes', function (event) {
 	event.custom({
 		"type": "appliedenergistics2:grinder",
 		"input": {
-			"item": "mekanism:tin_ore"
+			"tag": "forge:ores/tin"
 		},
 		"result": {
 			"primary": {
@@ -350,7 +350,7 @@ events.listen('recipes', function (event) {
 	event.custom({
 		"type": "appliedenergistics2:grinder",
 		"input": {
-			"item": "create:copper_ore"
+			"tag": "forge:ores/copper"
 		},
 		"result": {
 			"primary": {

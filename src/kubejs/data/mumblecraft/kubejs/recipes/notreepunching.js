@@ -6,7 +6,6 @@ console.info('Kubejs: Modifying No Tree Punching recipes')
 events.listen('recipes', function (event) {
     
     //Saw recipes
-    
 	//Remove default recipes
 	var idRemove =[
 	
