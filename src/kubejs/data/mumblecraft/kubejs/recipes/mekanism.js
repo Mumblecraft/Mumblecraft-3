@@ -32,7 +32,7 @@ events.listen('recipes', function (event) {
         'DED',
     ], {
     A: 'minecraft:iron_ingot',
-    B: '#forge:ingots/constantan',
+    B: 'emendatusenigmatica:constantan_ingot',
     C: 'mekanism:steel_casing',
     D: '#forge:ingots/copper',
 	E: 'minecraft:furnace'

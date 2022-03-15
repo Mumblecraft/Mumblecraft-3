@@ -1,6 +1,0 @@
-
-[general]
-	#The blocks whose hardness should be modified. This needs to be the registry name of the block followed by an @ followed by the new hardness, so for example: 'minecraft:stone@5'
-	tweak_hardness = []
-	#The blocks whose mining level should be modified. This needs to be the registry name of the block followed by an @ followed by the tool class ('pickaxe', 'axe' or 'shovel') followed by an @ followed by the harvest level (0 = wood, 1 = stone, 2 = iron, 3 = diamond, custom levels work), so for example: 'minecraft:stone@pickaxe@2'
-	tweak_mining_level = ["minecraft:iron_ore@pickaxe@2", "minecraft:diamond_ore@pickaxe@3", "mekanism:osmium_ore@pickaxe@3", "minecraft:lapis_ore@pickaxe@2", "mekanism:fluorite_ore@pickaxe@2", "appliedenergistics2:charged_quartz_ore@pickaxe@2", "immersiveengineering:ore_silver@pickaxe@3", "minecraft:emerald_ore@pickaxe@3", "minecraft:ancient_debris@pickaxe@4", "mekanism:lead_ore@pickaxe@2", "mekanism:uranium_ore@pickaxe@3"]
