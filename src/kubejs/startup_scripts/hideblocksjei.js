@@ -101,7 +101,6 @@ events.listen('jei.hide.items', function (event) {
 	'emendatusenigmatica:aluminum_plate',
 	'emendatusenigmatica:silver_plate',
 	'emendatusenigmatica:lead_plate',
-	'emendatusenigmatica:uranium_plate',
 	'emendatusenigmatica:osmium_plate',
 	'emendatusenigmatica:constantan_plate',
 	'emendatusenigmatica:electrum_plate',
