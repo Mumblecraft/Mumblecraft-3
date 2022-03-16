@@ -1,23 +1,23 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:blast_furnace"
+            "item": "immersiveengineering:alloybrick"
         },
         "title": {
-            "text": "And The Chain of Efficiency Begins"
+            "text": "Mixing My Metals"
         },
         "description": {
-            "text": "Create a blast furnace to speed up smelting"
+            "text": "Create an alloy kiln and smelt some bronze to enter the bronze age. Make a 2x2x2 cube of the kiln brick, then strike it with an engineer's hammer"
         }
     },
-    "parent": "mumblecraft3-adv:alloy_kiln",
+    "parent": "mumblecraft3-adv:furnace",
     "criteria": {
         "craft": {
             "trigger": "minecraft:inventory_changed",
 			"conditions": {
                 "items": [
                     {
-                        "item": "minecraft:blast_furnace",
+                        "item": "emendatusenigmatica:bronze_ingot",
 						"count" : {
 							"min": 1
 						}
