@@ -13,8 +13,8 @@ events.listen('recipes', function (event) {
 	'#forge:ingots/silver',
 	'#forge:ingots/nickel',
 	'#forge:ingots/uranium',
-	'#forge:ingots/constantan',
-	'#forge:ingots/electrum',
+	'emendatusenigmatica:constantan_ingot',
+	'emendatusenigmatica:electrum_ingot',
 	'#forge:ingots/steel',
 	'minecraft:diamond',
 	'minecraft:emerald',
@@ -52,13 +52,14 @@ events.listen('recipes', function (event) {
         i++
     })
 	
-	//Add plates to Immersive Engineering Press
+	//Add plates and rods to Immersive Engineering Press
 	event.recipes.immersiveengineeringMetalPress('emendatusenigmatica:diamond_plate', 'minecraft:diamond', 'immersiveengineering:mold_plate')
 	event.recipes.immersiveengineeringMetalPress('emendatusenigmatica:emerald_plate', 'minecraft:emerald', 'immersiveengineering:mold_plate')
 	event.recipes.immersiveengineeringMetalPress('emendatusenigmatica:lapis_plate', 'minecraft:lapis_lazuli', 'immersiveengineering:mold_plate')
-
+	event.recipes.immersiveengineeringMetalPress('emendatusenigmatica:constantan_plate', '#forge:ingots/constantan', 'immersiveengineering:mold_plate')
+	event.recipes.immersiveengineeringMetalPress('emendatusenigmatica:electrum_plate', '#forge:ingots/electrum', 'immersiveengineering:mold_plate')
+	
     //Ingots
-
     //Make bronze with Create mixer
     event.recipes.create.mixing(item.of('mekanism:ingot_bronze', 4), [
  	'#forge:ingots/copper',
@@ -89,21 +90,21 @@ events.listen('recipes', function (event) {
 	var smeltingOutput = [
 	'4x minecraft:iron_nugget',
 	'4x minecraft:gold_nugget',
-	'4x create:copper_nugget',
-	'4x create:zinc_nugget',
-	'4x create:brass_nugget',
-	'4x mekanism:nugget_osmium',
-	'4x immersiveengineering:nugget_silver',
-	'4x mekanism:nugget_tin',
-	'4x mekanism:nugget_lead',
-	'4x immersiveengineering:nugget_aluminum',
-	'4x mekanism:nugget_uranium',
-	'4x immersiveengineering:nugget_nickel',
+	'4x emendatusenigmatica:copper_nugget',
+	'4x emendatusenigmatica:zinc_nugget',
+	'4x emendatusenigmatica:brass_nugget',
+	'4x emendatusenigmatica:osmium_nugget',
+	'4x emendatusenigmatica:silver_nugget',
+	'4x emendatusenigmatica:tin_nugget',
+	'4x emendatusenigmatica:lead_nugget',
+	'4x emendatusenigmatica:aluminum_nugget',
+	'4x emendatusenigmatica:uranium_nugget',
+	'4x emendatusenigmatica:nickel_nugget',
 	]
 	
     var i = 0
-    smeltingOutput.forEach(function (nuggets) {
-        event.smelting(nuggets, smeltingInput[i])
+    smeltingOutput.forEach(function (output) {
+        event.smelting(output, smeltingInput[i])
         i++
     })	
 		
@@ -112,256 +113,101 @@ events.listen('recipes', function (event) {
 	event.recipes.immersiveengineeringMetalPress('emendatusenigmatica:diamond_rod', 'minecraft:diamond', 'immersiveengineering:mold_rod')
 	event.recipes.immersiveengineeringMetalPress('emendatusenigmatica:emerald_rod', 'minecraft:emerald', 'immersiveengineering:mold_rod')
 	event.recipes.immersiveengineeringMetalPress('emendatusenigmatica:lapis_rod', 'minecraft:lapis_lazuli', 'immersiveengineering:mold_rod')
+	event.recipes.immersiveengineeringMetalPress('emendatusenigmatica:constantan_rod', '#forge:rods/constantan', 'immersiveengineering:mold_rod')
+	event.recipes.immersiveengineeringMetalPress('emendatusenigmatica:electrum_rod', '#forge:rods/electrum', 'immersiveengineering:mold_rod')
 	
 	//Add rods to Create Additions Rolling Mill
 	event.remove({id: 'createaddition/rolling/gold_ingot'})
-	event.custom({
-		"type":"createaddition:rolling",
-		"input": {
-			"tag": "forge:ingots/gold"
-		},
-		"result": {
-			"item": "emendatusenigmatica:gold_rod",
-			"count": 2
-		}
-	})
 	
-	event.custom({
-		"type":"createaddition:rolling",
-		"input": {
-			"tag": "forge:ingots/iron"
-		},
-		"result": {
-			"item": "emendatusenigmatica:iron_rod",
-			"count": 2
-		}
-	})
-
-	event.custom({
-		"type":"createaddition:rolling",
-		"input": {
-			"item": "minecraft:diamond"
-		},
-		"result": {
-			"item": "emendatusenigmatica:diamond_rod",
-			"count": 2
-		}
-	})
+	var rollingInput = [
+		"forge:ingots/gold",
+		"forge:ingots/iron",
+		"forge:ingots/copper",
+		"forge:ingots/aluminum",
+		"forge:ingots/silver",
+		"forge:ingots/lead",
+		"forge:ingots/nickel",
+		"forge:ingots/uranium",
+		"forge:ingots/osmium",
+		"forge:ingots/tin",
+		"forge:ingots/zinc",
+		"forge:ingots/bronze",
+		"forge:ingots/brass",
+		"forge:ingots/constantan",
+		"forge:ingots/electrum",
+		"forge:ingots/steel",
+		"forge:gems/lapis",
+		"forge:gems/diamond",
+		"forge:gems/emerald",
+	]
 	
-	event.custom({
-		"type":"createaddition:rolling",
-		"input": {
-			"item": "minecraft:emerald"
-		},
-		"result": {
-			"item": "emendatusenigmatica:emerald_rod",
-			"count": 2
-		}
-	})
+	var rollingOutput = [
+		"emendatusenigmatica:gold_rod",
+		"emendatusenigmatica:iron_rod",
+		"emendatusenigmatica:copper_rod",
+		"emendatusenigmatica:aluminum_rod",
+		"emendatusenigmatica:silver_rod",
+		"emendatusenigmatica:lead_rod",
+		"emendatusenigmatica:nickel_rod",
+		"emendatusenigmatica:uranium_rod",
+		"emendatusenigmatica:osmium_rod",
+		"emendatusenigmatica:tin_rod",
+		"emendatusenigmatica:zinc_rod",
+		"emendatusenigmatica:bronze_rod",
+		"emendatusenigmatica:brass_rod",
+		"emendatusenigmatica:constantan_rod",
+		"emendatusenigmatica:electrum_rod",
+		"emendatusenigmatica:steel_rod",
+		"emendatusenigmatica:lapis_rod",
+		"emendatusenigmatica:diamond_rod",
+		"emendatusenigmatica:emerald_rod"
+	]
 	
-	event.custom({
-		"type":"createaddition:rolling",
-		"input": {
-			"item": "minecraft:lapis_lazuli"
-		},
-		"result": {
-			"item": "emendatusenigmatica:lapis_rod",
-			"count": 2
-		}
-	})
+	var i = 0
 	
-	event.custom({
-		"type":"createaddition:rolling",
-		"input": {
-			"tag": "forge:ingots/copper"
-		},
-		"result": {
-			"item": "emendatusenigmatica:copper_rod",
-			"count": 2
-		}
-	})
-	
-	event.custom({
-		"type":"createaddition:rolling",
-		"input": {
-			"tag": "forge:ingots/aluminum"
-		},
-		"result": {
-			"item": "emendatusenigmatica:aluminum_rod",
-			"count": 2
-		}
-	})
-	
-	event.custom({
-		"type":"createaddition:rolling",
-		"input": {
-			"tag": "forge:ingots/silver"
-		},
-		"result": {
-			"item": "emendatusenigmatica:silver_rod",
-			"count": 2
-		}
-	})
-	
-	event.custom({
-		"type":"createaddition:rolling",
-		"input": {
-			"tag": "forge:ingots/lead"
-		},
-		"result": {
-			"item": "emendatusenigmatica:lead_rod",
-			"count": 2
-		}
-	})
-	
-	event.custom({
-		"type":"createaddition:rolling",
-		"input": {
-			"tag": "forge:ingots/nickel"
-		},
-		"result": {
-			"item": "emendatusenigmatica:nickel_rod",
-			"count": 2
-		}
-	})
-	
-	event.custom({
-		"type":"createaddition:rolling",
-		"input": {
-			"tag": "forge:ingots/uranium"
-		},
-		"result": {
-			"item": "emendatusenigmatica:uranium_rod",
-			"count": 2
-		}
-	})
-	
-	event.custom({
-		"type":"createaddition:rolling",
-		"input": {
-			"tag": "forge:ingots/osmium"
-		},
-		"result": {
-			"item": "emendatusenigmatica:osmium_rod",
-			"count": 2
-		}
-	})
-	
-	event.custom({
-		"type":"createaddition:rolling",
-		"input": {
-			"tag": "forge:ingots/tin"
-		},
-		"result": {
-			"item": "emendatusenigmatica:tin_rod",
-			"count": 2
-		}
-	})
-	
-	event.custom({
-		"type":"createaddition:rolling",
-		"input": {
-			"tag": "forge:ingots/zinc"
-		},
-		"result": {
-			"item": "emendatusenigmatica:zinc_rod",
-			"count": 2
-		}
-	})
-	
-	event.custom({
-		"type":"createaddition:rolling",
-		"input": {
-			"tag": "forge:ingots/bronze"
-		},
-		"result": {
-			"item": "emendatusenigmatica:bronze_rod",
-			"count": 2
-		}
-	})
-	
-	event.custom({
-		"type":"createaddition:rolling",
-		"input": {
-			"tag": "forge:ingots/brass"
-		},
-		"result": {
-			"item": "emendatusenigmatica:brass_rod",
-			"count": 2
-		}
-	})
-	
-	event.custom({
-		"type":"createaddition:rolling",
-		"input": {
-			"tag": "forge:ingots/constantan"
-		},
-		"result": {
-			"item": "emendatusenigmatica:constantan_rod",
-			"count": 2
-		}
-	})
-	
-	event.custom({
-		"type":"createaddition:rolling",
-		"input": {
-			"tag": "forge:ingots/electrum"
-		},
-		"result": {
-			"item": "emendatusenigmatica:electrum_rod",
-			"count": 2
-		}
-	})
-	
-	event.custom({
-		"type":"createaddition:rolling",
-		"input": {
-			"tag": "forge:ingots/steel"
-		},
-		"result": {
-			"item": "emendatusenigmatica:steel_rod",
-			"count": 2
-		}
+	rollingOutput.forEach(function (output) {
+		event.custom({
+			"type":"createaddition:rolling",
+			"input": {
+				"tag": rollingInput[i]
+			},
+			"result": {
+				"item": output,
+				"count": 2
+			}
+		})
+		i++
 	})
 	
 	//Crushed Ores
-	event.custom({
-		"type": "appliedenergistics2:grinder",
-		"input": {
-			"tag": "forge:ores/zinc"
-		},
-		"result": {
-			"primary": {
-			"item": "create:crushed_zinc_ore"
-			},
-		},
-		"turns": 12
-	})
+	var crushedInput = [
+		"forge:ores/zinc",
+		"forge:ores/tin",
+		"forge:ores/copper"
+	]
 	
-	event.custom({
-		"type": "appliedenergistics2:grinder",
-		"input": {
-			"tag": "forge:ores/tin"
-		},
-		"result": {
-			"primary": {
-			"item": "create:crushed_tin_ore"
-			},
-		},
-		"turns": 12
-	})
+	var crushedOutput = [
+		"create:crushed_zinc_ore",
+		"create:crushed_tin_ore",
+		"create:crushed_copper_ore"
+	]
 	
-	event.custom({
-		"type": "appliedenergistics2:grinder",
-		"input": {
-			"tag": "forge:ores/copper"
-		},
-		"result": {
-			"primary": {
-			"item": "create:crushed_copper_ore"
+	var i = 0
+	
+	crushedOutput.forEach(function (output) {
+		event.custom({
+			"type": "appliedenergistics2:grinder",
+			"input": {
+				"tag": crushedInput[i]
 			},
-		},
-		"turns": 12
+			"result": {
+				"primary": {
+				"item": output
+				},
+			},
+			"turns": 12
+		})
+		i++
 	})
 	
     //Make netherite ingot with Create Mixer
@@ -389,30 +235,30 @@ events.listen('recipes', function (event) {
 	'#forge:ingots/zinc',
 	).time(1600)
 	
-		event.recipes.immersiveengineeringAlloy(item.of('emendatusenigmatica:constantan_ingot',2),
+	event.recipes.immersiveengineeringAlloy(item.of('emendatusenigmatica:constantan_ingot',2),
 	'#forge:ingots/copper',
 	'#forge:ingots/nickel',
 	).time(1600)
 	
-		event.recipes.immersiveengineeringAlloy(item.of('emendatusenigmatica:electrum_ingot',2),
+	event.recipes.immersiveengineeringAlloy(item.of('emendatusenigmatica:electrum_ingot',2),
 	'#forge:ingots/gold',
 	'#forge:ingots/silver',
 	).time(1600)
 	
-		event.recipes.immersiveengineeringAlloy(item.of('emendatusenigmatica:bronze_ingot',4),
+	event.recipes.immersiveengineeringAlloy(item.of('emendatusenigmatica:bronze_ingot',4),
 	'3x #forge:ingots/copper',
 	'#forge:ingots/tin',
 	).time(1600)
 	
 	//Food
 	//Merge Create and Pam's flour and dough
-		event.replaceInput({type: 'minecraft:crafting_shapeless'},
+	event.replaceInput({type: 'minecraft:crafting_shapeless'},
 	'pamhc2foodcore:doughitem', '#forge:dough'
 	)
-		event.replaceInput({type: 'minecraft:crafting_shapeless'},
+	event.replaceInput({type: 'minecraft:crafting_shapeless'},
 	'pamhc2foodcore:flouritem', '#forge:flour'
 	)
-		event.replaceInput({type: 'minecraft:crafting_shapeless'},
+	event.replaceInput({type: 'minecraft:crafting_shapeless'},
 	'create:dough', '#forge:dough'
 	)
 })
