@@ -502,7 +502,7 @@ events.listen('jei.hide.items', function (event) {
 	'emendatusenigmatica:certus_quartz_raw_marble_ore',
 	'emendatusenigmatica:charged_certus_quartz_raw_marble_ore',
 	'emendatusenigmatica:fluorite_raw_marble_ore',
-	'emendatusenigmatica:bitumen_raw_marble_ore'
+	'emendatusenigmatica:bitumen_raw_marble_ore',
 
 	//Fence
 	'immersiveposts:fence_constantan',
