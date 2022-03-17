@@ -76,33 +76,15 @@ events.listen('recipes', function (event) {
 	event.remove({type: 'minecraft:smelting', input: '#create:crushed_ores'})
 	
 	var smeltingInput = [
-	'create:crushed_iron_ore',
-	'create:crushed_gold_ore',
 	'create:crushed_copper_ore',
 	'create:crushed_zinc_ore',
-	'create:crushed_brass',
-	'create:crushed_osmium_ore',
-	'create:crushed_silver_ore',
 	'create:crushed_tin_ore',
-	'create:crushed_lead_ore',
-	'create:crushed_aluminum_ore',
-	'create:crushed_uranium_ore',
-	'create:crushed_nickel_ore',
 	]
 	
 	var smeltingOutput = [
-	'4x minecraft:iron_nugget',
-	'4x minecraft:gold_nugget',
 	'4x emendatusenigmatica:copper_nugget',
 	'4x emendatusenigmatica:zinc_nugget',
-	'4x emendatusenigmatica:brass_nugget',
-	'4x emendatusenigmatica:osmium_nugget',
-	'4x emendatusenigmatica:silver_nugget',
 	'4x emendatusenigmatica:tin_nugget',
-	'4x emendatusenigmatica:lead_nugget',
-	'4x emendatusenigmatica:aluminum_nugget',
-	'4x emendatusenigmatica:uranium_nugget',
-	'4x emendatusenigmatica:nickel_nugget',
 	]
 	
     var i = 0
