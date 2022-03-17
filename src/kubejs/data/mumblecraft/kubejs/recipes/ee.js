@@ -71,6 +71,16 @@ events.listen('recipes', function (event) {
 		'emendatusenigmatica:constantan_gear',
 		'emendatusenigmatica:electrum_gear',
 		'emendatusenigmatica:cast_iron_gear',
+		'emendatusenigmatica:lapis_gear',
+		'emendatusenigmatica:cobalt_gear',
+		'emendatusenigmatica:signalum_gear',
+		'emendatusenigmatica:sapphire_gear',
+		'emendatusenigmatica:invar_gear',
+		'emendatusenigmatica:iridium_gear',
+		'emendatusenigmatica:enderium_gear',
+		'emendatusenigmatica:lumium_gear',
+		'emendatusenigmatica:ruby_gear',
+		'emendatusenigmatica:peridot_gear',
 	]
 	
 	gears.forEach(function (gear){
@@ -81,7 +91,6 @@ events.listen('recipes', function (event) {
 	var plates = [
 		'emendatusenigmatica:emerald_plate',
 		'emendatusenigmatica:quartz_plate',
-		'emendatusenigmatica:aluminum_plate',
 		'emendatusenigmatica:silver_plate',
 		'emendatusenigmatica:lead_plate',
 		'emendatusenigmatica:osmium_plate',

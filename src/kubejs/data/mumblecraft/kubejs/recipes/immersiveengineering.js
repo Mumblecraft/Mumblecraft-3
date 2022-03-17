@@ -151,6 +151,64 @@ events.listen('recipes', function (event) {
         B: 'immersiveengineering:component_steel',
         C: '#forge:storage_blocks/electrum',
     })
+	
+	//MV Capacitor
+	event.shaped(item.of('immersiveengineering:capacitor_mv', 1), [
+        'AAA',
+        'BCB',
+        'DED',
+    ], {
+        A: '#forge:plates/iron',
+        B: '#forge:ingots/electrum',
+        C: '#forge:ingots/lead',
+	    D: '#forge:treated_wood',
+		E: '#forge:storage_blocks/redstone',
+    })
+	
+	//MV Relay
+	event.shaped(item.of('immersiveengineering:connector_mv_relay', 8), [
+        ' A ',
+        'BAB',
+        '   ',
+    ], {
+        A: '#forge:ingots/electrum',
+        B: '#mekanism:colorable/terracotta',
+    })
+	
+	//MV Connector
+	event.shaped(item.of('immersiveengineering:connector_mv', 4), [
+        ' A ',
+        'BAB',
+        'BAB',
+    ], {
+        A: '#forge:ingots/electrum',
+        B: '#mekanism:colorable/terracotta',
+    })
+	
+	//Furnace Heater
+	event.shaped(item.of('immersiveengineering:furnace_heater', 1), [
+        'ABA',
+        'BCB',
+        'ADA',
+    ], {
+        A: '#forge:plates/iron',
+        B: '#forge:ingots/copper',
+		C: 'immersiveengineering:coil_lv',
+	    D: '#forge:dusts/redstone',
+    })
+	
+	//Rockcutter Blade
+	event.remove({id: 'immersiveengineering:crafting/rockcutter'})
+	
+	event.shaped(item.of('immersiveengineering:rockcutter', 1), [
+        'ABA',
+        'BCB',
+        'ABA',
+    ], {
+        A: '#forge:gems/diamond',
+        B: '#forge:plates/steel',
+		C: '#forge:gears/diamond',
+    })
 
     //Engineer's Decor
     //Small Electrical Furnace

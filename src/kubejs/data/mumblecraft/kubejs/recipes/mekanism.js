@@ -158,7 +158,7 @@ events.listen('recipes', function (event) {
         'CDC',
         'AAA',
     ], {
-        A: 'immersiveengineering:plate_iron',
+        A: '#forge:plates/iron',
         B: 'mekanism:basic_control_circuit',
         C: 'create:adjustable_crate',
         D: 'mekanism:steel_casing'
@@ -186,7 +186,7 @@ events.listen('recipes', function (event) {
         'CDC',
         'AAA',
     ], {
-        A: 'immersiveengineering:plate_aluminum',
+        A: '#forge:plates/aluminum',
         B: 'mekanism:elite_control_circuit',
         C: 'mekanism:alloy_reinforced',
         D: 'mekanism:advanced_bin'
@@ -200,7 +200,7 @@ events.listen('recipes', function (event) {
         'CDC',
         'AAA',
     ], {
-        A: 'immersiveengineering:plate_uranium',
+        A: '#forge:plates/uranium',
         B: 'mekanism:ultimate_control_circuit',
         C: 'mekanism:alloy_atomic',
         D: 'mekanism:elite_bin'
@@ -510,7 +510,7 @@ events.listen('recipes', function (event) {
         ], {
             A: 'immersiveengineering:rs_engineering',
             B: 'mekanism:basic_control_circuit',
-            C: 'immersiveengineering:plate_iron',
+            C: '#forge:plates/iron',
             D: tierZero[i]
         })
         i++
@@ -540,7 +540,7 @@ events.listen('recipes', function (event) {
         ], {
             A: 'mekanism:alloy_reinforced',
             B: 'mekanism:elite_control_circuit',
-            C: 'immersiveengineering:plate_aluminum',
+            C: '#forge:plates/aluminum',
             D: tierTwo[i]
         })
         i++
@@ -580,7 +580,7 @@ events.listen('recipes', function (event) {
     ], {
         A: 'mekanism:alloy_reinforced',
         B: 'mekanism:elite_control_circuit',
-        C: 'immersiveengineering:plate_aluminum',
+        C: '#forge:plates/aluminum',
         D: '#minecraft:planks'
     })
 	

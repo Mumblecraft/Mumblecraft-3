@@ -12,6 +12,7 @@ events.listen('jei.hide.items', function (event) {
 	//Immersive Engineering
 	'immersiveengineering:ore_copper',
 	'immersiveengineering:ore_uranium',
+	'immersiveengineering:wire_lead',
 	
 	//Nuggets
 	'emendatusenigmatica:iridium_nugget',
@@ -74,6 +75,7 @@ events.listen('jei.hide.items', function (event) {
 	'emendatusenigmatica:constantan_gear',
 	'emendatusenigmatica:electrum_gear',
 	'emendatusenigmatica:cast_iron_gear',
+	'emendatusenigmatica:lapis_gear',
 	
 	//Plate
 	'emendatusenigmatica:iridium_plate',
@@ -87,7 +89,6 @@ events.listen('jei.hide.items', function (event) {
 	'emendatusenigmatica:cobalt_plate',
 	'emendatusenigmatica:emerald_plate',
 	'emendatusenigmatica:quartz_plate',
-	'emendatusenigmatica:aluminum_plate',
 	'emendatusenigmatica:silver_plate',
 	'emendatusenigmatica:lead_plate',
 	'emendatusenigmatica:osmium_plate',
