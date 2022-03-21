@@ -595,12 +595,14 @@ events.listen('recipes', function (event) {
         D: '#minecraft:planks'
     })
 	
-	//World
+	//Saw Treated Wood
+	event.recipes.mekanismSawing('6x immersiveengineering:stick_treated', '#forge:treated_wood', item.of('mekanism:sawdust').chance(0.25))
 	
+	//World
 	//Salt - Convert Pam's Kitchen Salt to Mekanism Salt
 	event.shapeless(Item.of('mekanism:salt', 1), 'pamhc2foodcore:saltitem')
 	
-		//Bronze Dust
+	//Bronze Dust
 	event.shapeless(Item.of('mekanism:dust_bronze',4), [
 		Item.of('create:crushed_copper_ore',3),
 		'create:crushed_tin_ore'
