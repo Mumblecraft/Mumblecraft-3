@@ -647,11 +647,14 @@ events.listen('recipes', function (event) {
 		H: 'appliedenergistics2:engineering_processor'
     })
 	
-	//World
+	//Saw Treated Wood
+	event.recipes.mekanismSawing('6x immersiveengineering:stick_treated', '#forge:treated_wood', item.of('mekanism:sawdust').chance(0.25))
+
 	
+	//World
 	//Salt - Convert Pam's Kitchen Salt to Mekanism Salt
 	event.shapeless(Item.of('mekanism:salt', 1), 'pamhc2foodcore:saltitem')
-	
+
 	//Dough
 	event.replaceInput({type: 'minecraft:crafting_shapeless'},
 		'#pamhc2foodcore:doughitem', '#forge:dough'
