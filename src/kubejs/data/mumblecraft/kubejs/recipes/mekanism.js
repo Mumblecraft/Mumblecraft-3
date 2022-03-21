@@ -7,6 +7,13 @@ events.listen('recipes', function (event) {
 
     //Machines/Components
 
+	//Replace Ingots with Plates
+	event.replaceInput(
+	    {type: 'minecraft:crafting_shaped',mod: 'mekanism'},
+		'#forge:ingots/iron',
+		'#forge:plates/iron'
+	)
+	
     //Steel Casing
 	event.remove({id: 'mekanism:steel_casing'})
 	
@@ -31,10 +38,10 @@ events.listen('recipes', function (event) {
         'BCB',
         'DED',
     ], {
-    A: 'minecraft:iron_ingot',
-    B: 'emendatusenigmatica:constantan_ingot',
+    A: '#forge:plates/iron',
+    B: '#forge:plates/constantan',
     C: 'mekanism:steel_casing',
-    D: '#forge:ingots/copper',
+    D: '#forge:plates/copper',
 	E: 'minecraft:furnace'
     })
 	
@@ -46,7 +53,7 @@ events.listen('recipes', function (event) {
         'CDC',
         'ABA',
     ], {
-    A: 'minecraft:iron_ingot',
+    A: '#forge:plates/iron',
     B: 'engineersdecor:small_electrical_furnace',
     C: 'minecraft:redstone',
     D: 'mekanism:steel_casing',
@@ -76,7 +83,7 @@ events.listen('recipes', function (event) {
     ], {
         A: 'minecraft:redstone',
         B: 'mekanism:basic_control_circuit',
-        C: 'immersiveengineering:storage_steel',
+        C: '#forge:/storage_blocks/steel',
         D: 'mekanism:steel_casing'
     })
 
@@ -104,7 +111,7 @@ events.listen('recipes', function (event) {
     ], {
         A: 'mekanism:alloy_infused',
         B: 'mekanism:advanced_control_circuit',
-        C: 'immersiveengineering:storage_steel',
+        C: '#forge:/storage_blocks/steel',
         D: 'mekanism:steel_casing'
     })
 
@@ -158,7 +165,7 @@ events.listen('recipes', function (event) {
         'CDC',
         'AAA',
     ], {
-        A: 'immersiveengineering:plate_iron',
+        A: '#forge:plates/iron',
         B: 'mekanism:basic_control_circuit',
         C: 'create:adjustable_crate',
         D: 'mekanism:steel_casing'
@@ -186,7 +193,7 @@ events.listen('recipes', function (event) {
         'CDC',
         'AAA',
     ], {
-        A: 'immersiveengineering:plate_aluminum',
+        A: '#forge:plates/aluminum',
         B: 'mekanism:elite_control_circuit',
         C: 'mekanism:alloy_reinforced',
         D: 'mekanism:advanced_bin'
@@ -200,7 +207,7 @@ events.listen('recipes', function (event) {
         'CDC',
         'AAA',
     ], {
-        A: 'immersiveengineering:plate_uranium',
+        A: '#forge:plates/uranium',
         B: 'mekanism:ultimate_control_circuit',
         C: 'mekanism:alloy_atomic',
         D: 'mekanism:elite_bin'
@@ -351,12 +358,11 @@ events.listen('recipes', function (event) {
 	
     event.shaped(item.of('mekanism:basic_chemical_tank', 1), [
         'ABA',
-        'BCB',
+        'B B',
         'ABA',
     ], {
-        A: 'minecraft:redstone',
-        B: '#forge:ingots/osmium',
-        C: 'mekanism:steel_casing'
+        A: 'mekanism:enriched_redstone',
+        B: '#forge:plates/osmium',
     })
 
     //Fission Reactor Casing
@@ -510,7 +516,7 @@ events.listen('recipes', function (event) {
         ], {
             A: 'immersiveengineering:rs_engineering',
             B: 'mekanism:basic_control_circuit',
-            C: 'immersiveengineering:plate_iron',
+            C: '#forge:plates/iron',
             D: tierZero[i]
         })
         i++
@@ -540,7 +546,7 @@ events.listen('recipes', function (event) {
         ], {
             A: 'mekanism:alloy_reinforced',
             B: 'mekanism:elite_control_circuit',
-            C: 'immersiveengineering:plate_aluminum',
+            C: '#forge:plates/aluminum',
             D: tierTwo[i]
         })
         i++
@@ -580,7 +586,7 @@ events.listen('recipes', function (event) {
     ], {
         A: 'mekanism:alloy_reinforced',
         B: 'mekanism:elite_control_circuit',
-        C: 'immersiveengineering:plate_aluminum',
+        C: '#forge:plates/aluminum',
         D: '#minecraft:planks'
     })
 	
@@ -595,31 +601,57 @@ events.listen('recipes', function (event) {
         D: '#minecraft:planks'
     })
 	
+	//Fission Fuel Assembly
+	event.remove({id: 'mekanismgenerators:fission_reactor/fuel_assembly'})
+	
+    event.shaped(item.of('mekanismgenerators:fission_fuel_assembly'), [
+        'ABA',
+        'ACA',
+        'ABA',
+    ], {
+        A: '#forge:rods/lead',
+        B: 'mekanism:ultimate_control_circuit',
+        C: '#forge:plates/steel',
+	})
+
+	//Control Rod Assembly
+	event.remove({id: 'mekanismgenerators:fission_reactor/control_rod_assembly'})
+	
+    event.shaped(item.of('mekanismgenerators:control_rod_assembly'), [
+        'ABA',
+        'CAC',
+        'CAC',
+    ], {
+        A: '#forge:rods/lead',
+        B: 'mekanism:elite_control_circuit',
+        C: '#forge:plates/steel',
+	})
+	
+	//Fusion Reactor Controller
+	event.remove({id: 'mekanismgenerators:reactor/controller'})
+	
+    event.recipes.create.mechanical_crafting(item.of('mekanismgenerators:fusion_reactor_controller', 1), [
+        'ABCBA',
+        'ADEDA',
+        'AFGFA',
+		'AHFHA',
+		'AAAAA',
+    ], {
+        A: 'mekanismgenerators:fusion_reactor_frame',
+        B: 'rftoolsutility:screen',
+        C: 'rftoolsutility:screen_controller',
+		D: '#forge:circuits/ultimate',
+		E: 'rftoolscontrol:processor',
+		F: 'mekanism:ultimate_chemical_tank',
+		G: 'rftoolscontrol:tank',
+		H: 'appliedenergistics2:engineering_processor'
+    })
+	
 	//World
 	
 	//Salt - Convert Pam's Kitchen Salt to Mekanism Salt
 	event.shapeless(Item.of('mekanism:salt', 1), 'pamhc2foodcore:saltitem')
 	
-		//Bronze Dust
-	event.shapeless(Item.of('mekanism:dust_bronze',4), [
-		Item.of('create:crushed_copper_ore',3),
-		'create:crushed_tin_ore'
-	])
-
-	event.shapeless(Item.of('mekanism:dust_bronze',4), [
-		Item.of('create:crushed_copper_ore',3),
-		'#forge:dusts/tin'
-	])
-
-	event.shapeless(Item.of('mekanism:dust_bronze',4), [
-		Item.of('#forge:dusts/copper',3),
-		'create:crushed_tin_ore'
-	])
-
-	event.shapeless(Item.of('mekanism:dust_bronze',4), [
-		Item.of('#forge:dusts/copper',3),
-		'#forge:dusts/tin'
-	])
 	//Dough
 	event.replaceInput({type: 'minecraft:crafting_shapeless'},
 		'#pamhc2foodcore:doughitem', '#forge:dough'

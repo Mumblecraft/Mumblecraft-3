@@ -76,7 +76,7 @@ events.listen('jei.hide.items', function (event) {
 	'emendatusenigmatica:cast_iron_gear',
 	
 	//Plate
-	'emendatusenigmatica:iridium_plate',
+/*	'emendatusenigmatica:iridium_plate',
 	'emendatusenigmatica:ruby_plate',
 	'emendatusenigmatica:sapphire_plate',
 	'emendatusenigmatica:peridot_plate',
@@ -88,13 +88,8 @@ events.listen('jei.hide.items', function (event) {
 	'emendatusenigmatica:emerald_plate',
 	'emendatusenigmatica:quartz_plate',
 	'emendatusenigmatica:aluminum_plate',
-	'emendatusenigmatica:silver_plate',
-	'emendatusenigmatica:lead_plate',
-	'emendatusenigmatica:osmium_plate',
-	'emendatusenigmatica:constantan_plate',
-	'emendatusenigmatica:electrum_plate',
 	'emendatusenigmatica:cast_iron_plate',
-	
+*/	
 	//Cluster
 	'emendatusenigmatica:iridium_cluster',
 	'emendatusenigmatica:ruby_cluster',
