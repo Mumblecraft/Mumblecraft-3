@@ -59,6 +59,9 @@ events.listen('recipes', function (event) {
 	event.recipes.immersiveengineeringMetalPress('emendatusenigmatica:constantan_plate', '#forge:ingots/constantan', 'immersiveengineering:mold_plate')
 	event.recipes.immersiveengineeringMetalPress('emendatusenigmatica:electrum_plate', '#forge:ingots/electrum', 'immersiveengineering:mold_plate')
 	
+	//Add wire and rods to Immersive Engineering Press
+	event.recipes.immersiveengineeringMetalPress('2x #forge:wires/electrum', '#forge:ingots/electrum', 'immersiveengineering:mold_wire')
+	
     //Ingots
     //Make bronze with Create mixer
     event.recipes.create.mixing(item.of('mekanism:ingot_bronze', 4), [
