@@ -146,4 +146,17 @@ events.listen('recipes', function (event) {
         A: 'emendatusenigmatica:bronze_plate',
         B: 'create:andesite_alloy',
     })
+	
+	//Controller Rail
+	event.remove({id: 'create:crafting/kinetics/controller_rail'})
+	
+	event.shaped(item.of('create:controller_rail', 6), [
+		'A A',
+		'ABA',
+		'ACA',
+	], {
+		A: '#forge:rods/gold',
+		B: '#forge:rods/wooden',
+		C: 'create:electron_tube',
+	})
 })

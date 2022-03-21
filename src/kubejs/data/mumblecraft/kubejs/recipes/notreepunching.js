@@ -33,16 +33,9 @@ events.listen('recipes', function (event) {
 	idRemove.forEach(function (remove) {
 		event.remove({id: remove})
 	})
-	
-    event.shaped(item.of('immersiveengineering:stick_treated', 2), [
-        'AB',
-    ], {
-        A: '#notreepunching:saws',
-        B: '#forge:treated_wood'
-    })
 
     //Add BoP logs->planks
-    var planksList =[
+    var planksList = [
         'biomesoplenty:fir_planks',
         'biomesoplenty:redwood_planks',
         'biomesoplenty:cherry_planks',
@@ -58,7 +51,7 @@ events.listen('recipes', function (event) {
 		'minecraft:crimson_planks',
     ]
 
-    var logsList =[
+    var logsList = [
         '#biomesoplenty:fir_logs',
         '#biomesoplenty:redwood_logs',
         '#biomesoplenty:cherry_logs',
@@ -73,9 +66,12 @@ events.listen('recipes', function (event) {
 		'minecraft:warped_stem',
 		'minecraft:crimson_stem',
     ]
+	
+	//Saw Recipes
     var i = 0
 
     planksList.forEach(function (planks) {
+		//Logs to Planks
         event.shaped(item.of(planks, 4), [
             'A',
             'B'
@@ -83,19 +79,72 @@ events.listen('recipes', function (event) {
             A: '#notreepunching:saws',
             B: logsList[i]
         })
+		
+		//Planks to Sticks
+		event.shaped(item.of('minecraft:stick', 2), [
+            'AB'
+        ], {
+            A: '#notreepunching:saws',
+            B: planks
+        })
         i++
     })
 	
+	//Logs to Sticks
+	logsList.forEach(function (logs) {
+		event.shaped(item.of('minecraft:stick', 8), [
+			'AB'
+		], {
+			A: '#notreepunching:saws',
+            B: logs
+		})
+	})
+	
+	event.shaped(item.of('immersiveengineering:stick_treated', 2), [
+        'AB'
+    ], {
+        A: '#notreepunching:saws',
+        B: '#forge:treated_wood'
+    })
+	
+	//Axe  Recipes
 	var i = 0
 
     planksList.forEach(function (planks) {
+		//Logs to Planks
         event.shaped(item.of(planks, 2), [
             'A',
             'B'
         ], {
-            A: 'notreepunching:flint_axe',
+            A: '#notreepunching:weak_saws',
             B: logsList[i]
         })
+		
+		//Planks to Sticks
+		event.shaped(item.of('minecraft:stick', 1), [
+            'AB'
+        ], {
+            A: '#notreepunching:weak_saws',
+            B: planks
+        })
         i++
+    })
+	
+	//Logs to Sticks
+	logsList.forEach(function (logs) {
+		event.shaped(item.of('minecraft:stick', 6), [
+			'AB'
+		], {
+			A: '#notreepunching:weak_saws',
+            B: logs
+		})
+	})
+	
+	//Treated Sticks
+	event.shaped(item.of('immersiveengineering:stick_treated', 1), [
+        'AB'
+    ], {
+        A: '#notreepunching:weak_saws',
+        B: '#forge:treated_wood'
     })
 })
