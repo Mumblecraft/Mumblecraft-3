@@ -209,18 +209,44 @@ events.listen('recipes', function (event) {
         B: '#forge:plates/steel',
 		C: '#forge:gears/diamond',
     })
-
+	
+	//Water Wheel
+	event.remove({id: 'immersiveengineering:crafting/watermill'})
+	
+	event.shaped(item.of('immersiveengineering:watermill', 1), [
+        ' A ',
+        'ABA',
+        ' A ',
+    ], {
+        A: 'immersiveengineering:waterwheel_segment',
+        B: '#forge:gears/steel',
+    })
+	
+	//Windmill
+	event.remove({id: 'immersiveengineering:crafting/windmill'})
+	
+	event.shaped(item.of('immersiveengineering:windmill', 1), [
+        'AAA',
+        'ABA',
+        'AAA',
+    ], {
+        A: 'immersiveengineering:windmill_blade',
+        B: '#forge:gears/iron',
+		
+    })
     //Engineer's Decor
     //Small Electrical Furnace
+	event.remove(item.of('engineersdecor:independant/small_electrical_furnace_recipe'))
+	
     event.shaped(item.of('engineersdecor:small_electrical_furnace', 1), [
         'ABA',
         'CDC',
         'AAA',
     ], {
-        A: '#forge:plates/iron',
+        A: '#forge:plates/steel',
         B: 'immersiveengineering:connector_lv',
         C: 'create:electron_tube',
-	    D: 'minecraft:furnace',
+	    D: 'minecraft:blast_furnace',
     })
 
     //Processing
