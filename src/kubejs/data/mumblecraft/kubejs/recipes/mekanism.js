@@ -83,7 +83,7 @@ events.listen('recipes', function (event) {
     ], {
         A: 'minecraft:redstone',
         B: 'mekanism:basic_control_circuit',
-        C: '#forge:/storage_blocks/steel',
+        C: '#forge:storage_blocks/steel',
         D: 'mekanism:steel_casing'
     })
 
@@ -111,7 +111,7 @@ events.listen('recipes', function (event) {
     ], {
         A: 'mekanism:alloy_infused',
         B: 'mekanism:advanced_control_circuit',
-        C: '#forge:/storage_blocks/steel',
+        C: '#forge:storage_blocks/steel',
         D: 'mekanism:steel_casing'
     })
 
