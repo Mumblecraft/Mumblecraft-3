@@ -49,6 +49,19 @@ events.listen('recipes', function (event) {
 		C: 'mekanism:ingot_refined_obsidian',
     })
 	
+	//Vibration Chamber
+	event.remove({id: 'appliedenergistics2:network/blocks/energy_vibration_chamber'})
+	
+	event.shaped(item.of('appliedenergistics2:vibration_chamber'), [
+        'AAA',
+        'ABA',
+		'ACA',
+    ], {
+        A: 'minecraft:iron_ingot',
+        B: 'mekanism:energized_smelter',
+		C: 'appliedenergistics2:energy_acceptor',
+    })
+	
 	//Make sky stone chests require iron nugget
 	event.remove({id: 'appliedenergistics2:misc/chests_sky_stone'})
 	
