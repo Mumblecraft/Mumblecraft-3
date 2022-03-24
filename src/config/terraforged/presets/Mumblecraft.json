@@ -241,7 +241,7 @@
   "climate": {
     "temperature": {
       "seedOffset": 0,
-      "scale": 6,
+      "scale": 3,
       "falloff": 2,
       "min": 0.0,
       "max": 0.98,
@@ -249,14 +249,14 @@
     },
     "moisture": {
       "seedOffset": 0,
-      "scale": 6,
+      "scale": 3,
       "falloff": 1,
       "min": 0.0,
       "max": 1.0,
       "bias": 0.0
     },
     "biomeShape": {
-      "biomeSize": 400,
+      "biomeSize": 350,
       "macroNoiseSize": 8,
       "biomeWarpScale": 100,
       "biomeWarpStrength": 60
@@ -273,7 +273,7 @@
   "terrain": {
     "general": {
       "terrainSeedOffset": 0,
-      "terrainRegionSize": 800,
+      "terrainRegionSize": 700,
       "globalVerticalScale": 0.98,
       "globalHorizontalScale": 0.8,
       "fancyMountains": true
