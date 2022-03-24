@@ -1,0 +1,42 @@
+{
+	"pools": [
+	{
+		"rolls": 1,
+		"entries": [
+		  {		
+		  "type": "minecraft:item",
+		  "weight": 1,
+		  "name": "mekanism:clump_iron",
+		  "functions": [
+		  {
+			  "function": "minecraft:set_count",
+			  "count": {
+				  "min": 3,
+				  "max": 5
+              }
+		    }
+          ]
+        }
+      ]
+    },
+	{
+		"rolls": 1,
+		"entries": [
+		  {		
+		  "type": "minecraft:item",
+		  "weight": 1,
+		  "name": "minecraft:poppy",
+		  "functions": [
+		  {
+			  "function": "minecraft:set_count",
+			  "count": {
+				  "min": 0,
+				  "max": 2
+              }
+		    }
+          ]
+        }
+      ]
+    }
+  ]
+}

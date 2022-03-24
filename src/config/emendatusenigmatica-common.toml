@@ -2286,7 +2286,7 @@
 	active = true
 
 ["Stratum Config: minecraft_sand"]
-	active = true
+	active = false
 
 ["Stratum Config: minecraft_gravel"]
 	active = true
@@ -2298,8 +2298,7 @@
 	active = true
 
 ["Stratum Config: minecraft_basalt"]
-	active = true
-
+	active = false
 ["Stratum Config: minecraft_soul_soil"]
 	active = true
 
