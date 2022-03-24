@@ -234,9 +234,10 @@ events.listen('recipes', function (event) {
         B: '#forge:gears/iron',
 		
     })
+	
     //Engineer's Decor
     //Small Electrical Furnace
-	event.remove(item.of('engineersdecor:independant/small_electrical_furnace_recipe'))
+	event.remove({id: 'engineersdecor:independant/small_electrical_furnace_recipe'})
 	
     event.shaped(item.of('engineersdecor:small_electrical_furnace', 1), [
         'ABA',
