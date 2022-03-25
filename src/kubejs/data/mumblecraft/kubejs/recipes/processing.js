@@ -20,7 +20,6 @@ events.listen('recipes', function (event) {
 	'minecraft:emerald',
 	'minecraft:lapis_lazuli',
 	'#forge:ingots/osmium',
-	'#forge:ingots/tin',
 	'#forge:ingots/zinc',
 	'#forge:ingots/bronze',
 	'#forge:ingots/brass'
@@ -39,7 +38,6 @@ events.listen('recipes', function (event) {
 	'emendatusenigmatica:emerald_plate',
 	'emendatusenigmatica:lapis_plate',
 	'emendatusenigmatica:osmium_plate',
-	'emendatusenigmatica:tin_plate',
 	'emendatusenigmatica:zinc_plate',
 	'emendatusenigmatica:bronze_plate',
 	'emendatusenigmatica:brass_plate'
@@ -58,6 +56,9 @@ events.listen('recipes', function (event) {
 	event.recipes.immersiveengineeringMetalPress('emendatusenigmatica:lapis_plate', 'minecraft:lapis_lazuli', 'immersiveengineering:mold_plate')
 	event.recipes.immersiveengineeringMetalPress('emendatusenigmatica:constantan_plate', '#forge:ingots/constantan', 'immersiveengineering:mold_plate')
 	event.recipes.immersiveengineeringMetalPress('emendatusenigmatica:electrum_plate', '#forge:ingots/electrum', 'immersiveengineering:mold_plate')
+	event.recipes.immersiveengineeringMetalPress('emendatusenigmatica:osmium_plate', '#forge:ingots/osmium', 'immersiveengineering:mold_plate')
+	event.recipes.immersiveengineeringMetalPress('emendatusenigmatica:silver_plate', '#forge:ingots/silver', 'immersiveengineering:mold_plate')
+	event.recipes.immersiveengineeringMetalPress('emendatusenigmatica:lead_plate', '#forge:ingots/lead', 'immersiveengineering:mold_plate')
 	
 	//Add wire and rods to Immersive Engineering Press
 	event.recipes.immersiveengineeringMetalPress('2x #forge:wires/electrum', '#forge:ingots/electrum', 'immersiveengineering:mold_wire')
@@ -95,7 +96,6 @@ events.listen('recipes', function (event) {
 		
 	//Rods
 	//Add rods to Immersive Engineering Press
-	event.recipes.immersiveengineeringMetalPress('emendatusenigmatica:diamond_rod', 'minecraft:diamond', 'immersiveengineering:mold_rod')
 	event.recipes.immersiveengineeringMetalPress('emendatusenigmatica:emerald_rod', 'minecraft:emerald', 'immersiveengineering:mold_rod')
 	event.recipes.immersiveengineeringMetalPress('emendatusenigmatica:lapis_rod', 'minecraft:lapis_lazuli', 'immersiveengineering:mold_rod')
 	event.recipes.immersiveengineeringMetalPress('emendatusenigmatica:constantan_rod', '#forge:rods/constantan', 'immersiveengineering:mold_rod')
@@ -114,15 +114,9 @@ events.listen('recipes', function (event) {
 		"forge:ingots/nickel",
 		"forge:ingots/uranium",
 		"forge:ingots/osmium",
-		"forge:ingots/tin",
-		"forge:ingots/zinc",
-		"forge:ingots/bronze",
-		"forge:ingots/brass",
 		"forge:ingots/constantan",
 		"forge:ingots/electrum",
 		"forge:ingots/steel",
-		"forge:gems/lapis",
-		"forge:gems/diamond",
 		"forge:gems/emerald",
 	]
 	
@@ -136,15 +130,9 @@ events.listen('recipes', function (event) {
 		"emendatusenigmatica:nickel_rod",
 		"emendatusenigmatica:uranium_rod",
 		"emendatusenigmatica:osmium_rod",
-		"emendatusenigmatica:tin_rod",
-		"emendatusenigmatica:zinc_rod",
-		"emendatusenigmatica:bronze_rod",
-		"emendatusenigmatica:brass_rod",
 		"emendatusenigmatica:constantan_rod",
 		"emendatusenigmatica:electrum_rod",
 		"emendatusenigmatica:steel_rod",
-		"emendatusenigmatica:lapis_rod",
-		"emendatusenigmatica:diamond_rod",
 		"emendatusenigmatica:emerald_rod"
 	]
 	

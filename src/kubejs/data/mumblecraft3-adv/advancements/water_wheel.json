@@ -1,23 +1,23 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:blast_furnace"
+            "item": "create:water_wheel"
         },
         "title": {
-            "text": "And The Chain of Efficiency Begins"
+            "text": "Let Nature Do The Work"
         },
         "description": {
-            "text": "Create a blast furnace to open up an easy mode to smelting crushed ores, even if it isn't as efficient as create can get"
+            "text": "Create a water wheel so you don't have to do manual labor anymore. Just kidding, you've barely started the modpack"
         }
     },
-    "parent": "mumblecraft3-adv:encased_fan",
+    "parent": "mumblecraft3-adv:alloy_kiln",
     "criteria": {
         "craft": {
             "trigger": "minecraft:inventory_changed",
 			"conditions": {
                 "items": [
                     {
-                        "item": "minecraft:blast_furnace",
+                        "item": "create:water_wheel",
 						"count" : {
 							"min": 1
 						}
