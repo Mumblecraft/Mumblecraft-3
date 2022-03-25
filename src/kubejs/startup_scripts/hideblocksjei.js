@@ -77,7 +77,7 @@ events.listen('jei.hide.items', function (event) {
 	'emendatusenigmatica:bitumen_chunk',
 	
 	//Gear
-/*	'emendatusenigmatica:iridium_gear',
+	'emendatusenigmatica:iridium_gear',
 	'emendatusenigmatica:ruby_gear',
 	'emendatusenigmatica:sapphire_gear',
 	'emendatusenigmatica:peridot_gear',
@@ -88,7 +88,6 @@ events.listen('jei.hide.items', function (event) {
 	'emendatusenigmatica:cobalt_gear',
 	'emendatusenigmatica:emerald_gear',
 	'emendatusenigmatica:quartz_gear',
-	'emendatusenigmatica:copper_gear',
 	'emendatusenigmatica:aluminum_gear',
 	'emendatusenigmatica:silver_gear',
 	'emendatusenigmatica:lead_gear',
@@ -97,11 +96,10 @@ events.listen('jei.hide.items', function (event) {
 	'emendatusenigmatica:osmium_gear',
 	'emendatusenigmatica:tin_gear',
 	'emendatusenigmatica:zinc_gear',
-	'emendatusenigmatica:brass_gear',
 	'emendatusenigmatica:constantan_gear',
 	'emendatusenigmatica:electrum_gear',
 	'emendatusenigmatica:cast_iron_gear',
-	'emendatusenigmatica:lapis_gear',*/
+	'emendatusenigmatica:lapis_gear',
 	
 	//Plate
 	'emendatusenigmatica:iridium_plate',
