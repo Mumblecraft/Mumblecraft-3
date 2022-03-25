@@ -98,7 +98,6 @@ events.listen('recipes', function (event) {
 		'   ',
     ], {
         A: 'kubejs:coke_brick',
-
     })
 	
 	//Blast Brick
@@ -113,6 +112,38 @@ events.listen('recipes', function (event) {
         B: 'immersiveengineering:cokebrick',
 		C: 'minecraft:magma_block',
     })
+	
+	//Aluminum Scaffolding
+	event.remove({id: 'immersiveengineering:crafting/alu_scaffolding_standard'})
+	
+	event.recipes.createSequencedAssembly([
+        Item.of('4x immersiveengineering:alu_scaffolding_standard').withChance(80.0),
+        Item.of('emendatusenigmatica:aluminum_ingot').withChance(2.0),
+            'emendatusenigmatica:aluminum_dust',
+            'emendatusenigmatica:aluminum_nugget'
+            ], 
+			'emendatusenigmatica:aluminum_ingot', [
+        event.recipes.createDeploying('kubejs:incomplete_aluminum_scaffolding', ['kubejs:incomplete_aluminum_scaffolding', 'emendatusenigmatica:aluminum_rod']),
+        event.recipes.createDeploying('kubejs:incomplete_aluminum_scaffolding', ['kubejs:incomplete_aluminum_scaffolding', 'emendatusenigmatica:aluminum_rod']),
+        event.recipes.createDeploying('kubejs:incomplete_aluminum_scaffolding', ['kubejs:incomplete_aluminum_scaffolding', 'emendatusenigmatica:aluminum_ingot'])
+    ]).transitionalItem('kubejs:incomplete_aluminum_scaffolding').loops(3)
+
+	
+	//Steel Scaffolding
+	event.remove({id: 'immersiveengineering:crafting/steel_scaffolding_standard'})
+	
+	event.recipes.createSequencedAssembly([
+        Item.of('4x immersiveengineering:steel_scaffolding_standard').withChance(80.0),
+        Item.of('emendatusenigmatica:steel_ingot').withChance(2.0),
+            'emendatusenigmatica:steel_dust',
+            'emendatusenigmatica:steel_nugget'
+            ], 
+			'emendatusenigmatica:steel_ingot', [
+        event.recipes.createDeploying('kubejs:incomplete_steel_scaffolding', ['kubejs:incomplete_steel_scaffolding', 'emendatusenigmatica:steel_rod']),
+        event.recipes.createDeploying('kubejs:incomplete_steel_scaffolding', ['kubejs:incomplete_steel_scaffolding', 'emendatusenigmatica:steel_rod']),
+        event.recipes.createDeploying('kubejs:incomplete_steel_scaffolding', ['kubejs:incomplete_steel_scaffolding', 'emendatusenigmatica:steel_ingot'])
+    ]).transitionalItem('kubejs:incomplete_steel_scaffolding').loops(3)
+
 	
     //Redstone Engineering Block
 	event.remove({id: 'immersiveengineering:crafting/rs_engineering'})
