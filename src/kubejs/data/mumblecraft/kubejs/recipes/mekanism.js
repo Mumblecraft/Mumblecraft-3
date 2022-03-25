@@ -654,9 +654,5 @@ events.listen('recipes', function (event) {
 	//World
 	//Salt - Convert Pam's Kitchen Salt to Mekanism Salt
 	event.shapeless(Item.of('mekanism:salt', 1), 'pamhc2foodcore:saltitem')
-
-	//Dough
-	event.replaceInput({type: 'minecraft:crafting_shapeless'},
-		'#pamhc2foodcore:doughitem', '#forge:dough'
-	)
+	
 })

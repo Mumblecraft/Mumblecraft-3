@@ -231,6 +231,7 @@ events.listen('recipes', function (event) {
 	'2x minecraft:andesite',
 	'2x minecraft:iron_nugget',
 	).time(800)
+	
 	event.recipes.immersiveengineeringAlloy(item.of('create:andesite_alloy',1),
 	'2x minecraft:andesite',
 	'2x #forge:nuggets/zinc',

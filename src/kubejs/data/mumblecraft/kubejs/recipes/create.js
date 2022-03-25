@@ -43,6 +43,32 @@ events.listen('recipes', function (event) {
 		C: '#minecraft:planks',
 	})
 	
+	//Brass Casing
+	event.remove({id: 'create:crafting/materials/brass_casing'})
+	
+	event.shaped(item.of('create:brass_casing', 1), [
+		'CCC',
+		'BAB',
+		'CCC',
+	], {
+		A: '#forge:gears/brass',
+		B: '#forge:plates/brass',
+		C: '#forge:treated_wood',
+	})
+	
+	//Copper Casing
+		event.remove({id: 'create:crafting/materials/copper_casing'})
+	
+	event.shaped(item.of('create:copper_casing', 1), [
+		'CCC',
+		'BAB',
+		'CCC',
+	], {
+		A: '#forge:gears/copper',
+		B: '#forge:plates/copper',
+		C: '#forge:treated_wood',
+	})
+	
 	//Schematicannon
 	event.remove({id: 'create:crafting/schematics/schematicannon'})
 	
@@ -163,9 +189,9 @@ events.listen('recipes', function (event) {
 	
 	//Coal Coke Blend
 	event.recipes.createMixing('kubejs:coke_brick_blend', [
-  '#forge:sandstone',
-  '#forge:sandstone',
-  '#forge:sandstone',
+  '#forge:sand',
+  '#forge:sand',
+  '#forge:sand',
   'minecraft:clay_ball',
   'minecraft:clay_ball',
   'minecraft:clay_ball',
