@@ -163,9 +163,9 @@ events.listen('recipes', function (event) {
 	
 	//Coal Coke Blend
 	event.recipes.createMixing('kubejs:coke_brick_blend', [
-  '#forge:sand',
-  '#forge:sand',
-  '#forge:sand',
+  '#forge:sandstone',
+  '#forge:sandstone',
+  '#forge:sandstone',
   'minecraft:clay_ball',
   'minecraft:clay_ball',
   'minecraft:clay_ball',
