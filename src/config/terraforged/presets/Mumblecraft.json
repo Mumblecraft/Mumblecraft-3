@@ -258,8 +258,8 @@
     "biomeShape": {
       "biomeSize": 350,
       "macroNoiseSize": 8,
-      "biomeWarpScale": 100,
-      "biomeWarpStrength": 60
+      "biomeWarpScale": 30,
+      "biomeWarpStrength": 180
     },
     "biomeEdgeShape": {
       "type": "SIMPLEX",
@@ -267,7 +267,7 @@
       "octaves": 2,
       "gain": 0.5,
       "lacunarity": 2.651,
-      "strength": 40
+      "strength": 4
     }
   },
   "terrain": {
