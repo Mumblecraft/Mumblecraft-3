@@ -153,7 +153,7 @@ events.listen('jei.hide.items', function (event) {
 	'emendatusenigmatica:apatite_cluster',
 	'emendatusenigmatica:sulfur_cluster',
 	'emendatusenigmatica:potassium_nitrate_cluster',
-	'emendatusenigmatica:source_cluster',
+	'emendatusenigmatica:arcane_cluster',
 	'emendatusenigmatica:dimensional_cluster',
 	'byg:ametrine_cluster',
 	'byg:subzero_crystal_cluster',
@@ -488,8 +488,7 @@ events.listen('jei.hide.items', function (event) {
 	'#forge:ores/signalum',
 	'#forge:ores/lumium',
 	'#forge:ores/enderium',
-	'emendatusenigmatica:bitumen_gem',
-	'emendatusenigmatica:cinnabar_gem'
+	'emendatusenigmatica:cinnabar_gem',
 	'emendatusenigmatica:apatite_gem',
 	'emendatusenigmatica:sulfur_gem',
 	'emendatusenigmatica:potassium_nitrate_gem',

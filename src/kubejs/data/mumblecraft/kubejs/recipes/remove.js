@@ -26,11 +26,6 @@ events.listen('recipes', function (event) {
 	'mekanism:processing/bronze/ingot/from_dust_smelting',
 
 	//Tools/armor
-	//Remove No Tree Punching Mattocks
-	'notreepunching:iron_mattock',
-	'notreepunching:gold_mattock',
-	'notreepunching:diamond_mattock',
-	
 	//Remove Immersive Engineering Steel Pickaxe
 	'immersiveengineering:crafting/pickaxe_steel',
 	
@@ -54,7 +49,8 @@ events.listen('recipes', function (event) {
 	event.remove({type: 'immersiveengineering:hammer_crushing'})
 	
 	//Minecraft Furnace
-	//Remove recipes to cook ores in furnace
+	//Remove recipes to cook ores in furnace or blast furnace. Need to crush ores
 	event.remove({input: '#forge:ores', type: 'minecraft:smelting'})
-
+	
+	event.remove({input: '#forge:ores', type: 'minecraft:blasting'})
 })

@@ -1,23 +1,23 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:blast_furnace"
+            "item": "create:mechanical_press"
         },
         "title": {
-            "text": "And The Chain of Efficiency Begins"
+            "text": "Stamp Stamp Stamp"
         },
         "description": {
-            "text": "Create a blast furnace to open up an easy mode to smelting crushed ores, even if it isn't as efficient as create can get"
+            "text": "Ingots are fine, but sheets are going to get you places in this modpack"
         }
     },
-    "parent": "mumblecraft3-adv:encased_fan",
+    "parent": "mumblecraft3-adv:water_wheel",
     "criteria": {
         "craft": {
             "trigger": "minecraft:inventory_changed",
 			"conditions": {
                 "items": [
                     {
-                        "item": "minecraft:blast_furnace",
+                        "item": "create:mechanical_press",
 						"count" : {
 							"min": 1
 						}

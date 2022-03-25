@@ -117,4 +117,8 @@ events.listen('recipes', function (event) {
 	rods.forEach(function (rod){
 		event.remove({output: rod})
 	})
+	
+	//Remove cluster crafting
+	event.remove({input: '#forge:clusters'})
+	event.remove({output: '#forge:clusters'})
 })

@@ -147,4 +147,44 @@ events.listen('recipes', function (event) {
         A: '#notreepunching:weak_saws',
         B: '#forge:treated_wood'
     })
+	
+	//Saws
+	//Iron
+	event.remove({id: 'notreepunching:iron_saw'})
+	
+	//Add recipe for crafting
+	 event.shaped(item.of('notreepunching:iron_saw', 1), [
+		'  A',
+		' AB',
+		'AB ',
+	], {
+		A: '#forge:rods/wooden',
+		B: '#forge:plates/iron',
+	})
+	
+	//Gold
+	event.remove({id: 'notreepunching:gold_saw'})
+	
+	//Add recipe for crafting
+	 event.shaped(item.of('notreepunching:gold_saw', 1), [
+		'  A',
+		' AB',
+		'AB ',
+	], {
+		A: '#forge:rods/wooden',
+		B: '#forge:plates/gold',
+	})
+	
+	//Diamond
+	event.remove({id: 'notreepunching:diamond_saw'})
+	
+	//Add recipe for crafting
+	 event.shaped(item.of('notreepunching:diamond_saw', 1), [
+		'  A',
+		' AB',
+		'AB ',
+	], {
+		A: '#forge:rods/wooden',
+		B: '#forge:plates/diamond',
+	})
 })
