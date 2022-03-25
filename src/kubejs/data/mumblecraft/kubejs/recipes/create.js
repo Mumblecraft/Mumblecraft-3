@@ -54,8 +54,8 @@ events.listen('recipes', function (event) {
 		A: 'minecraft:cauldron',
 		B: '#minecraft:logs',
 		C: 'minecraft:dispenser',
-		D: 'emendatusenigmatica:iron_plate',
-		E: 'emendatusenigmatica:steel_gear',
+		D: '#forge:plates/iron',
+		E: '#forge:gears/steel',
 	})
 	
 	//Nozzle
@@ -66,9 +66,9 @@ events.listen('recipes', function (event) {
 		' B ',
 		'CCC',
 	], {
-		A: 'emendatusenigmatica:iron_rod',
+		A: '#forge:rods/iron',
 		B: '#minecraft:wool',
-		C: 'emendatusenigmatica:iron_plate',
+		C: '#forge:plates/iron',
 	})
 	
 	//Basin
@@ -80,7 +80,7 @@ events.listen('recipes', function (event) {
 		'BBB',
 	], {
 		A: 'create:andesite_alloy',
-		B: 'emendatusenigmatica:iron_plate',
+		B: '#forge:plates/iron',
 	})
 	
 	//Mechanical Saw
@@ -91,8 +91,8 @@ events.listen('recipes', function (event) {
 		'ABA',
 		' C ',
 	], {
-		A: 'emendatusenigmatica:steel_plate',
-		B: 'emendatusenigmatica:steel_gear',
+		A: '#forge:plates/steel',
+		B: '#forge:gears/steel',
 		C: 'create:andesite_casing',
 	})
 	
@@ -104,25 +104,26 @@ events.listen('recipes', function (event) {
 		'CEC',
 		' D ',
 	], {
-		A: 'emendatusenigmatica:steel_gear',
-		B: 'emendatusenigmatica:steel_rod',
-		C: 'emendatusenigmatica:steel_plate',
+		A: '#forge:gears/steel',
+		B: '#forge:rods/steel',
+		C: '#forge:plates/steel',
 		D: 'create:andesite_casing',
-		E: 'emendatusenigmatica:iron_plate',
+		E: '#forge:plates/iron',
 	})
 	
 	//Windmill Bearing
 	event.remove({id: 'create:crafting/kinetics/windmill_bearing'})
 	
 	event.shaped(item.of('create:windmill_bearing', 1), [
-		' A ',
-		'BCB',
-		' D ',
+		'CAC',
+		'BEB',
+		'CDC',
 	], {
 		A: 'create:turntable',
 		B: '#forge:stone',
-		C: 'emendatusenigmatica:bronze_gear',
+		C: '#forge:plates/bronze',
 		D: 'create:shaft',
+		E: 'create:andesite_casing',
 	})
 	
 	//Add Alternative bronze recipe for Mechanical Press
@@ -143,7 +144,7 @@ events.listen('recipes', function (event) {
         'ABA',
         ' A ',
     ], {
-        A: 'emendatusenigmatica:bronze_plate',
+        A: '#forge:plates/bronze',
         B: 'create:andesite_alloy',
     })
 	

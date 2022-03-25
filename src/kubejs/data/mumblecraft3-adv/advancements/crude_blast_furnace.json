@@ -1,23 +1,23 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:blast_furnace"
+            "item": "immersiveengineering:blastbrick"
         },
         "title": {
-            "text": "And The Chain of Efficiency Begins"
+            "text": "The Dawn of The Steel Era"
         },
         "description": {
-            "text": "Create a blast furnace to open up an easy mode to smelting crushed ores, even if it isn't as efficient as create can get"
+            "text": "Create a Crude Blast Furnace to really start creating advanced machines"
         }
     },
-    "parent": "mumblecraft3-adv:encased_fan",
+    "parent": "mumblecraft3-adv:blast_furnace",
     "criteria": {
         "craft": {
             "trigger": "minecraft:inventory_changed",
 			"conditions": {
                 "items": [
                     {
-                        "item": "minecraft:blast_furnace",
+                        "item": "immersiveengineering:blastbrick",
 						"count" : {
 							"min": 1
 						}

@@ -1,23 +1,23 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:blast_furnace"
+            "item": "create:encased_fan"
         },
         "title": {
-            "text": "And The Chain of Efficiency Begins"
+            "text": "Welcome to the Iron Age"
         },
         "description": {
-            "text": "Create a blast furnace to open up an easy mode to smelting crushed ores, even if it isn't as efficient as create can get"
+            "text": "Build a way to crush iron, and then blast it with the encased fan to enter the iron age"
         }
     },
-    "parent": "mumblecraft3-adv:encased_fan",
+    "parent": "mumblecraft3-adv:water_wheel",
     "criteria": {
         "craft": {
             "trigger": "minecraft:inventory_changed",
 			"conditions": {
                 "items": [
                     {
-                        "item": "minecraft:blast_furnace",
+                        "item": "create:encased_fan",
 						"count" : {
 							"min": 1
 						}
