@@ -92,7 +92,14 @@ events.listen('recipes', function (event) {
 	//Coke Brick
 	event.remove({id: 'immersiveengineering:crafting/cokebrick'})
 	
-	event.blasting('immersiveengineering:cokebrick', 'immersiveengineering:alloybrick')
+	event.shaped(item.of('immersiveengineering:cokebrick', 1), [
+        'AA ',
+        'AA ',
+		'   ',
+    ], {
+        A: 'kubejs:coke_brick',
+
+    })
 	
 	//Blast Brick
 	event.remove({id: 'immersiveengineering:crafting/blastbrick'})
