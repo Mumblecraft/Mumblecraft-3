@@ -13,7 +13,7 @@ events.listen('recipes', function (event) {
     ], {
         A: '#forge:ingots/copper',
         B: '#forge:string',
-		C: 'minecraft:stick'
+		C: '#forge:rods/wooden'
     })
 	
     //Machines/Components
@@ -234,9 +234,10 @@ events.listen('recipes', function (event) {
         B: '#forge:gears/iron',
 		
     })
+	
     //Engineer's Decor
     //Small Electrical Furnace
-	event.remove(item.of('engineersdecor:independant/small_electrical_furnace_recipe'))
+	event.remove({id: 'engineersdecor:independent/small_electrical_furnace_recipe'})
 	
     event.shaped(item.of('engineersdecor:small_electrical_furnace', 1), [
         'ABA',
@@ -248,6 +249,20 @@ events.listen('recipes', function (event) {
         C: 'create:electron_tube',
 	    D: 'minecraft:blast_furnace',
     })
+	
+	//Asphalt
+	event.remove({id: 'immersivepetroleum:asphalt'})
+	
+    event.shaped(item.of('immersivepetroleum:asphalt', 12), [
+        'ABA',
+        'BCB',
+        'ABA',
+    ], {
+        A: '#forge:slag',
+        B: '#forge:gems/bitumen',
+        C: 'minecraft:water_bucket',
+    })
+	
 
     //Processing
     //Mumble Alloy
