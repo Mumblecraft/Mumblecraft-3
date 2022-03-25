@@ -223,6 +223,22 @@ events.listen('recipes', function (event) {
 	'#forge:ingots/tin',
 	).time(1600)
 	
+	//Make andesite alloy in kiln
+	event.remove({id: 'create:crafting/materials/andesite_alloy'})
+	event.remove({id: 'create:crafting/materials/andesite_alloy_from_zinc'})
+	
+	event.recipes.immersiveengineeringAlloy(item.of('create:andesite_alloy',1),
+	'2x minecraft:andesite',
+	'2x minecraft:iron_nugget',
+	).time(800)
+	event.recipes.immersiveengineeringAlloy(item.of('create:andesite_alloy',1),
+	'2x minecraft:andesite',
+	'2x #forge:nuggets/zinc',
+	).time(800)
+	
+	//Coke Brick Brick
+	event.blasting('kubejs:coke_brick', 'kubejs:coke_brick_blend')
+	
 	//Food
 	//Merge Create and Pam's flour and dough
 	event.replaceInput({type: 'minecraft:crafting_shapeless'},
