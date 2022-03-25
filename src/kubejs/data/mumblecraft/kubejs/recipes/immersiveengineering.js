@@ -117,15 +117,15 @@ events.listen('recipes', function (event) {
 	event.remove({id: 'immersiveengineering:crafting/alu_scaffolding_standard'})
 	
 	event.recipes.createSequencedAssembly([
-        Item.of('6x immersiveengineering:alu_scaffolding_standard').withChance(85.0),
+        Item.of('4x immersiveengineering:alu_scaffolding_standard').withChance(80.0),
         Item.of('emendatusenigmatica:steel_ingot').withChance(2.0),
             'emendatusenigmatica:aluminum_dust',
             'emendatusenigmatica:aluminum_nugget'
             ], 
 			'emendatusenigmatica:aluminum_ingot', [
-        event.recipes.createDeploying('kubejs:incomplete_aluminum_scaffolding', ['kubejs:incomplete_aluminum_scaffolding', 'emendatusenigmatica:steel_rod']),
-        event.recipes.createDeploying('kubejs:incomplete_aluminum_scaffolding', ['kubejs:incomplete_aluminum_scaffolding', 'emendatusenigmatica:steel_rod']),
-        event.recipes.createDeploying('kubejs:incomplete_aluminum_scaffolding', ['kubejs:incomplete_aluminum_scaffolding', 'emendatusenigmatica:steel_ingot'])
+        event.recipes.createDeploying('kubejs:incomplete_aluminum_scaffolding', ['kubejs:incomplete_aluminum_scaffolding', 'emendatusenigmatica:aluminum_rod']),
+        event.recipes.createDeploying('kubejs:incomplete_aluminum_scaffolding', ['kubejs:incomplete_aluminum_scaffolding', 'emendatusenigmatica:aluminum_rod']),
+        event.recipes.createDeploying('kubejs:incomplete_aluminum_scaffolding', ['kubejs:incomplete_aluminum_scaffolding', 'emendatusenigmatica:aluminum_ingot'])
     ]).transitionalItem('kubejs:incomplete_aluminum_scaffolding').loops(3)
 
 	
@@ -133,7 +133,7 @@ events.listen('recipes', function (event) {
 	event.remove({id: 'immersiveengineering:crafting/steel_scaffolding_standard'})
 	
 	event.recipes.createSequencedAssembly([
-        Item.of('6x immersiveengineering:steel_scaffolding_standard').withChance(85.0),
+        Item.of('4x immersiveengineering:steel_scaffolding_standard').withChance(80.0),
         Item.of('emendatusenigmatica:steel_ingot').withChance(2.0),
             'emendatusenigmatica:steel_dust',
             'emendatusenigmatica:steel_nugget'
