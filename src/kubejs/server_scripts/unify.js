@@ -21,20 +21,6 @@ global["unifypriorities"] = [
 
 // Add oredictionary tags here to unify (or use javascript to generate it!)
 var tags = [
-    "forge:plates/iron",
-	"forge:plates/uranium",
-	"forge:plates/constantan",
-	"forge:plates/steel",
-	"forge:plates/electrum",
-    "forge:gears/iron",	
-	"forge:rods/copper",
-	"forge:rods/iron",
-	"forge:rods/gold",
-	"forge:rods/aluminum",
-	"forge:rods/brass",
-	"forge:rods/steel",
-	"forge:rods/uranium"
-	
 	
 ]
 // Block tags for ore gen unification (an equal item tag is required for this to work, which is the case with ores normally)
@@ -54,22 +40,29 @@ var tags = [
 ]*/
 // Easier way to add multiple tags (feel free to add empty extra tags, this will ignore them)
 var tagGen = [
-    "gold=gears,plates",
+	"iron=gears,plates,rods",
+    "gold=gears,plates,rods",
     "diamond=gears,plates",
-    "copper=storage_blocks,ingots,nuggets,dusts,ores,gears,plates",
+    "copper=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods",
     "tin=storage_blocks,ingots,nuggets,dusts,ores,gears,plates",
-    "aluminum=storage_blocks,ingots,nuggets,dusts,ores,gears,plates",
+    "aluminum=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods",
     "lead=storage_blocks,ingots,nuggets,dusts,ores,gears,plates",
     "silver=storage_blocks,ingots,nuggets,dusts,ores,gears,plates",
     "nickel=storage_blocks,ingots,nuggets,dusts,ores,gears,plates",
     "bronze=storage_blocks,ingots,nuggets,dusts,ores,gears,plates",
-    "steel=storage_blocks,ingots,nuggets,dusts",
+    "steel=storage_blocks,ingots,nuggets,dusts,plates,rods",
     "platinum=storage_blocks,ingots,nuggets,dusts,ores",
-    "uranium=storage_blocks,ingots,nuggets,dusts,ores",
+    "uranium=storage_blocks,ingots,nuggets,dusts,ores,rods",
     "iridium=storage_blocks,ingots,nuggets,dusts,ores",
     "zinc=storage_blocks,ingots,nuggets,dusts,ores",
     "osmium=ingots,ores",
-    "sulfur=dusts,ores"
+    "sulfur=dusts,ores",
+	"uranium=plates",
+	"brass=ingots,rods",
+	"bronze=ingots",
+	"constantan=ingots,plates",
+	"electrum=ingots,plates",
+
 ]
 for (let line of tagGen) {
     let data = line.split("=")
