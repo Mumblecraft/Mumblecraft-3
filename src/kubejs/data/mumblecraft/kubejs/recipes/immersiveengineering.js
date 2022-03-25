@@ -118,7 +118,7 @@ events.listen('recipes', function (event) {
 	
 	event.recipes.createSequencedAssembly([
         Item.of('4x immersiveengineering:alu_scaffolding_standard').withChance(80.0),
-        Item.of('emendatusenigmatica:steel_ingot').withChance(2.0),
+        Item.of('emendatusenigmatica:aluminum_ingot').withChance(2.0),
             'emendatusenigmatica:aluminum_dust',
             'emendatusenigmatica:aluminum_nugget'
             ], 
