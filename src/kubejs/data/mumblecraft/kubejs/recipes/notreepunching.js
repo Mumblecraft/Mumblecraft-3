@@ -86,9 +86,9 @@ events.listen('recipes', function (event) {
         ], {
             A: '#notreepunching:saws',
             B: planks
-        })
+        }).damageIngredient(0)
         i++
-    }).damageIngredient(0)
+    })
 	
 	//Logs to Sticks
 	logsList.forEach(function (logs) {
@@ -126,9 +126,9 @@ events.listen('recipes', function (event) {
         ], {
             A: '#notreepunching:weak_saws',
             B: planks
-        })
+        }).damageIngredient(0)
         i++
-    }).damageIngredient(0)
+    })
 	
 	//Logs to Sticks
 	logsList.forEach(function (logs) {
