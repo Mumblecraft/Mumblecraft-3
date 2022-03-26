@@ -73,8 +73,9 @@ events.listen('recipes', function (event) {
     planksList.forEach(function (planks) {
 		//Logs to Planks
         event.shaped(item.of(planks, 4), [
-            'A',
-            'B'
+            ' A ',
+            ' B ',
+			'   '
         ], {
             A: '#notreepunching:saws',
             B: logsList[i]
@@ -82,7 +83,9 @@ events.listen('recipes', function (event) {
 		
 		//Planks to Sticks
 		event.shaped(item.of('minecraft:stick', 2), [
-            'AB'
+            'AB ',
+			'   ',
+			'   '
         ], {
             A: '#notreepunching:saws',
             B: planks
@@ -93,7 +96,9 @@ events.listen('recipes', function (event) {
 	//Logs to Sticks
 	logsList.forEach(function (logs) {
 		event.shaped(item.of('minecraft:stick', 8), [
-			'AB'
+			'AB ',
+			'   ',
+			'   '
 		], {
 			A: '#notreepunching:saws',
             B: logs
@@ -101,7 +106,9 @@ events.listen('recipes', function (event) {
 	})
 	
 	event.shaped(item.of('immersiveengineering:stick_treated', 2), [
-        'AB'
+        'AB ',
+		'   ',
+		'   '
     ], {
         A: '#notreepunching:saws',
         B: '#forge:treated_wood'
@@ -113,8 +120,9 @@ events.listen('recipes', function (event) {
     planksList.forEach(function (planks) {
 		//Logs to Planks
         event.shaped(item.of(planks, 2), [
-            'A',
-            'B'
+            ' A ',
+            ' B ',
+			'   '
         ], {
             A: '#notreepunching:weak_saws',
             B: logsList[i]
@@ -122,7 +130,9 @@ events.listen('recipes', function (event) {
 		
 		//Planks to Sticks
 		event.shaped(item.of('minecraft:stick', 1), [
-            'AB'
+            'AB ',
+			'   ',
+			'   '
         ], {
             A: '#notreepunching:weak_saws',
             B: planks
@@ -133,7 +143,9 @@ events.listen('recipes', function (event) {
 	//Logs to Sticks
 	logsList.forEach(function (logs) {
 		event.shaped(item.of('minecraft:stick', 6), [
-			'AB'
+			'AB ',
+			'   ',
+			'   '
 		], {
 			A: '#notreepunching:weak_saws',
             B: logs
@@ -142,7 +154,9 @@ events.listen('recipes', function (event) {
 	
 	//Treated Sticks
 	event.shaped(item.of('immersiveengineering:stick_treated', 1), [
-        'AB'
+        'AB ',
+		'   ',
+		'   '
     ], {
         A: '#notreepunching:weak_saws',
         B: '#forge:treated_wood'
