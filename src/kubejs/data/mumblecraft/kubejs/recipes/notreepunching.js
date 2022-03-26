@@ -78,7 +78,7 @@ events.listen('recipes', function (event) {
         ], {
             A: '#notreepunching:saws',
             B: logsList[i]
-        })
+        }).damageIngredient(0)
 		
 		//Planks to Sticks
 		event.shaped(item.of('minecraft:stick', 2), [
@@ -97,7 +97,7 @@ events.listen('recipes', function (event) {
 		], {
 			A: '#notreepunching:saws',
             B: logs
-		})
+		}).damageIngredient(0)
 	})
 	
 	event.shaped(item.of('immersiveengineering:stick_treated', 2), [
@@ -118,7 +118,7 @@ events.listen('recipes', function (event) {
         ], {
             A: '#notreepunching:weak_saws',
             B: logsList[i]
-        })
+        }).damageIngredient(0)
 		
 		//Planks to Sticks
 		event.shaped(item.of('minecraft:stick', 1), [
@@ -137,7 +137,7 @@ events.listen('recipes', function (event) {
 		], {
 			A: '#notreepunching:weak_saws',
             B: logs
-		})
+		}).damageIngredient(0)
 	})
 	
 	//Treated Sticks
