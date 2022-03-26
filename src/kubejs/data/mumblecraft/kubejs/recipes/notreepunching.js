@@ -88,7 +88,7 @@ events.listen('recipes', function (event) {
             B: planks
         })
         i++
-    })
+    }).damageIngredient(0)
 	
 	//Logs to Sticks
 	logsList.forEach(function (logs) {
@@ -105,7 +105,7 @@ events.listen('recipes', function (event) {
     ], {
         A: '#notreepunching:saws',
         B: '#forge:treated_wood'
-    })
+    }).damageIngredient(0)
 	
 	//Axe  Recipes
 	var i = 0
@@ -128,7 +128,7 @@ events.listen('recipes', function (event) {
             B: planks
         })
         i++
-    })
+    }).damageIngredient(0)
 	
 	//Logs to Sticks
 	logsList.forEach(function (logs) {
@@ -146,7 +146,7 @@ events.listen('recipes', function (event) {
     ], {
         A: '#notreepunching:weak_saws',
         B: '#forge:treated_wood'
-    })
+    }).damageIngredient(0)
 	
 	//Saws
 	//Iron
