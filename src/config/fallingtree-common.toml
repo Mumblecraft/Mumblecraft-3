@@ -1,5 +1,5 @@
 #When set to true, a tree will, only be chopped down if the player is sneaking.
-reverse_sneaking = false
+reverse_sneaking = true
 #When set to true, the mod will, cut down trees in creative too.
 break_in_creative = false
 
