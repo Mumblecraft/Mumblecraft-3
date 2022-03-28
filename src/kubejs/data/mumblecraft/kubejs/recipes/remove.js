@@ -36,7 +36,7 @@ events.listen('recipes', function (event) {
 	idRemove.forEach(function (remove) {
 		event.remove({id: remove})
 	})
-	event.remove({type: 'valhelsia_structures:axe_crafting'})
+//	event.remove({type: 'valhelsia_structures:axe_crafting'})
 	
 	//Remove Rod Crafting
 	event.remove({output: '#forge:rods', type: 'minecraft:crafting_shaped'})
