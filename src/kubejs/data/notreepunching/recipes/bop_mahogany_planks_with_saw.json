@@ -11,12 +11,12 @@
         "tag": "notreepunching:saws"
       },
       "W": {
-        "tag": "biomesoplenty:mohagany_logs"
+        "tag": "biomesoplenty:mahogany_logs"
       }
     },
     "result": {
       "count": 4,
-      "item": "biomesoplenty:mohagany_planks"
+      "item": "biomesoplenty:mahogany_planks"
     }
   }
 }
