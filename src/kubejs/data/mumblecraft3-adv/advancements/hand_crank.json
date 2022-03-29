@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "create:hand_crank"
+        },
+        "title": {
+            "text": "Generating Some Power"
+        },
+        "description": {
+            "text": "Start generating power for your machines of the bronze age"
+        }
+    },
+    "parent": "mumblecraft3-adv:alloy_kiln",
+    "criteria": {
+        "craft": {
+            "trigger": "minecraft:inventory_changed",
+			"conditions": {
+                "items": [
+                    {
+                        "item": "create:hand_crank",
+						"count" : {
+							"min": 1
+						}
+                    }
+                ]
+            }
+        }
+    }
+}

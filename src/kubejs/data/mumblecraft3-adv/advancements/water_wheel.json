@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "create:water_wheel"
+        },
+        "title": {
+            "text": "Let Nature Do The Work"
+        },
+        "description": {
+            "text": "Create a water wheel so you don't have to do manual labor anymore. Just kidding, you've barely started the modpack"
+        }
+    },
+    "parent": "mumblecraft3-adv:alloy_kiln",
+    "criteria": {
+        "craft": {
+            "trigger": "minecraft:inventory_changed",
+			"conditions": {
+                "items": [
+                    {
+                        "item": "create:water_wheel",
+						"count" : {
+							"min": 1
+						}
+                    }
+                ]
+            }
+        }
+    }
+}

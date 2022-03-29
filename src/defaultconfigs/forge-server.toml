@@ -9,7 +9,7 @@
 	fullBoundingBoxLadders = false
 	#Base zombie summoning spawn chance. Allows changing the bonus zombie summoning mechanic.
 	#Range: 0.0 ~ 1.0
-	zombieBaseSummonChance = 0.1
+	zombieBaseSummonChance = 0.08
 	#Chance that a zombie (or subclass) is a baby. Allows changing the zombie spawning mechanic.
 	#Range: 0.0 ~ 1.0
 	zombieBabyChance = 0.05

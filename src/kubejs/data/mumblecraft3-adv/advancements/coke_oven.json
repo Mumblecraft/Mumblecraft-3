@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "immersiveengineering:cokebrick"
+        },
+        "title": {
+            "text": "We're Going to Need Better Fuel"
+        },
+        "description": {
+            "text": "Create better fuel to be able to power your blast furnaces"
+        }
+    },
+    "parent": "mumblecraft3-adv:blast_furnace",
+    "criteria": {
+        "craft": {
+            "trigger": "minecraft:inventory_changed",
+			"conditions": {
+                "items": [
+                    {
+                        "item": "immersiveengineering:cokebrick",
+						"count" : {
+							"min": 9
+						}
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "create:encased_fan"
+        },
+        "title": {
+            "text": "Welcome to the Iron Age"
+        },
+        "description": {
+            "text": "Build a way to crush iron, and then blast it with the encased fan to enter the iron age"
+        }
+    },
+    "parent": "mumblecraft3-adv:water_wheel",
+    "criteria": {
+        "craft": {
+            "trigger": "minecraft:inventory_changed",
+			"conditions": {
+                "items": [
+                    {
+                        "item": "create:encased_fan",
+						"count" : {
+							"min": 1
+						}
+                    }
+                ]
+            }
+        }
+    }
+}

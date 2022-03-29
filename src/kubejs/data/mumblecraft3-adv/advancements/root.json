@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:map"
+        },
+        "title": {
+            "text": "Mumblecraft 3 - Getting Started"
+        },
+        "description": {
+            "text": "Welcome to the Stone Age. Use this and the no tree punching advacement trees to help get started with the modpack. If no tree punching isn't appearing yet, explore, stay safe, and start your adventure by finding some gravel"
+        },
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "always": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

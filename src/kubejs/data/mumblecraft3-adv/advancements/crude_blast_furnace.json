@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "immersiveengineering:blastbrick"
+        },
+        "title": {
+            "text": "The Dawn of The Steel Era"
+        },
+        "description": {
+            "text": "Create a Crude Blast Furnace to really start creating advanced machines"
+        }
+    },
+    "parent": "mumblecraft3-adv:blast_furnace",
+    "criteria": {
+        "craft": {
+            "trigger": "minecraft:inventory_changed",
+			"conditions": {
+                "items": [
+                    {
+                        "item": "immersiveengineering:blastbrick",
+						"count" : {
+							"min": 1
+						}
+                    }
+                ]
+            }
+        }
+    }
+}

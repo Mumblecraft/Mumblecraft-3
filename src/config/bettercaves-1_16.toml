@@ -16,7 +16,7 @@
 	###########################################################################################################
 	["Better Caves"."Bedrock Generation"]
 		# Replaces the usual bedrock generation pattern with flat layers.
-		#     Activates in all whitelisted dimension, where applicable. The End is unaffected.
+		#     Activates in all whitelisted dimensions.
 		# Default: true
 		"Flatten Bedrock" = true
 		# The width of the bedrock layer. Only works if Flatten Bedrock is true.
@@ -87,8 +87,7 @@
 			#Range: 0.0 ~ 100.0
 			"Cave Spawn Chance" = 100.0
 			# Determines how large cave regions are.
-			#     Controls how long a cave system of a certain cave type extends before intersecting with a cave system of another type.
-			#     Larger = more cave interconnectivity for a given area, but less variation.
+			#     Controls the average size of a cave system.
 			# Accepted values: Small, Medium, Large, ExtraLarge, Custom
 			# Default: Small (recommended).
 			"Cave Region Size" = "Small"
@@ -152,7 +151,7 @@
 				# Determines how frequently Type 1 Caves spawn. 0 = will not spawn at all.
 				# Default: 10
 				#Range: 0 ~ 10
-				"Type 1 Cave Priority" = 10
+				"Type 1 Cave Priority" = 12
 
 			###########################################################################################################
 			## Settings used in the generation of type 2 caves, which tend to be more open and spacious.
@@ -183,7 +182,7 @@
 				# Determines how frequently Type 2 Caves spawn. 0 = will not spawn at all.
 				# Default: 5
 				#Range: 0 ~ 10
-				"Type 2 Cave Priority" = 5
+				"Type 2 Cave Priority" = 8
 
 			###########################################################################################################
 			## Settings controlling vanilla Minecraft cave generation.
@@ -204,7 +203,7 @@
 				# The minimum y-coordinate at which vanilla caves can generate.
 				# Default: 8
 				#Range: 0 ~ 255
-				"Vanilla Cave Minimum Altitude" = 8
+				"Vanilla Cave Minimum Altitude" = 7
 
 		###########################################################################################################
 		## Settings used in the generation of caverns. Caverns are spacious caves at low altitudes.

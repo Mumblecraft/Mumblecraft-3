@@ -1,0 +1,22 @@
+{
+  "type": "notreepunching:tool_damaging",
+  "recipe": {
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "S",
+      "W"
+    ],
+    "key": {
+      "S": {
+        "tag": "notreepunching:weak_saws"
+      },
+      "W": {
+        "tag": "biomesoplenty:jacaranda_logs"
+      }
+    },
+    "result": {
+      "count": 2,
+      "item": "biomesoplenty:jacaranda_planks"
+    }
+  }
+}

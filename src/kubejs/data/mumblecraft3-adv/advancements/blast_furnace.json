@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:blast_furnace"
+        },
+        "title": {
+            "text": "And The Chain of Efficiency Begins"
+        },
+        "description": {
+            "text": "Create a blast furnace to open up an easy mode to smelting crushed ores, even if it isn't as efficient as create can get"
+        }
+    },
+    "parent": "mumblecraft3-adv:encased_fan",
+    "criteria": {
+        "craft": {
+            "trigger": "minecraft:inventory_changed",
+			"conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:blast_furnace",
+						"count" : {
+							"min": 1
+						}
+                    }
+                ]
+            }
+        }
+    }
+}

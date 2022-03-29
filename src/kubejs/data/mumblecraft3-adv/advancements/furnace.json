@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:furnace"
+        },
+        "title": {
+            "text": "Finally, Some Efficiency"
+        },
+        "description": {
+            "text": "Create a furnace to be able to start smelting"
+        }
+    },
+    "parent": "mumblecraft3-adv:fire_starter",
+    "criteria": {
+        "craft": {
+            "trigger": "minecraft:inventory_changed",
+			"conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:furnace",
+						"count" : {
+							"min": 1
+						}
+                    }
+                ]
+            }
+        }
+    }
+}

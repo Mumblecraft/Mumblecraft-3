@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "create:mechanical_press"
+        },
+        "title": {
+            "text": "Stamp Stamp Stamp"
+        },
+        "description": {
+            "text": "Ingots are fine, but sheets are going to get you places in this modpack"
+        }
+    },
+    "parent": "mumblecraft3-adv:water_wheel",
+    "criteria": {
+        "craft": {
+            "trigger": "minecraft:inventory_changed",
+			"conditions": {
+                "items": [
+                    {
+                        "item": "create:mechanical_press",
+						"count" : {
+							"min": 1
+						}
+                    }
+                ]
+            }
+        }
+    }
+}

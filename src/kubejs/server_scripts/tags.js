@@ -1,0 +1,22 @@
+onEvent('tags.items', event => {
+
+  event.add('forge:dough', 'create:dough')
+  event.add('forge:flour', 'create:wheat_flour')
+  event.add('forge:sandstone/smooth', 'minecraft:smooth_sandstone')
+  event.add('forge:sandstone/smooth', 'minecraft:smooth_red_sandstone')
+  event.add('forge:sandstone/smooth', 'biomesoplenty:smooth_white_sandstone')
+  event.add('forge:sandstone/smooth', 'biomesoplenty:smooth_orange_sandstone')
+  event.add('forge:sandstone/smooth', 'biomesoplenty:smooth_black_sandstone')
+  event.add('notreepunching:weak_saws', 'mekanismtools:bronze_axe')
+  event.add('notreepunching:weak_saws', 'mekanismtools:osmium_axe')
+  event.add('notreepunching:weak_saws', 'mekanismtools:lapis_lazuli_axe')
+  event.add('notreepunching:weak_saws', 'mekanismtools:refined_glowstone_axe')
+  event.add('notreepunching:weak_saws', 'mekanismtools:refined_obsidian_axe')
+  event.add('notreepunching:weak_saws', 'mekanismtools:steel_axe')
+  event.add('notreepunching:weak_saws', 'appliedenergistics2:certus_quartz_axe')
+  event.add('notreepunching:weak_saws', 'appliedenergistics2:nether_quartz_axe')
+  event.add('notreepunching:weak_saws', 'immersiveengineering:axe_steel')
+  event.add('notreepunching:weak_saws', 'byg:pendorite_axe')
+  event.add('notreepunching:weak_saws', 'aquaculture:neptunium_axe')
+  
+})

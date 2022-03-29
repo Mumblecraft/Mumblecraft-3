@@ -40,6 +40,22 @@
 		containerClass = "mcjty.rftoolsutility.modules.crafter.blocks.CrafterContainer"
 		sortRange = ""
 
+	[[sorting.containerOverrides]]
+		containerClass = "appeng.container.implementations.InterfaceTerminalContainer"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "appeng.container.implementations.CraftingTermContainer"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "appeng.container.implementations.PatternTermContainer"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "appeng.container.implementations.WirelessTermContainer"
+		sortRange = ""
+
 	#Categor(y/ies) for sorting
 	#
 	#name: the name of the category

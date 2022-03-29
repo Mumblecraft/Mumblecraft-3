@@ -2,7 +2,7 @@
 #Settings affecting the logical server side.
 [server]
 
-	#Opt-out settings
+	#Server dev opt-out settings !WARNING THE OPT-OUTs will be moved to common-config.toml in the next MC version!
 	[server.optout]
 		#Opt-out any block by its registry name ('*' wildcard matching, comma separated list, whitespaces ignored. You must match the whole name, means maybe add '*' also at the begin and end. Example: '*wood*,*steel*' excludes everything that has 'wood' or 'steel' in the registry name. The matching result is also traced in the log file. 
 		pattern_excludes = ""
@@ -82,19 +82,13 @@
 		without_poles = false
 		#Disable horizontal supports like the double-T support.
 		without_hsupports = false
-		#Disable all internal recipes, allowing to use alternative pack recipes.
-		without_recipes = false
 		#Disable all fences and fence gates.
 		without_fences = false
 
 	#Miscellaneous settings
 	[server.miscellaneous]
-		#Enables experimental features. Use at own risk.
-		with_experimental = false
 		#Disable directly picking up layers from slabs and slab  slices by left clicking while looking up/down.
 		without_direct_slab_pickup = false
-		#Enable that devices are dropped as item also in creative mode, allowing  to relocate them with contents and settings.
-		with_creative_mode_device_drops = false
 
 	#Tweaks
 	[server.tweaks]
@@ -107,6 +101,8 @@
 		#Defines the energy consumption (per tick) for speeding up the smelting process. If IE is installed, an external heater has to be inserted into an auxiliary slot of the lab furnace. The power source needs to be able to provide at least 4 times this consumption (fixed threshold value). The value can be changed on-the-fly for tuning. The default value corresponds to the IE heater consumption.
 		#Range: 2 ~ 1024
 		furnace_boost_energy_consumption = 24
+		#Defines (as comma separated list of full registry names) which items are allowed as external heaters in the Aux slot for powered speed boosting.
+		furnace_accepted_heaters = "immersiveengineering:furnace_heater"
 		#Defines, in percent, how high the probability is that a mob sits on a chair when colliding with it. Can be changed on-the-fly for tuning.
 		#Range: 0.0 ~ 80.0
 		chair_mob_sitting_probability_percent = 10.0
@@ -123,7 +119,7 @@
 		pipevalve_redstone_gain = 20
 		#Defines, in percent, how fast the electrical furnace smelts compared to a vanilla furnace. 100% means vanilla furnace speed, 150% means the electrical furnace is faster. The value can be changed on-the-fly for tuning.
 		#Range: 50 ~ 800
-		e_furnace_speed_percent = 200
+		e_furnace_speed_percent = 290
 		#Defines how much RF per tick the the electrical furnace consumed (average) for smelting. The feeders transferring items from/to adjacent have this consumption/8 for each stack transaction. The default value is only slightly higher than a furnace with an IE external heater (and no burning fuel inside).The config value can be changed on-the-fly for tuning.
 		#Range: 8 ~ 4096
 		e_furnace_power_consumption = 16
@@ -145,12 +141,12 @@
 		block_breaker_requires_power = false
 		#Defines how much RF power the Small Tree Cutter requires to magnificently increase the processing speed. The config value can be changed on-the-fly for tuning.
 		#Range: 4 ~ 1024
-		tree_cuttter_energy_consumption = 64
+		tree_cutter_energy_consumption = 64
 		#Defines how much time the Small Tree Cutter needs to cut a tree without RF power. The value is in seconds. With energy it is 6 times faster. The config value can be changed on-the-fly for tuning.
 		#Range: 10 ~ 240
-		tree_cuttter_cutting_time_needed = 60
+		tree_cutter_cutting_time_needed = 60
 		#Defines if the Small Tree Cutter does not work without RF power.
-		tree_cuttter_requires_power = false
+		tree_cutter_requires_power = false
 		#Defines how much time the Small Milking Machine needs work. Note this is a permanent standby power, not only when the device does something. Use zero to disable energy dependency and energy handling of the machine. The config value can be changed on-the-fly for tuning.
 		#Range: 0 ~ 1024
 		milking_machine_energy_consumption = 0

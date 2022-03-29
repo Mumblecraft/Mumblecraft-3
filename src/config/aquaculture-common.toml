@@ -6,6 +6,11 @@
 	"Should fish be added as compostables for the composter/worm farm? (Based on fish, or weight if enabled)" = true
 	"Should Aquaculture fish be able to be used to breed cats & ocelots?" = true
 	"Enable debug mode? (Enables additional logging)" = false
+	"Show Fillet recipes in JEI?" = true
+
+	["basic options"."Amount of Message In A Bottle messages"]
+		#Range: 0 ~ 255
+		" Used to add additional custom messages" = 29
 
 ["neptunium options"]
 	"Enable recipes for Neptunium items?" = true
@@ -21,11 +26,9 @@
 		#Range: 0 ~ 64
 		max = 2
 		#Range: 0 ~ 100
-		weight = 9
+		weight = 10
 		include = ["SWAMP"]
 		exclude = [""]
-		temperatures = [""]
-		rain_types = [""]
 
 	["spawn options".arrau_turtle]
 		#Range: 0 ~ 64
@@ -33,11 +36,9 @@
 		#Range: 0 ~ 64
 		max = 2
 		#Range: 0 ~ 100
-		weight = 6
+		weight = 8
 		include = ["JUNGLE"]
 		exclude = [""]
-		temperatures = [""]
-		rain_types = [""]
 
 	["spawn options".starshell_turtle]
 		#Range: 0 ~ 64
@@ -46,8 +47,6 @@
 		max = 2
 		#Range: 0 ~ 100
 		weight = 5
-		include = [""]
+		include = ["TWILIGHT"]
 		exclude = [""]
-		temperatures = [""]
-		rain_types = [""]
 

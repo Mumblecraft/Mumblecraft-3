@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "immersiveengineering:alloybrick"
+        },
+        "title": {
+            "text": "Mixing My Metals"
+        },
+        "description": {
+            "text": "Create an alloy kiln and smelt some bronze to enter the bronze age. Make a 2x2x2 cube of the kiln brick, then strike it with an engineer's hammer"
+        }
+    },
+    "parent": "mumblecraft3-adv:furnace",
+    "criteria": {
+        "craft": {
+            "trigger": "minecraft:inventory_changed",
+			"conditions": {
+                "items": [
+                    {
+                        "item": "emendatusenigmatica:bronze_ingot",
+						"count" : {
+							"min": 1
+						}
+                    }
+                ]
+            }
+        }
+    }
+}

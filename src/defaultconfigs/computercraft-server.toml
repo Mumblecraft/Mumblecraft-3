@@ -9,8 +9,6 @@ maximum_open_files = 128
 disable_lua51_features = false
 #A comma separated list of default system settings to set on new computers. Example: "shell.autocomplete=false,lua.autocomplete=false,edit.autocomplete=false" will disable all autocompletion
 default_computer_settings = ""
-#Enable Lua's debug library. This is sandboxed to each computer, so is generally safe to be used by players.
-debug_enabled = true
 #Log exceptions thrown by peripherals and other Lua objects.
 #This makes it easier for mod authors to debug problems, but may result in log spam should people use buggy methods.
 log_computer_errors = true
@@ -45,31 +43,20 @@ command_require_creative = true
 	#Range: > 1
 	max_websockets = 4
 
+	#Limits bandwidth used by computers
+	[http.bandwidth]
+		#The number of bytes which can be downloaded in a second. This is shared across all computers. (bytes/s)
+		#Range: > 1
+		global_download = 33554432
+		#The number of bytes which can be uploaded in a second. This is shared across all computers. (bytes/s)
+		#Range: > 1
+		global_upload = 33554432
+
 	#A list of rules which control behaviour of the "http" API for specific domains or IPs.
 	#Each rule is an item with a 'host' to match against, and a series of properties. The host may be a domain name ("pastebin.com"),
 	#wildcard ("*.pastebin.com") or CIDR notation ("127.0.0.0/8"). If no rules, the domain is blocked.
 	[[http.rules]]
-		host = "127.0.0.0/8"
-		action = "deny"
-
-	[[http.rules]]
-		host = "0.0.0.0/8"
-		action = "deny"
-
-	[[http.rules]]
-		host = "10.0.0.0/8"
-		action = "deny"
-
-	[[http.rules]]
-		host = "172.16.0.0/12"
-		action = "deny"
-
-	[[http.rules]]
-		host = "192.168.0.0/16"
-		action = "deny"
-
-	[[http.rules]]
-		host = "fd00::/8"
+		host = "$private"
 		action = "deny"
 
 	[[http.rules]]
@@ -152,10 +139,4 @@ command_require_creative = true
 		width = 8
 		#Range: 1 ~ 32
 		height = 6
-
-#Options for various experimental features. These are not guaranteed to be stable, and may change or be removed across versions.
-[experimental]
-	#Attempt to make any existing block (or tile entity) a peripheral.
-	#This provides peripheral methods for any inventory, fluid tank or energy storage block. It will_not_ provide methods which have an existing peripheral provider.
-	generic_peripherals = false
 
