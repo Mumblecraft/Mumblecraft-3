@@ -189,11 +189,57 @@ events.listen('recipes', function (event) {
 	
 	//Coal Coke Blend
 	event.recipes.createMixing('kubejs:coke_brick_blend', [
-  '#forge:sand',
-  '#forge:sand',
-  '#forge:sand',
-  'minecraft:clay_ball',
-  'minecraft:clay_ball',
-  'minecraft:clay_ball',
+        '#forge:sand',
+        '#forge:sand',
+        '#forge:sand',
+        'minecraft:clay_ball',
+        'minecraft:clay_ball',
+        'minecraft:clay_ball',
     ]).heated()
+	
+	//Washing
+	//Reduce Crushed Ores>Nuggets output
+	event.remove({type: 'create:splashing', input: '#create:crushed_ores'})
+	
+	var crushedInput = [
+		'create:crushed_iron_ore',
+		'create:crushed_gold_ore',
+		'create:crushed_copper_ore',
+		'create:crushed_zinc_ore',
+		'create:crushed_brass',
+		'create:crushed_osmium_ore',
+		'create:crushed_silver_ore',
+		'create:crushed_tin_ore',
+		'create:crushed_lead_ore',
+		'create:crushed_aluminum_ore',
+		'create:crushed_uranium_ore',
+		'create:crushed_nickel_ore',
+		
+	]
+	var nuggetsOutput = [
+		'minecraft:iron_nugget',
+		'minecraft:gold_nugget',
+		'emendatusenigmatica:copper_nugget',
+		'emendatusenigmatica:zinc_nugget',
+		'emendatusenigmatica:brass_nugget',
+		'emendatusenigmatica:osmium_nugget',
+		'emendatusenigmatica:silver_nugget',
+		'emendatusenigmatica:tin_nugget',
+		'emendatusenigmatica:lead_nugget',
+		'emendatusenigmatica:aluminum_nugget',
+		'emendatusenigmatica:uranium_nugget',
+		'emendatusenigmatica:nickel_nugget',	
+		
+	]
+	var i = 0
+    nuggetsOutput.forEach(function (output) {
+        event.recipes.createSplashing([
+         Item.of(output, 7),
+         Item.of(output, 4).withChance(0.5)
+	],   
+	     crushedInput[i]
+    )
+        i++
+    })
+
 })

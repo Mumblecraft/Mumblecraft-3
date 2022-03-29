@@ -24,9 +24,6 @@ events.listen('jei.hide.items', function (event) {
 	'emendatusenigmatica:lumium_nugget',
 	'emendatusenigmatica:enderium_nugget',
 	'emendatusenigmatica:cobalt_nugget',
-	'create:brass_nugget',
-	'immersiveengineering:nugget_constantan',
-	'immersiveengineering:nugget_electrum',
 	
 	//Dust
 	'emendatusenigmatica:iridium_dust',
@@ -52,16 +49,12 @@ events.listen('jei.hide.items', function (event) {
 	'emendatusenigmatica:froststeel_dust',
 	'emendatusenigmatica:cloggrum_dust',
 	'emendatusenigmatica:nebu_dust',
-	
+
 	//Chunk
 	'emendatusenigmatica:iridium_chunk',
 	'emendatusenigmatica:ruby_chunk',
 	'emendatusenigmatica:sapphire_chunk',
 	'emendatusenigmatica:peridot_chunk',
-	'emendatusenigmatica:invar_chunk',
-	'emendatusenigmatica:signalum_chunk',
-	'emendatusenigmatica:lumium_chunk',
-	'emendatusenigmatica:enderium_chunk',
 	'emendatusenigmatica:cobalt_chunk',
 	'emendatusenigmatica:coal_chunk',
 	'emendatusenigmatica:iron_chunk',
@@ -121,10 +114,6 @@ events.listen('jei.hide.items', function (event) {
 	'emendatusenigmatica:ruby_cluster',
 	'emendatusenigmatica:sapphire_cluster',
 	'emendatusenigmatica:peridot_cluster',
-	'emendatusenigmatica:invar_cluster',
-	'emendatusenigmatica:signalum_cluster',
-	'emendatusenigmatica:lumium_cluster',
-	'emendatusenigmatica:enderium_cluster',
 	'emendatusenigmatica:cobalt_cluster',
 	'emendatusenigmatica:coal_cluster',
 	'emendatusenigmatica:iron_cluster',
@@ -155,16 +144,12 @@ events.listen('jei.hide.items', function (event) {
 	'emendatusenigmatica:dimensional_cluster',
 	'byg:ametrine_cluster',
 	'byg:subzero_crystal_cluster',
-	
-	//Clump
+
+	//Clump 
 	'emendatusenigmatica:iridium_clump',
 	'emendatusenigmatica:ruby_clump',
 	'emendatusenigmatica:sapphire_clump',
 	'emendatusenigmatica:peridot_clump',
-	'emendatusenigmatica:invar_clump',
-	'emendatusenigmatica:signalum_clump',
-	'emendatusenigmatica:lumium_clump',
-	'emendatusenigmatica:enderium_clump',
 	'emendatusenigmatica:cobalt_clump',
 	'emendatusenigmatica:coal_clump',
 	'emendatusenigmatica:iron_clump',
@@ -206,10 +191,6 @@ events.listen('jei.hide.items', function (event) {
 	'emendatusenigmatica:ruby_crystal',
 	'emendatusenigmatica:sapphire_crystal',
 	'emendatusenigmatica:peridot_crystal',
-	'emendatusenigmatica:invar_crystal',
-	'emendatusenigmatica:signalum_crystal',
-	'emendatusenigmatica:lumium_crystal',
-	'emendatusenigmatica:enderium_crystal',
 	'emendatusenigmatica:cobalt_crystal',
 	'emendatusenigmatica:coal_crystal',
 	'emendatusenigmatica:diamond_crystal',
@@ -238,17 +219,13 @@ events.listen('jei.hide.items', function (event) {
 	'emendatusenigmatica:froststeel_crystal',
 	'emendatusenigmatica:cloggrum_crystal',
 	'emendatusenigmatica:nebu_crystal',
-	
+
 	
 	//Dirty Dust
 	'emendatusenigmatica:iridium_dirty_dust',
 	'emendatusenigmatica:ruby_dirty_dust',
 	'emendatusenigmatica:sapphire_dirty_dust',
 	'emendatusenigmatica:peridot_dirty_dust',
-	'emendatusenigmatica:invar_dirty_dust',
-	'emendatusenigmatica:signalum_dirty_dust',
-	'emendatusenigmatica:lumium_dirty_dust',
-	'emendatusenigmatica:enderium_dirty_dust',
 	'emendatusenigmatica:cobalt_dirty_dust',
 	'emendatusenigmatica:coal_dirty_dust',
 	'emendatusenigmatica:diamond_dirty_dust',
@@ -283,10 +260,6 @@ events.listen('jei.hide.items', function (event) {
 	'emendatusenigmatica:ruby_shard',
 	'emendatusenigmatica:sapphire_shard',
 	'emendatusenigmatica:peridot_shard',
-	'emendatusenigmatica:invar_shard',
-	'emendatusenigmatica:signalum_shard',
-	'emendatusenigmatica:lumium_shard',
-	'emendatusenigmatica:enderium_shard',
 	'emendatusenigmatica:cobalt_shard',
 	'emendatusenigmatica:coal_shard',
 	'emendatusenigmatica:diamond_shard',
@@ -344,7 +317,7 @@ events.listen('jei.hide.items', function (event) {
 	'emendatusenigmatica:arcane_crushed',
 	'emendatusenigmatica:dimensional_crushed',
 	'emendatusenigmatica:bronze_crushed',
-	'emendatusenigmaticonstantan_crushed',
+	'emendatusenigmatica:constantan_crushed',
 	'emendatusenigmatica:electrum_crushed',
 	'emendatusenigmatica:steel_crushed',
 	'emendatusenigmatica:thallasium_crushed',
@@ -360,10 +333,6 @@ events.listen('jei.hide.items', function (event) {
 	'emendatusenigmatica:ruby_fragment',
 	'emendatusenigmatica:sapphire_fragment',
 	'emendatusenigmatica:peridot_fragment',
-	'emendatusenigmatica:invar_fragment',
-	'emendatusenigmatica:signalum_fragment',
-	'emendatusenigmatica:lumium_fragment',
-	'emendatusenigmatica:enderium_fragment',
 	'emendatusenigmatica:cobalt_fragment',
 	'emendatusenigmatica:coal_fragment',
 	'emendatusenigmatica:diamond_fragment',
@@ -403,10 +372,6 @@ events.listen('jei.hide.items', function (event) {
 	'emendatusenigmatica:ruby_gravel',
 	'emendatusenigmatica:sapphire_gravel',
 	'emendatusenigmatica:peridot_gravel',
-	'emendatusenigmatica:invar_gravel',
-	'emendatusenigmatica:signalum_gravel',
-	'emendatusenigmatica:lumium_gravel',
-	'emendatusenigmatica:enderium_gravel',
 	'emendatusenigmatica:cobalt_gravel',
 	'emendatusenigmatica:coal_gravel',
 	'emendatusenigmatica:diamond_gravel',
@@ -482,10 +447,6 @@ events.listen('jei.hide.items', function (event) {
 	'#forge:ores/ruby',
 	'#forge:ores/sapphire',
 	'#forge:ores/peridot',
-	'#forge:ores/invar',
-	'#forge:ores/signalum',
-	'#forge:ores/lumium',
-	'#forge:ores/enderium',
 	'emendatusenigmatica:cinnabar_gem',
 	'emendatusenigmatica:apatite_gem',
 	'emendatusenigmatica:sulfur_gem',
@@ -504,8 +465,6 @@ events.listen('jei.hide.items', function (event) {
 	'emendatusenigmatica:ruby_ingot',
 	'emendatusenigmatica:sapphire_ingot',
 	'emendatusenigmatica:peridot_ingot',
-	'immersiveengineering:ingot_constantan',
-	'immersiveengineering:ingot_electrum',
 	'emendatusenigmatica:cobalt_ingot',
 	'emendatusenigmatica:iridium_ingot',
 	'emendatusenigmatica:invar_ingot',
@@ -524,6 +483,8 @@ events.listen('jei.hide.items', function (event) {
 	'emendatusenigmatica:molten_lumium_bucket',
 	'emendatusenigmatica:molten_enderium_bucket',
 	'emendatusenigmatica:molten_cobalt_bucket',
+	
+	//Slurry
 	
 	//Block
 	'emendatusenigmatica:iridium_block',
@@ -780,10 +741,6 @@ events.listen('jei.hide.items', function (event) {
 	'emendatusenigmatica:charged_certus_quartz_raw_marble_ore',
 	'emendatusenigmatica:fluorite_raw_marble_ore',
 	'emendatusenigmatica:bitumen_raw_marble_ore',
-
-	//Fence
-	'immersiveposts:fence_constantan',
-	'immersiveposts:fence_electrum',
 	
 	]
 	idHide.forEach(function (hide) {

@@ -51,6 +51,8 @@ events.listen('recipes', function (event) {
     })
 	
 	//Add plates and rods to Immersive Engineering Press
+	
+	
 	event.recipes.immersiveengineeringMetalPress('emendatusenigmatica:diamond_plate', 'minecraft:diamond', 'immersiveengineering:mold_plate')
 	event.recipes.immersiveengineeringMetalPress('emendatusenigmatica:emerald_plate', 'minecraft:emerald', 'immersiveengineering:mold_plate')
 	event.recipes.immersiveengineeringMetalPress('emendatusenigmatica:lapis_plate', 'minecraft:lapis_lazuli', 'immersiveengineering:mold_plate')
@@ -91,6 +93,47 @@ events.listen('recipes', function (event) {
     var i = 0
     smeltingOutput.forEach(function (output) {
         event.smelting(output, smeltingInput[i])
+        i++
+    })	
+	
+	//Blast Crushed Ore into Nuggets
+	event.remove({type: 'minecraft:blasting', input: '#create:crushed_ores'})
+	
+	var blastingInput = [
+	
+	'create:crushed_iron_ore',
+	'create:crushed_gold_ore',
+	'create:crushed_copper_ore',
+	'create:crushed_zinc_ore',
+	'create:crushed_osmium_ore',
+	'create:crushed_silver_ore',
+	'create:crushed_tin_ore',
+	'create:crushed_lead_ore',
+	'create:crushed_aluminum_ore',
+	'create:crushed_uranium_ore',
+	'create:crushed_nickel_ore',
+	'create:crushed_brass',
+	]
+	
+	var blastingOutput = [
+	
+	'4x minecraft:iron_nugget',
+	'4x minecraft:gold_nugget',
+	'4x emendatusenigmatica:copper_nugget',
+	'4x emendatusenigmatica:zinc_nugget',
+	'4x emendatusenigmatica:osmium_nugget',
+	'4x emendatusenigmatica:silver_nugget',
+	'4x emendatusenigmatica:tin_nugget',
+	'4x emendatusenigmatica:lead_nugget',
+	'4x emendatusenigmatica:aluminum_nugget',
+	'4x emendatusenigmatica:uranium_nugget',
+	'4x emendatusenigmatica:nickel_nugget',
+	'4x emendatusenigmatica:brass_nugget',
+	]
+	
+    var i = 0
+    blastingOutput.forEach(function (output) {
+        event.blasting(output, blastingInput[i])
         i++
     })	
 		
@@ -152,7 +195,7 @@ events.listen('recipes', function (event) {
 		i++
 	})
 	
-	//Crushed Ores
+	//Use Grindstone to crush ores into crushed ore
 	var crushedInput = [
 		"forge:ores/zinc",
 		"forge:ores/tin",
@@ -198,6 +241,7 @@ events.listen('recipes', function (event) {
         ]).superheated()
 
     //Make Alloy Kiln Slower
+	
 	event.remove({id: 'immersiveengineering:alloysmelter/brass'})
 	event.remove({id: 'immersiveengineering:alloysmelter/constantan'})
 	event.remove({id: 'immersiveengineering:alloysmelter/electrum'})

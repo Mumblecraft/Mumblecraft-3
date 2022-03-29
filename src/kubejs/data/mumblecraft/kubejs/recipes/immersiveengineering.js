@@ -310,12 +310,4 @@ events.listen('recipes', function (event) {
 	    'create:shadow_steel',
 	    '#forge:dusts/coal_coke',
 	]).time(400).energy(204800)
-	
-    //Remove nuggets/ingots added in EE
-    event.remove({input: 'immersiveengineering:nugget_constantan'})
-    event.remove({input: 'immersiveengineering:ingot_constantan'})
-    event.remove({output: 'immersiveengineering:ingot_constantan'})
-    event.remove({input: 'immersiveengineering:nugget_electrum'})
-    event.remove({input: 'immersiveengineering:ingot_electrum'})
-    event.remove({output: 'immersiveengineering:ingot_electrum'})
 })
