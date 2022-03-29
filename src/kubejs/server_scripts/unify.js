@@ -21,7 +21,6 @@ global["unifypriorities"] = [
 
 // Add oredictionary tags here to unify (or use javascript to generate it!)
 var tags = [
-	
 ]
 // Block tags for ore gen unification (an equal item tag is required for this to work, which is the case with ores normally)
 /*var btags = [
@@ -40,28 +39,23 @@ var tags = [
 ]*/
 // Easier way to add multiple tags (feel free to add empty extra tags, this will ignore them)
 var tagGen = [
-	"iron=gears,plates,rods",
-    "gold=gears,plates,rods",
-    "diamond=gears,plates",
+	"iron=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods",
+    "gold=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods",
+    "diamond=storage_blocks,ingots,nuggets,dusts,ores,gears,plates",
     "copper=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods",
-    "tin=storage_blocks,ingots,nuggets,dusts,ores,gears,plates",
-    "aluminum=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods",
-    "lead=storage_blocks,ingots,nuggets,dusts,ores,gears,plates",
-    "silver=storage_blocks,ingots,nuggets,dusts,ores,gears,plates",
-    "nickel=storage_blocks,ingots,nuggets,dusts,ores,gears,plates",
+    "tin=storage_blocks,ingots,nuggets,dusts,ores",
+    "aluminum=storage_blocks,ingots,nuggets,dusts,ores,plates",
+    "lead=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods",
+    "silver=storage_blocks,ingots,nuggets,dusts,ores,plates,rods",
+    "nickel=storage_blocks,ingots,nuggets,dusts,ores,plates,rods",
     "bronze=storage_blocks,ingots,nuggets,dusts,ores,gears,plates",
-    "steel=storage_blocks,ingots,nuggets,dusts,plates,rods",
-    "platinum=storage_blocks,ingots,nuggets,dusts,ores",
-    "uranium=storage_blocks,ingots,nuggets,dusts,ores,rods",
-    "iridium=storage_blocks,ingots,nuggets,dusts,ores",
-    "zinc=storage_blocks,ingots,nuggets,dusts,ores",
-    "osmium=ingots,ores",
-    "sulfur=dusts,ores",
-	"uranium=plates",
-	"brass=ingots,rods",
-	"bronze=ingots",
-	"constantan=ingots,plates",
-	"electrum=ingots,plates",
+    "steel=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods",
+    "uranium=storage_blocks,ingots,nuggets,dusts,ores,plates",
+    "zinc=storage_blocks,ingots,nuggets,dusts,ores,plates",
+    "osmium=storage_blocks,ingots,nuggets,dusts,ores,plates",
+	"brass=storage_blocks,ingots,nuggets,dusts,ores,gears,plates",
+	"constantan=storage_blocks,ingots,nuggets,dusts,ores,plates,rods",
+	"electrum=storage_blocks,ingots,nuggets,dusts,ores,plates,rods",
 
 ]
 for (let line of tagGen) {
