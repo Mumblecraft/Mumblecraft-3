@@ -24,6 +24,7 @@ events.listen('jei.hide.items', function (event) {
 	'emendatusenigmatica:lumium_nugget',
 	'emendatusenigmatica:enderium_nugget',
 	'emendatusenigmatica:cobalt_nugget',
+	'emendatusenigmatica:cast_iron_nugget',
 	
 	//Dust
 	'emendatusenigmatica:iridium_dust',
@@ -483,6 +484,7 @@ events.listen('jei.hide.items', function (event) {
 	'emendatusenigmatica:molten_lumium_bucket',
 	'emendatusenigmatica:molten_enderium_bucket',
 	'emendatusenigmatica:molten_cobalt_bucket',
+	'emendatusenigmatica:molten_cast_iron_bucket',
 	
 	//Slurry
 	
