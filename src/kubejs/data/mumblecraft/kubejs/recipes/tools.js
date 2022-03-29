@@ -154,4 +154,32 @@ events.listen('recipes', function (event) {
 		
 		i++
 	})
+	
+	//Pam's Harvestcraft
+	//Roller - Recipe Conflict
+	event.remove({output: 'pamhc2foodcore:rolleritem'})
+		
+	//Add Recipe
+	event.shaped(item.of('pamhc2foodcore:rolleritem', 1), [
+		'  A',
+		' B ',
+		'A  ',
+	], {
+		A: '#forge:rods/wooden',
+		B: '#minecraft:logs',
+	})
+	
+	//Cutting Board
+	event.remove({output: 'pamhc2foodcore:cuttingboarditem'})
+		
+	//Add Recipe
+	event.shaped(item.of('pamhc2foodcore:cuttingboarditem', 1), [
+		'A  ',
+		' B ',
+		'  C',
+	], {
+		A: '#forge:plates/steel',
+		B: '#forge:rods/wooden',
+		C: '#minecraft:planks'
+	})
 })
