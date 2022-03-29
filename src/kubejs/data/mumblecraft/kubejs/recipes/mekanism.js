@@ -789,8 +789,7 @@ events.listen('recipes', function (event) {
 	event.recipes.mekanismEnriching(output, dirtyDusts[i])
 		i++
 	})
-	
-	event.recipes.mekanismInjecting('minecraft:obsidian', 'minecraft:lava_bucket', {gas: 'mekanism:oxygen', amount: 200})
+
 	//World
 	//Salt - Convert Pam's Kitchen Salt to Mekanism Salt
 	event.shapeless(Item.of('mekanism:salt', 1), 'pamhc2foodcore:saltitem')
