@@ -223,7 +223,7 @@ events.listen('jei.hide.items', function (event) {
 	'emendatusenigmatica:diamond_dirty_dust',
 	'emendatusenigmatica:emerald_dirty_dust',
 	'emendatusenigmatica:lapis_dirty_dust',
-	'emendatusenigmatica:redstone_dirty_dust',,
+	'emendatusenigmatica:redstone_dirty_dust',
 	'emendatusenigmatica:quartz_dirty_dust',
 	'emendatusenigmatica:certus_quartz_dirty_dust',
 	'emendatusenigmatica:charged_certus_quartz_dirty_dust',
