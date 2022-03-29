@@ -650,7 +650,146 @@ events.listen('recipes', function (event) {
 	//Saw Treated Wood
 	event.recipes.mekanismSawing('6x immersiveengineering:stick_treated', '#forge:treated_wood', item.of('mekanism:sawdust').chance(0.25))
 
+    //Process ores from other mods
 	
+	var ores = [
+	'#forge:ores/aluminum',
+	'#forge:ores/nickel',
+	'#forge:ores/silver',
+	'#forge:ores/zinc'
+	]
+
+	var dirtySlurries = [
+	'emendatusenigmatica:dirty_aluminum',
+	'emendatusenigmatica:dirty_nickel',
+	'emendatusenigmatica:dirty_silver',
+	'emendatusenigmatica:dirty_zinc'
+	]
+	
+	var cleanSlurries = [
+	'emendatusenigmatica:clean_aluminum',
+	'emendatusenigmatica:clean_nickel',
+	'emendatusenigmatica:clean_silver',
+	'emendatusenigmatica:clean_zinc',
+	]
+	
+	var crystals = [
+	'emendatusenigmatica:aluminum_crystal',
+	'emendatusenigmatica:nickel_crystal',
+	'emendatusenigmatica:silver_crystal',
+	'emendatusenigmatica:zinc_crystal'
+	]
+	
+	var shards = [
+	'emendatusenigmatica:aluminum_shard',
+	'emendatusenigmatica:nickel_shard',
+	'emendatusenigmatica:silver_shard',
+	'emendatusenigmatica:zinc_shard'
+	]
+	
+	var clumps = [
+	'emendatusenigmatica:aluminum_clump',
+	'emendatusenigmatica:nickel_clump',
+	'emendatusenigmatica:silver_clump',
+	'emendatusenigmatica:zinc_clump'
+	]
+	
+	var dirtyDusts = [
+	'emendatusenigmatica:aluminum_dirty_dust',
+	'emendatusenigmatica:nickel_dirty_dust',
+	'emendatusenigmatica:silver_dirty_dust',
+	'emendatusenigmatica:zinc_dirty_dust'
+	]
+	
+	var dusts = [
+	'emendatusenigmatica:aluminum_dust',
+	'emendatusenigmatica:nickel_dust',
+	'emendatusenigmatica:silver_dust',
+	'emendatusenigmatica:zinc_dust'
+	]
+	
+	i = 0
+	
+	dirtySlurries.forEach(function (output) {
+	event.custom({
+            type: 'mekanism:dissolution',
+            itemInput:{ingredient: item.of(ores[i]).toResultJson()},
+			gasInput:{amount: 1, gas: 'mekanism:sulfuric_acid'},
+            output: {slurry: output, amount: 1000, chemicalType: 'slurry'}
+		})
+		i++
+	})
+	i = 0
+	
+	cleanSlurries.forEach(function (output) {
+		event.custom({			
+			type:'mekanism:washing',
+			fluidInput:{ amount:5, tag: 'minecraft:water'},
+			slurryInput:{ amount:1, slurry: dirtySlurries[i]},
+			output:{ slurry: output, amount: 1}
+		})
+		i++
+	})
+	i = 0
+	
+	crystals.forEach(function (output) {
+	event.custom({
+            type: 'mekanism:crystallizing',
+            chemicalType: 'slurry',
+            input: { amount: 200, slurry: cleanSlurries[i] },
+            output: item.of(output).toJson()
+		})
+		i++
+	})
+	i = 0
+	
+	shards.forEach(function (output) {
+	event.recipes.mekanismInjecting(
+			item.of(output, 4), ores[i], {
+			gas: 'mekanism:hydrogen_chloride', amount: 1
+		})
+		i++
+	})
+	i = 0
+	
+	shards.forEach(function (output) {
+	event.recipes.mekanismInjecting(
+			output, crystals[i], {
+			gas: 'mekanism:hydrogen_chloride', amount: 1
+		})
+		i++
+	})
+	i = 0
+	
+	clumps.forEach(function (output) {
+	event.recipes.mekanismPurifying(
+			output, shards[i], {
+			gas: 'mekanism:oxygen', amount: 1
+		})
+		i++
+	})
+	i = 0
+	
+	clumps.forEach(function (output) {
+	event.recipes.mekanismPurifying(
+			item.of(output, 3), item.of(ores[i]).toResultJson(), {
+			gas: 'mekanism:oxygen', amount: 1
+		})
+		i++
+	})
+	i = 0
+	
+	dirtyDusts.forEach(function (output) {
+	event.recipes.mekanismCrushing(output, clumps[i])
+		i++
+	})
+	i = 0
+	
+	dusts.forEach(function (output) {
+	event.recipes.mekanismEnriching(output, dirtyDusts[i])
+		i++
+	})
+
 	//World
 	//Salt - Convert Pam's Kitchen Salt to Mekanism Salt
 	event.shapeless(Item.of('mekanism:salt', 1), 'pamhc2foodcore:saltitem')
