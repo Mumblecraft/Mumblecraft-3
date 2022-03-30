@@ -1,0 +1,21 @@
+{
+  "type": "notreepunching:tool_damaging",
+  "recipe": {
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "SW"
+    ],
+    "key": {
+      "S": {
+        "tag": "notreepunching:weak_saws"
+      },
+      "W": {
+        "tag": "forge:treated_wood"
+      }
+    },
+    "result": {
+      "count": 1,
+      "item": "immersiveengineering:stick_treated"
+    }
+  }
+}
