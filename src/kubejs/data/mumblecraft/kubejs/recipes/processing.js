@@ -274,12 +274,12 @@ events.listen('recipes', function (event) {
 	event.recipes.immersiveengineeringAlloy(item.of('create:andesite_alloy',1),
 	'2x minecraft:andesite',
 	'2x minecraft:iron_nugget',
-	).time(800)
+	).time(400)
 	
 	event.recipes.immersiveengineeringAlloy(item.of('create:andesite_alloy',1),
 	'2x minecraft:andesite',
 	'2x #forge:nuggets/zinc',
-	).time(800)
+	).time(400)
 	
 	//Coke Brick Brick
 	event.blasting('kubejs:coke_brick', 'kubejs:coke_brick_blend')

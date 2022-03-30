@@ -14,7 +14,7 @@ events.listen('recipes', function (event) {
 	], {
 		A: 'create:andesite_alloy',
 		B: '#appliedenergistics2:gears/wooden',
-		C: '#minecraft:planks',
+		C: '#minecraft:buttons',
 	})
 	
 	//Water Wheel
@@ -117,8 +117,8 @@ events.listen('recipes', function (event) {
 		'ABA',
 		' C ',
 	], {
-		A: '#forge:plates/steel',
-		B: '#forge:gears/steel',
+		A: '#forge:plates/iron',
+		B: '#forge:gears/iron',
 		C: 'create:andesite_casing',
 	})
 	
