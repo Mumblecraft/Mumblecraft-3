@@ -54,12 +54,13 @@ events.listen('recipes', function (event) {
 	event.remove({id: 'minecraft:furnace'})
 	
     event.shaped(item.of('minecraft:furnace', 1), [
+        'AAA',
         'ABA',
-        'AAA',
-        'AAA',
+        'CCC',
     ], {
         A: 'minecraft:bricks',
-		B: 'minecraft:cobblestone'
+		B: '#minecraft:coals',
+		C: '#forge:cobblestone'
     })
 	
 	//Blast Furnace
