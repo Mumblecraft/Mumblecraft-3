@@ -38,7 +38,7 @@ events.listen('recipes', function (event) {
 		'BAB',
 		'CCC',
 	], {
-		A: '#forge:gears/bronze',
+		A: 'appliedenergistics2:wooden_gear',
 		B: 'create:andesite_alloy',
 		C: '#minecraft:planks',
 	})
