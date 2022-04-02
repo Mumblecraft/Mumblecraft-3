@@ -117,8 +117,8 @@ events.listen('recipes', function (event) {
 		'ABA',
 		' C ',
 	], {
-		A: '#forge:plates/iron',
-		B: '#forge:gears/iron',
+		A: '#forge:plates/steel',
+		B: '#forge:gears/steel',
 		C: 'create:andesite_casing',
 	})
 	
