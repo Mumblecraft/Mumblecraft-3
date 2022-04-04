@@ -56,6 +56,9 @@ var tagGen = [
 	"brass=storage_blocks,ingots,nuggets,dusts,ores,gears,plates",
 	"constantan=storage_blocks,ingots,nuggets,dusts,ores,plates,rods",
 	"electrum=storage_blocks,ingots,nuggets,dusts,ores,plates,rods",
+	"wood=dusts",
+	"quartz=dusts",
+	"certus_quartz=dusts",
 
 ]
 for (let line of tagGen) {

@@ -68,7 +68,7 @@ events.listen('recipes', function (event) {
 	
     //Ingots
     //Make bronze with Create mixer
-    event.recipes.create.mixing(item.of('mekanism:ingot_bronze', 4), [
+    event.recipes.create.mixing(item.of('emendatusenigmatica:bronze_ingot', 4), [
  	'#forge:ingots/copper',
  	'#forge:ingots/copper',
  	'#forge:ingots/copper',
