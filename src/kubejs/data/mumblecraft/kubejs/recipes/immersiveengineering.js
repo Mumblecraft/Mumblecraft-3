@@ -18,65 +18,6 @@ events.listen('recipes', function (event) {
 	
     //Machines/Components
 	
-	//Sheetmetal
-	var idRemove = [
-	'immersiveengineering:crafting/sheetmetal_copper',
-	'immersiveengineering:crafting/sheetmetal_aluminum',
-	'immersiveengineering:crafting/sheetmetal_lead',
-	'immersiveengineering:crafting/sheetmetal_silver',
-	'immersiveengineering:crafting/sheetmetal_nickel',
-	'immersiveengineering:crafting/sheetmetal_uranium',
-	'immersiveengineering:crafting/sheetmetal_constantan',
-	'immersiveengineering:crafting/sheetmetal_electrum',
-	'immersiveengineering:crafting/sheetmetal_steel',
-	'immersiveengineering:crafting/sheetmetal_iron',
-	'immersiveengineering:crafting/sheetmetal_gold',
-	]
-	idRemove.forEach(function (remove) {
-		event.remove({id: remove})
-	})
-	
-	var sheetmetalInput = [ 
-	'emendatusenigmatica:copper_plate',
-	'emendatusenigmatica:aluminum_plate',
-	'emendatusenigmatica:lead_plate',
-	'emendatusenigmatica:silver_plate',
-	'emendatusenigmatica:nickel_plate',
-	'emendatusenigmatica:uranium_plate',
-	'emendatusenigmatica:constantan_plate',
-	'emendatusenigmatica:electrum_plate',
-	'emendatusenigmatica:steel_plate',
-	'emendatusenigmatica:iron_plate',
-	'emendatusenigmatica:gold_plate',
-	]
-	
-	var sheetmetalOutput = [
-	'immersiveengineering:sheetmetal_copper',
-	'immersiveengineering:sheetmetal_aluminum',
-	'immersiveengineering:sheetmetal_lead',
-	'immersiveengineering:sheetmetal_silver',
-	'immersiveengineering:sheetmetal_nickel',
-	'immersiveengineering:sheetmetal_uranium',
-	'immersiveengineering:sheetmetal_constantan',
-	'immersiveengineering:sheetmetal_electrum',
-	'immersiveengineering:sheetmetal_steel',
-	'immersiveengineering:sheetmetal_iron',
-	'immersiveengineering:sheetmetal_gold',
-	]
-	
-	var i = 0
-	sheetmetalOutput.forEach(function (sheetmetal) {
-		event.shaped(item.of(sheetmetal, 1), [
-			' A ',
-			'A A',
-			' A ',
-		], {
-			A: sheetmetalInput[i]
-		})
-		i++
-	})
-	i = 0
-	
 	//Kiln Brick
 	event.remove({id: 'immersiveengineering:crafting/alloybrick'})
 	
@@ -189,7 +130,7 @@ events.listen('recipes', function (event) {
         B: 'immersiveengineering:component_steel',
         C: '#forge:storage_blocks/electrum',
     })
-	
+
 	//MV Capacitor
 	event.shaped(item.of('immersiveengineering:capacitor_mv', 1), [
         'AAA',

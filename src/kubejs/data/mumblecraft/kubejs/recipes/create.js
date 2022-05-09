@@ -53,7 +53,7 @@ events.listen('recipes', function (event) {
 	], {
 		A: '#forge:gears/brass',
 		B: '#forge:plates/brass',
-		C: '#forge:treated_wood',
+		C: '#forge:planks',
 	})
 	
 	//Copper Casing
@@ -66,7 +66,7 @@ events.listen('recipes', function (event) {
 	], {
 		A: '#forge:gears/copper',
 		B: '#forge:plates/copper',
-		C: '#forge:treated_wood',
+		C: '#forge:planks',
 	})
 	
 	//Schematicannon
@@ -191,8 +191,6 @@ events.listen('recipes', function (event) {
 	event.recipes.createMixing('kubejs:coke_brick_blend', [
         '#forge:sand',
         '#forge:sand',
-        '#forge:sand',
-        'minecraft:clay_ball',
         'minecraft:clay_ball',
         'minecraft:clay_ball',
     ]).heated()
