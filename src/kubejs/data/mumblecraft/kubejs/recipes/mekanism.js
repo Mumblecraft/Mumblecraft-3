@@ -14,6 +14,18 @@ events.listen('recipes', function (event) {
 		'#forge:plates/iron'
 	)
 	
+	//Remove Steel Blocks
+	event.remove({output: 'mekanism:block_steel'})
+	event.remove({output: 'mekanism:block_copper'})
+	event.remove({output: 'mekanism:block_lead'})
+	event.remove({output: 'mekanism:block_uranium'})
+	
+	//Add Penis
+	event.stonecutting('mekanism:block_steel', 'emendatusenigmatica:steel_block')
+	event.stonecutting('mekanism:block_copper', 'emendatusenigmatica:copper_block')
+	event.stonecutting('mekanism:block_lead', 'emendatusenigmatica:lead_block')	
+	event.stonecutting('mekanism:block_uranium', 'emendatusenigmatica:uranium_block')	
+	
     //Steel Casing
 	event.remove({id: 'mekanism:steel_casing'})
 	

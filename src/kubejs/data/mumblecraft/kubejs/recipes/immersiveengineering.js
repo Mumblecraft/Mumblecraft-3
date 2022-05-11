@@ -16,8 +16,32 @@ events.listen('recipes', function (event) {
 		C: '#forge:rods/wooden'
     })
 	
-    //Machines/Components
+	//Blocks
+
+	//Remove Metal Blocks
+	event.remove({output: 'immersiveengineering:storage_copper'})
+	event.remove({output: 'immersiveengineering:storage_steel'})
+	event.remove({output: 'immersiveengineering:storage_aluminum'})
+	event.remove({output: 'immersiveengineering:storage_lead'})	
+	event.remove({output: 'immersiveengineering:storage_silver'})
+	event.remove({output: 'immersiveengineering:storage_nickel'})
+	event.remove({output: 'immersiveengineering:storage_uranium'})	
+	event.remove({output: 'immersiveengineering:storage_constantan'})
+	event.remove({output: 'immersiveengineering:storage_electrum'})
 	
+	//Add Stonecutter Recipes for IE Metal Blocks
+	event.stonecutting('immersiveengineering:storage_copper', 'emendatusenigmatica:copper_block')
+	event.stonecutting('immersiveengineering:storage_steel', 'emendatusenigmatica:steel_block')		
+	event.stonecutting('immersiveengineering:storage_aluminum', 'emendatusenigmatica:aluminum_block')	
+	event.stonecutting('immersiveengineering:storage_lead', 'emendatusenigmatica:lead_block')
+	event.stonecutting('immersiveengineering:storage_silver', 'emendatusenigmatica:silver_block')		
+	event.stonecutting('immersiveengineering:storage_nickel', 'emendatusenigmatica:nickel_block')
+	event.stonecutting('immersiveengineering:storage_uranium', 'emendatusenigmatica:uranium_block')
+	event.stonecutting('immersiveengineering:storage_constantan', 'emendatusenigmatica:constantan_block')
+	event.stonecutting('immersiveengineering:storage_electrum', 'emendatusenigmatica:electrum_block')
+	
+    //Machines/Components
+
 	//Kiln Brick
 	event.remove({id: 'immersiveengineering:crafting/alloybrick'})
 	
