@@ -9,6 +9,7 @@ events.listen('recipes', function (event) {
 	event.remove({output: 'metalbarrels:copper_barrel'})
 	event.remove({output: 'metalbarrels:wood_to_copper'})
 	
+	//Add recipe for crafting
 	event.shaped(item.of('metalbarrels:copper_barrel', 1), [
 		'AAA',
 		'ABA',
@@ -25,6 +26,7 @@ events.listen('recipes', function (event) {
 	event.remove({output: 'metalbarrels:wood_to_iron'})
 	event.remove({output: 'metalbarrels:copper_to_iron'})
 	
+	//Add recipe for crafting
 	event.shaped(item.of('metalbarrels:iron_barrel', 1), [
 		'AAA',
 		'ABA',
@@ -53,6 +55,7 @@ events.listen('recipes', function (event) {
 	event.remove({output: 'metalbarrels:iron_to_silver'})
 	event.remove({id: 'metalbarrels:upgrades/nested/wood_to_silver_upgrade'})
 	
+	//Add recipe for crafting
 	event.shaped(item.of('metalbarrels:silver_barrel', 1), [
 		'AAA',
 		'ABA',
@@ -100,6 +103,7 @@ events.listen('recipes', function (event) {
 	event.remove({output: 'metalbarrels:silver_to_gold'})
 	event.remove({id: 'metalbarrels:upgrades/nested/wood_to_gold_upgrade'})
 	
+	//Add recipe for crafting
 	event.shaped(item.of('metalbarrels:gold_barrel', 1), [
 		'AAA',
 		'ABA',
