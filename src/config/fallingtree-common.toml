@@ -85,7 +85,7 @@ break_in_creative = false
 	speed_multiplicand = 1.0
 	#Additional list of tools that can be used to chop down a tree.
 	#INFO: Items marked with the axe tag will already be whitelisted.
-	whitelisted = []
+	whitelisted = ["mekanismtools:iron_paxel", "mekanismtools:diamond_paxel", "mekanismtools:gold_paxel", "mekanismtools:netherite_paxel", "mekanismtools:bronze_paxel", "mekanismtools:lapis_lazuli_paxel", "mekanismtools:osmium_paxel", "mekanismtools:refined_glowstone_paxel", "mekanismtools:refined_obsidian_paxel", "mekanismtools:steel_paxel"]
 	#Defines the number of times the damage is applied to the tool.
 	#ie: if set to 1 then breaking 5 logs will give 5 damage.
 	#ie: if set to 2 then breaking 5 logs will give 10 damage.
