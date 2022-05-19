@@ -7,49 +7,51 @@ events.listen('recipes', function (event) {
 
 	//Gears
 	var gearType = [
+	    'emendatusenigmatica:copper_gear',
 		'emendatusenigmatica:bronze_gear',
 		'emendatusenigmatica:iron_gear',
+		'emendatusenigmatica:brass_gear',
 		'emendatusenigmatica:gold_gear',
 		'emendatusenigmatica:diamond_gear',
 		'emendatusenigmatica:steel_gear',
 	]
 	
-	var previousGearType = [
-		'#appliedenergistics2:gears/wooden',
-		'emendatusenigmatica:bronze_gear',
-		'emendatusenigmatica:iron_gear',
-		'emendatusenigmatica:gold_gear',
-		'emendatusenigmatica:diamond_gear',
-	]
-	
 	var ingot = [
+	    '#forge:ingots/copper',
 		'#forge:ingots/bronze',
 		'#forge:ingots/iron',
+		'#forge:ingots/brass',
 		'#forge:ingots/gold',
 		'#forge:gems/diamond',
 		'#forge:ingots/steel',
 	]
 	
+	var incompleteGear = [
+	    'kubejs:incomplete_copper_gear',
+		'kubejs:incomplete_bronze_gear',
+		'kubejs:incomplete_iron_gear',
+		'kubejs:incomplete_brass_gear',
+		'kubejs:incomplete_gold_gear',
+		'kubejs:incomplete_diamond_gear',
+		'kubejs:incomplete_steel_gear'
+	]
+	
 	var i = 0
 	
 	gearType.forEach(function (gear){
-		//Remove Gear
+		//Remove gear
 		event.remove({output: gear})
 		
 		//Add recipe for crafting
-		 event.shaped(item.of(gear, 1), [
-			' B ',
-			'BAB',
-			' B ',
-		], {
-			A: previousGearType[i],
-			B: ingot[i],
-		})
-		
-		//Add recipe for metal press
-		//Add plates and rods to Immersive Engineering Press
-		event.recipes.immersiveengineeringMetalPress(gear, '4x ' + ingot[i], 'immersiveengineering:mold_gear')
-		
+		event.recipes.createSequencedAssembly([
+			Item.of(gear).withChance(80.0),
+			Item.of(ingot[i]).withChance(2.0),
+				'create:andesite_alloy',
+				], 
+				'create:andesite_alloy', [
+			event.recipes.createDeploying(incompleteGear[i], [incompleteGear[i], ingot[i]]),
+			event.recipes.createPressing(incompleteGear[i], incompleteGear[i]),
+		]).transitionalItem(incompleteGear[i]).loops(4)
 		i++
 	})
 	

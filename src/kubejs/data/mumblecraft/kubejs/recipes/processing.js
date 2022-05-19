@@ -50,7 +50,7 @@ events.listen('recipes', function (event) {
         i++
     })
 	
-	//Add plates and rods to Immersive Engineering Press
+	//Add plates to Immersive Engineering Press
 	
 	
 	event.recipes.immersiveengineeringMetalPress('emendatusenigmatica:diamond_plate', 'minecraft:diamond', 'immersiveengineering:mold_plate')
@@ -62,12 +62,13 @@ events.listen('recipes', function (event) {
 	event.recipes.immersiveengineeringMetalPress('emendatusenigmatica:silver_plate', '#forge:ingots/silver', 'immersiveengineering:mold_plate')
 	event.recipes.immersiveengineeringMetalPress('emendatusenigmatica:lead_plate', '#forge:ingots/lead', 'immersiveengineering:mold_plate')
 	
+	//Wires
 	//Add wire and rods to Immersive Engineering Press
 	event.recipes.immersiveengineeringMetalPress('2x #forge:wires/electrum', '#forge:ingots/electrum', 'immersiveengineering:mold_wire')
 	
     //Ingots
     //Make bronze with Create mixer
-    event.recipes.create.mixing(item.of('mekanism:ingot_bronze', 4), [
+    event.recipes.create.mixing(item.of('emendatusenigmatica:bronze_ingot', 4), [
  	'#forge:ingots/copper',
  	'#forge:ingots/copper',
  	'#forge:ingots/copper',
@@ -195,6 +196,17 @@ events.listen('recipes', function (event) {
 		i++
 	})
 	
+	//Gears
+	//Make gears in IE Press
+	event.recipes.immersiveengineeringMetalPress('emendatusenigmatica:copper_gear', '4x #forge:ingots/copper', 'immersiveengineering:mold_gear')
+	event.recipes.immersiveengineeringMetalPress('emendatusenigmatica:bronze_gear', '4x #forge:ingots/bronze', 'immersiveengineering:mold_gear')
+	event.recipes.immersiveengineeringMetalPress('emendatusenigmatica:iron_gear', '4x #forge:ingots/iron', 'immersiveengineering:mold_gear')
+	event.recipes.immersiveengineeringMetalPress('emendatusenigmatica:brass_gear', '4x #forge:ingots/brass', 'immersiveengineering:mold_gear')
+	event.recipes.immersiveengineeringMetalPress('emendatusenigmatica:gold_gear', '4x #forge:ingots/gold', 'immersiveengineering:mold_gear')
+	event.recipes.immersiveengineeringMetalPress('emendatusenigmatica:diamond_gear', '4x minecraft:diamond', 'immersiveengineering:mold_gear')
+	event.recipes.immersiveengineeringMetalPress('emendatusenigmatica:steel_gear', '4x #forge:ingots/steel', 'immersiveengineering:mold_gear')
+	
+	//Crushed Ores
 	//Use Grindstone to crush ores into crushed ore
 	var crushedInput = [
 		"forge:ores/zinc",
@@ -247,21 +259,6 @@ events.listen('recipes', function (event) {
 	event.remove({id: 'immersiveengineering:alloysmelter/electrum'})
 	event.remove({id: 'immersiveengineering:alloysmelter/bronze'})
 	
-	event.recipes.immersiveengineeringAlloy(item.of('emendatusenigmatica:brass_ingot',2),
-	'#forge:ingots/copper',
-	'#forge:ingots/zinc',
-	).time(1600)
-	
-	event.recipes.immersiveengineeringAlloy(item.of('emendatusenigmatica:constantan_ingot',2),
-	'#forge:ingots/copper',
-	'#forge:ingots/nickel',
-	).time(1600)
-	
-	event.recipes.immersiveengineeringAlloy(item.of('emendatusenigmatica:electrum_ingot',2),
-	'#forge:ingots/gold',
-	'#forge:ingots/silver',
-	).time(1600)
-	
 	event.recipes.immersiveengineeringAlloy(item.of('emendatusenigmatica:bronze_ingot',4),
 	'3x #forge:ingots/copper',
 	'#forge:ingots/tin',
@@ -274,12 +271,12 @@ events.listen('recipes', function (event) {
 	event.recipes.immersiveengineeringAlloy(item.of('create:andesite_alloy',1),
 	'2x minecraft:andesite',
 	'2x minecraft:iron_nugget',
-	).time(800)
+	).time(400)
 	
 	event.recipes.immersiveengineeringAlloy(item.of('create:andesite_alloy',1),
 	'2x minecraft:andesite',
 	'2x #forge:nuggets/zinc',
-	).time(800)
+	).time(400)
 	
 	//Coke Brick Brick
 	event.blasting('kubejs:coke_brick', 'kubejs:coke_brick_blend')

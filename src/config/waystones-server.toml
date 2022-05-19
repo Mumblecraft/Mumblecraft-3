@@ -11,10 +11,10 @@
 		blocksPerXPLevel = 500
 		#The minimum base xp cost
 		#Range: 0.0 ~ Infinity
-		minimumXpCost = 0.0
+		minimumXpCost = 1.0
 		#The maximum base xp cost (may be exceeded by multipliers defined below), set to 0 to disable all distance-based XP costs
 		#Range: 0.0 ~ Infinity
-		maximumXpCost = 0.0
+		maximumXpCost = 30.0
 
 	#These options apply to teleporting from one waystone to another by right-clicking it.
 	[server.waystoneToWaystone]

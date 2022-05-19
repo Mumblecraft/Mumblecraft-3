@@ -18,5 +18,17 @@ onEvent('tags.items', event => {
   event.add('notreepunching:weak_saws', 'immersiveengineering:axe_steel')
   event.add('notreepunching:weak_saws', 'byg:pendorite_axe')
   event.add('notreepunching:weak_saws', 'aquaculture:neptunium_axe')
+  event.add('notreepunching:weak_saws', 'mekanismtools:iron_paxel')
+  event.add('notreepunching:weak_saws', 'mekanismtools:diamond_paxel')
+  event.add('notreepunching:weak_saws', 'mekanismtools:gold_paxel')
+  event.add('notreepunching:weak_saws', 'mekanismtools:netherite_paxel')
+  event.add('notreepunching:weak_saws', 'mekanismtools:bronze_paxel')
+  event.add('notreepunching:weak_saws', 'mekanismtools:lapis_lazuli_paxel')
+  event.add('notreepunching:weak_saws', 'mekanismtools:osmium_paxel')
+  event.add('notreepunching:weak_saws', 'mekanismtools:refined_glowstone_paxel')
+  event.add('notreepunching:weak_saws', 'mekanismtools:refined_obsidian_paxel')
+  event.add('notreepunching:weak_saws', 'mekanismtools:steel_paxel')
+  event.add('forge:chests', 'ironchest:diamond_chest')
+
   
 })

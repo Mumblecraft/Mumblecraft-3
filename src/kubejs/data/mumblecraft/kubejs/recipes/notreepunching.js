@@ -34,14 +34,6 @@ events.listen('recipes', function (event) {
 		event.remove({id: remove})
 	})
 
-	//Treated Sticks
-	event.shaped(item.of('immersiveengineering:stick_treated', 1), [
-        'AB'
-    ], {
-        A: '#notreepunching:weak_saws',
-        B: '#forge:treated_wood'
-    })
-	
 	//Saws
 	//Iron
 	event.remove({id: 'notreepunching:iron_saw'})
