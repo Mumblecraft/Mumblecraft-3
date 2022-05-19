@@ -147,6 +147,7 @@
       "name": "gui.xaero_entity_category_other_entities",
       "protection": true,
       "settingOverrides": {
+	    "displayed": false,
         "color": 5.0
       },
       "subCategories": []

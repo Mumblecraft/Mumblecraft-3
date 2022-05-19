@@ -1,18 +1,9 @@
 {
     "ModSettings": {
+        "enable_updates_check": false,
         "first_run": false
     },
-    "GuiSettings": {
-        "show_continuous_crafting_checkbox": false,
-        "continuous_crafting_saved_value": false
-    },
     "AutoRefillSettings": {
-        "tool_damage_threshold": 0,
-        "visual_durability_notification": false,
-        "audio_durability_notification": false,
-        "visual_replace_success_notification": false,
-        "audio_replace_success_notification": false,
-        "visual_replace_failed_notification": false,
-        "audio_replace_failed_notification": false
+        "refill_before_tool_break": false
     }
 }
