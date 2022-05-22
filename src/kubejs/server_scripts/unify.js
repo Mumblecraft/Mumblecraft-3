@@ -1,7 +1,7 @@
 // Whether or not to unify items in inventory
-global["INVENTORY_UNIFY"] = true
+global["INVENTORY_UNIFY"] = false
 // Whether or not to unify items in world
-global["ITEM_UNIFY"] = true
+global["ITEM_UNIFY"] = false
 // Whether or not to unify recipes
 global["RECIPE_UNIFY"] = true
 // Whether or not to hide not-first materials in jei (requires secondary script)
