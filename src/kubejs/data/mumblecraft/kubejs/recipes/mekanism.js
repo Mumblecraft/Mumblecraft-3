@@ -14,12 +14,6 @@ events.listen('recipes', function (event) {
 		'#forge:plates/iron'
 	)
 	
-	//Remove Metal Blocks
-	event.remove({output: 'mekanism:block_steel'})
-	event.remove({output: 'mekanism:block_copper'})
-	event.remove({output: 'mekanism:block_lead'})
-	event.remove({output: 'mekanism:block_uranium'})
-	
 	//Add Stonecutter Recipes for Mekanism Metal Blocks
 	event.stonecutting('mekanism:block_steel', 'emendatusenigmatica:steel_block')
 	event.stonecutting('mekanism:block_copper', 'emendatusenigmatica:copper_block')

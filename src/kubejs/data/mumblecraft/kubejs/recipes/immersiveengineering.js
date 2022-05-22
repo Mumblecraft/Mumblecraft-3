@@ -17,17 +17,6 @@ events.listen('recipes', function (event) {
     })
 	
 	//Blocks
-
-	//Remove Metal Blocks
-	event.remove({output: 'immersiveengineering:storage_copper'})
-	event.remove({output: 'immersiveengineering:storage_steel'})
-	event.remove({output: 'immersiveengineering:storage_aluminum'})
-	event.remove({output: 'immersiveengineering:storage_lead'})	
-	event.remove({output: 'immersiveengineering:storage_silver'})
-	event.remove({output: 'immersiveengineering:storage_nickel'})
-	event.remove({output: 'immersiveengineering:storage_uranium'})	
-	event.remove({output: 'immersiveengineering:storage_constantan'})
-	event.remove({output: 'immersiveengineering:storage_electrum'})
 	
 	//Add Stonecutter Recipes for IE Metal Blocks
 	event.stonecutting('immersiveengineering:storage_copper', 'emendatusenigmatica:copper_block')
