@@ -53,7 +53,7 @@ events.listen('recipes', function (event) {
 	], {
 		A: '#forge:gears/brass',
 		B: '#forge:plates/brass',
-		C: '#forge:planks',
+		C: '#minecraft:planks',
 	})
 	
 	//Copper Casing
@@ -66,7 +66,7 @@ events.listen('recipes', function (event) {
 	], {
 		A: '#forge:gears/copper',
 		B: '#forge:plates/copper',
-		C: '#forge:planks',
+		C: '#minecraft:planks',
 	})
 	
 	//Schematicannon
